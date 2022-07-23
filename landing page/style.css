@@ -1,0 +1,76 @@
+.container{
+    background-color: rgb(230, 255, 255);
+}
+
+.section-01{
+    background-color:#FFD868
+}
+.section-01 div .main-title{
+    font-family: Helvetica Neue bold, sans-serif; 
+    font-weight:bolder; 
+    font-size: 80px;
+    line-height: 94px; 
+    color:721B65
+}
+
+.sub-title{
+    font-weight:normal; 
+    font-size:20px;
+    line-height: 23px; 
+    color:#bb233f;
+    margin-bottom: 3rem;
+}
+ .btn-grid{
+    display: grid;
+    grid-template-columns: 234px 234px;
+    grid-gap: 10px;
+ }
+ .btn-white{
+    padding:16px 82px;
+    border:0px; 
+    border-radius: 10px;
+    background-color: white;
+    color:#721B65;
+    text-decoration: none
+}
+ .btn-white:hover{
+    background-color:#721B65;
+    color:white
+}
+
+.btn-blue{
+    padding:16px 76px;
+    border:0px;
+    border-radius: 10px;
+    background-color:#721B65;
+    color:white;
+    text-decoration: none
+}
+ .btn-blue:hover{
+    color:#721B65;
+    background-color:white
+}
+
+.main-title-02{
+    font-family: Helvetica Neue bold, sans-serif; 
+    font-weight:bold; 
+    font-size: 56px;
+    color:#721B65;
+    line-height: 58px;
+    color:#808080 
+}
+
+.social-link{
+    width:100px;height:100px;border-radius:50%;background-color: #721B65;
+}
+
+@media only screen and (max-width: 600px){
+
+        .btn-grid{
+
+                grid-template-columns: 234px;
+                grid-gap:35px;
+        }
+       
+
+}
