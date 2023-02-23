@@ -1,0 +1,11 @@
+.form{
+    padding:90px;
+}
+.form-bg{
+
+    background-color: rgb(250, 127, 127);
+    padding:40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgb(194, 189, 189);
+
+}

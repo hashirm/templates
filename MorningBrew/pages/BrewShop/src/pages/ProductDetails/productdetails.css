@@ -1,0 +1,22 @@
+.ProductDetails .productDetailsGrid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.ProductDetails .productDetailsGrid .shirtGrid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.ProductDetails .productDetailsGrid .shirtGrid .zoomview {
+  overflow: hidden;
+}
+.ProductDetails .productDetailsGrid .shirtGrid .zoomview .image {
+  transition: 500ms ease;
+}
+.ProductDetails .productDetailsGrid .shirtGrid .zoomview .image img {
+  position: relative;
+}
+.ProductDetails .productDetailsGrid .shirtGrid .zoomview .image img:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=productdetails.css.map */

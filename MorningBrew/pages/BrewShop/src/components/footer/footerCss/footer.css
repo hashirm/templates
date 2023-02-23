@@ -1,0 +1,23 @@
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #f6f8fc;
+}
+.footer .footerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space;
+  grid-gap: 6rem;
+}
+.footer .footerContent .flexContainer {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=footer.css.map */

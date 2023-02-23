@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+    $font-stack: 'poppins', sans-sarif;
+    $bg-color: #F15C40;
+    $text-color01: #92959b;
+
+
+    $background: #f9f9f9;
+    $foreground: #2c3e50;
+
+    $foreground-light: #34495e;
+
+
+    $size: 50px;
+    $ratio: 1.2;
+
+    $transition-time: 0.3s;
+    *,
+    html,
+    body {
+        box-sizing: border-box;
+        font-family: $font-stack;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+
+
+    p{
+
+        margin-bottom: 0px;
+
+    }
+
+    nav{
+        
+        background: #0D5F8F !important;
+        
+    }
+
+    .navbar {
+
+        padding-top: 1.2rem !important;
+        padding-bottom: 1.2rem !important
+    }
+
+    .mainSlide {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .section-02 {
+
+        margin-top: 2rem;
+
+        .moneywithkatie-container{
+            max-width: 1140px; 
+            margin:0 auto;
+        }
+
+        .btn {
+            background-color: $bg-color;
+            color: white
+        }
+
+        .section-02-grid {
+            display: grid;
+            grid-template-columns: 64% 32%;
+            grid-gap: 4%;
+            margin-top: 2rem;
+            justify-content: center;
+
+            .left-content {
+
+
+                .board {
+
+                    border-radius: 1.5rem;
+
+                    h5 {
+                        color: $text-color01;
+                    }
+
+                    h4 {
+                        color: $bg-color;
+
+                        &:hover{
+
+                                color:#2c3e50
+                        }
+
+                    }
+
+                    h6 {
+                        color: $text-color01;
+                        font-weight: 400;
+                    }
+                    
+                    .board-subSect{
+                        background-color: #f4f4f4;
+                        padding:2rem 0 0 0;
+                        height: 14.5rem;
+                        position : relative;
+                        overflow : hidden;
+
+                        .desc{
+                           
+                            p:nth-of-type(1){
+                                font-size: .7rem
+                            }
+                            p:nth-of-type(3){
+                                font-size: .7rem
+                            }
+
+                        }
+                     
+                    }
+
+                    #backgroundplaceholder{
+                        background-color: #3680ca;
+                        border-radius: 50%;
+                        width:35px;
+                        height:35px;
+                        padding:10px 12px;
+
+                        &:hover{
+                            background-color: #5e9ddd;
+                        }
+                    }
+                    #playPauseButton{
+
+                        background-color: transparent;
+                        border:none;
+                        color:white;
+                    }
+
+                    .board-accordian-a{
+                        background-color:#e7e9ec;
+                        position:absolute;
+                        bottom: calc(26px - 12.5em);
+                        z-index: 4;
+                        width: 100%;
+                        height: 14.5em;
+                        padding: 0 20px;
+                        transition: bottom .25s;
+                    }
+
+                    .board-accordian-a.dis-block {
+                        position: absolute;
+                        bottom: 0;
+                    }
+
+                    .board-accordian{
+                        background-color:#e7e9ec;
+                        position:absolute;
+                        bottom:0;
+                        height: 2.6rem;
+                        z-index : 9;
+                        padding: 0.78rem 1rem;
+
+                        .d-flex{
+                           
+                            .d-flex{                            
+                                width: 100%;
+                                
+                                p{
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                            
+
+                        }
+
+                    }
+                    
+                    #expendupMenu{
+                        
+                        width:100%;
+                        transition:visibility 500ms fade;
+
+                    .expendupmenu-desc{
+                            
+                        height: 87px;
+                        overflow-y:scroll;
+                        
+                    }
+
+                }
+
+                .dis-block{
+                   visibility: visible;
+                }
+                .dis-none{
+                    visibility: hidden;
+                }
+
+                }
+
+            }
+        .right-content{
+
+            .form{
+                input{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+            }
+
+
+        }    
+
+        }
+
+    }
+
+  

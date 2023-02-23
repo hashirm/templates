@@ -1,0 +1,164 @@
+@import '../../../../public/scss/common.scss';
+
+
+@mixin flexCenter($direction) {
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.removeColor{
+    border:0px;
+}
+
+.addColor{
+    border:1px solid blue;
+}
+
+.new-arrivals {
+
+
+    .main-image {
+
+        margin-top: 7.4rem;
+
+        img {
+            border-radius: 20px;
+        }
+
+    }
+
+    .productsGrid {
+
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgb(201, 194, 194);
+            border-radius: 15px;
+            width:20%;
+            min-width: 311px;
+            flex-grow: 1;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                .Add-to-bag {
+
+                    bottom: 0px !important;
+
+                }
+
+            }
+
+            img {
+                width: 100% !important;
+            }
+
+            .tag {
+                background-color: #529ac7;
+                width: 150px;
+                height: 32px;
+                top: 2rem;
+                left: 8.72rem;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10px 50%);
+
+                .tagtext {
+                    font-size: 1.7rem;
+                    margin-bottom: 0rem;
+                    font-weight: 700;
+                }
+            }
+
+            .Add-to-bag {
+                background-color: white;
+                border-top: 1px solid rgb(219, 208, 208);
+                transition: 0.5s ease;
+                position: absolute;
+
+                .variaties-desc {
+                    @include flexCenter(column);
+                }
+
+
+                div {
+
+                    .colors {
+
+                       
+
+
+
+                        div {
+
+
+                            @include flexCenter(row);
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+
+                            &:hover{
+                                border: 1px solid blue;
+                            }
+
+                            div {
+
+                                border-radius: 50%;
+                                width: 26px;
+                                height: 26px;
+                                &:hover{
+                                border: none;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                }
+
+                .product-sizes {
+
+                    div {
+
+                        &:hover{
+                            border: 2px solid blue;
+                        }
+
+
+                        border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+
+                        div {
+                            &:hover{
+                                border: none;
+                            }
+
+                            border-radius: 50%;
+                            width: 33px;
+                            height: 33px;
+
+                        }
+
+                    }
+
+
+
+                }
+
+            }
+
+        }
+
+
+    }
+}

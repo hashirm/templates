@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*,
+html,
+body {
+  box-sizing: border-box;
+  font-family: "poppins", sans-sarif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+nav {
+  background: #0D5F8F !important;
+}
+
+.navbar {
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
+}
+
+.mainSlide img {
+  width: 100%;
+}
+
+.section-02 {
+  margin-top: 2rem;
+}
+.section-02 .moneywithkatie-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section-02 .btn {
+  background-color: #F15C40;
+  color: white;
+}
+.section-02 .section-02-grid {
+  display: grid;
+  grid-template-columns: 64% 32%;
+  grid-gap: 4%;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.section-02 .section-02-grid .left-content .board {
+  border-radius: 1.5rem;
+}
+.section-02 .section-02-grid .left-content .board h5 {
+  color: #92959b;
+}
+.section-02 .section-02-grid .left-content .board h4 {
+  color: #F15C40;
+}
+.section-02 .section-02-grid .left-content .board h4:hover {
+  color: #2c3e50;
+}
+.section-02 .section-02-grid .left-content .board h6 {
+  color: #92959b;
+  font-weight: 400;
+}
+.section-02 .section-02-grid .left-content .board .board-subSect {
+  background-color: #f4f4f4;
+  padding: 2rem 0 0 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.section-02 .section-02-grid .left-content .board .board-subSect .desc p:nth-of-type(1) {
+  font-size: 0.7rem;
+}
+.section-02 .section-02-grid .left-content .board .board-subSect .desc p:nth-of-type(3) {
+  font-size: 0.7rem;
+}
+.section-02 .section-02-grid .left-content .board #backgroundplaceholder {
+  background-color: #3680ca;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 10px 12px;
+}
+.section-02 .section-02-grid .left-content .board #backgroundplaceholder:hover {
+  background-color: #5e9ddd;
+}
+.section-02 .section-02-grid .left-content .board #playPauseButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.section-02 .section-02-grid .left-content .board .board-accordian-a {
+  background-color: #e7e9ec;
+  position: absolute;
+  bottom: calc(26px - 12.5em);
+  z-index: 4;
+  width: 100%;
+  height: 14.5em;
+  padding: 0 20px;
+  transition: bottom 0.25s;
+}
+.section-02 .section-02-grid .left-content .board .board-accordian-a.dis-block {
+  position: absolute;
+  bottom: 0;
+}
+.section-02 .section-02-grid .left-content .board .board-accordian {
+  background-color: #e7e9ec;
+  position: absolute;
+  bottom: 0;
+  height: 2.6rem;
+  z-index: 9;
+  padding: 0.78rem 1rem;
+}
+.section-02 .section-02-grid .left-content .board .board-accordian .d-flex .d-flex {
+  width: 100%;
+}
+.section-02 .section-02-grid .left-content .board .board-accordian .d-flex .d-flex p {
+  font-size: 0.8rem;
+}
+.section-02 .section-02-grid .left-content .board #expendupMenu {
+  width: 100%;
+  transition: visibility 500ms fade;
+}
+.section-02 .section-02-grid .left-content .board #expendupMenu .expendupmenu-desc {
+  height: 87px;
+  overflow-y: scroll;
+}
+.section-02 .section-02-grid .left-content .board .dis-block {
+  visibility: visible;
+}
+.section-02 .section-02-grid .left-content .board .dis-none {
+  visibility: hidden;
+}
+.section-02 .section-02-grid .right-content .form input {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

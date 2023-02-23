@@ -1,0 +1,303 @@
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0.5%;
+  padding: 0;
+}
+
+nav {
+  background: transparent;
+}
+
+
+
+@media (max-width: 1024px) {
+  nav .menu-items {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  nav .social-links .menu-icon {
+    display: block !important;
+  }
+}
+nav .remove-height {
+  height: 0px;
+}
+
+nav .add-height {
+  height: 350px;
+}
+
+nav .mobile-menu-bg {
+  height: 0px;
+}
+
+@media (max-width: 1024px) {
+  nav .mobile-menu-bg {
+    transition: all 500ms ease;
+  }
+}
+.bg-video .w-25 {
+  width: 26% !important;
+}
+
+@media (max-width: 1024px) {
+  .bg-video .w-25 {
+    width: 40% !important;
+  }
+}
+@media (max-width: 991px) {
+  .bg-video .w-25 {
+    width: 45% !important;
+  }
+}
+@media (max-width: 780px) {
+  .bg-video .w-25 {
+    width: 55% !important;
+  }
+}
+@media (max-width: 600px) {
+  .bg-video .w-25 {
+    width: 75% !important;
+   
+}
+  
+}
+@media (max-width: 600px) {
+  .bg-video .mobile-height {
+    height: 700px !important;
+  }
+}
+.bg-video .text-main {
+  top: 19%;
+  left: 10%;
+  font-size: 3rem;
+}
+
+.bg-video .text-main h1, .bg-video .text-main .section-03 h1 span, .section-03 h1 .bg-video .text-main span {
+  font-size: 3.5rem;
+  font-weight: 800;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.bg-video .text-main p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.bg-video .text-main button {
+  background-color: aliceblue;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.bg-video .text-main button:hover {
+  background-color: brown;
+  border: 1px solid brown !important;
+  color: white !important;
+}
+
+@media (max-width: 600px) {
+  .tfbltd .col-sm-12 {
+    text-align: center;
+  }
+  .tfbltd .col-sm-12 .list-unstyled {
+    text-align: left;
+    margin-left: 7.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .tfbltd .col-sm-12 .list-unstyled {
+    margin-left: 0.6rem;
+  }
+}
+.tfbltd h1, .tfbltd .section-03 h1 span, .section-03 h1 .tfbltd span {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.tfbltd h1 span, .section-03 h1 .tfbltd span span {
+  font-size: 2rem;
+}
+
+.tfbltd p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.tfbltd p span {
+  font-size: 1.8rem;
+  color: brown;
+}
+
+.tfbltd button {
+  color: brown;
+  border-color: brown !important;
+}
+
+.tfbltd button:hover {
+  background-color: brown !important;
+  color: white !important;
+}
+
+.section-03 h1, .section-03 h1 span {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.section-03 h1 span {
+  font-weight: bold;
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+  .section-03 .sec-03-part-02 {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+.section-03 .box-one {
+  background-color: white;
+  width: 32%;
+  padding: 20px;
+}
+
+@media (max-width: 780px) {
+  .section-03 .box-one {
+    width: 100%;
+  }
+}
+.section-03 .box-two {
+  background-color: blueviolet;
+  color: white;
+  width: 32%;
+  padding: 20px;
+}
+
+@media (max-width: 780px) {
+  .section-03 .box-two {
+    width: 100%;
+  }
+}
+.section-03 .box-three {
+  background-color: white;
+  width: 32%;
+  padding: 20px;
+}
+
+@media (max-width: 780px) {
+  .section-03 .box-three {
+    width: 100%;
+  }
+}
+.section-04 {
+  background-image: url(../assets/section-04-bg-02.jpg);
+  background-size: 100% 100%;
+}
+
+.section-04 h3, .section-04 .section-05 h3 span, .section-05 h3 .section-04 span {
+  font-weight: bolder;
+}
+
+.section-04 p {
+  font-size: 1.5    rem;
+}
+
+.section-05 h3, .section-05 h3 span {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.section-05 h3 span {
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.section-05 p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .section-06 .flex-container {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 600px) {
+  .section-06 .flex-container {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 780px) {
+  .contact-section .button-submit {
+    width: 50% !important;
+  }
+}
+.contact-section .button-submit:hover {
+  background-color: brown !important;
+  color: white !important;
+  border: 1px solid brown !important;
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 780px) {
+  .contact-section .w-75 {
+    width: 90% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .contact-section .contact-form {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+}
+@media (max-width: 991px) {
+  .footer .w-50 {
+    width: 95% !important;
+  }
+}
+@media (max-width: 780px) {
+  
+  .footer .w-50 {
+    width: 95% !important;
+  }
+}
+@media (max-width: 600px) {
+  .footer .w-50 {
+    width: 95% !important;
+  }
+  .position-absolute.text-main.w-50 h1{
+    width:70% !important;
+  }
+}
+@media (max-width: 480px) {
+  .footer .w-50 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .footer h6 {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .p-5 {
+    padding: 1rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */

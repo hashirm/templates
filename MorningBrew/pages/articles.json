@@ -1,0 +1,25 @@
+{
+
+    "articles":[
+        {
+            "id":"1",
+            "author":"Richard Morgan",
+            "title":"Can anything stop deepfake porn?",
+            "subTitle":"It's a “business model for sexually violating women.",
+            "imgSrc":"./assets/section-03-image-part-01.webp",
+            "description":"Jennifer, a 42-year-old divorcée in North Carolina who retains much of the optimism from her days as a high school cheerleader, prays every morning. She prays for her wellbeing, her home, her friends and family, her dogs, her business, her pastor, her church, and her country. She also prays “for God to clean up my DMs,” she said.Jennifer said she routinely gets direct messages from strangers on the internet who have found pornography where her face has been imposed on another woman without her consent. The porn flags her real name, her home address, and her Instagram account, which is where people DM her."
+        },
+        {
+            "id":"2",
+            "author":"Sherry Qin",
+            "title":"Brew Questionnaire with Christian Smalls",
+            "subTitle":"Meet the man who led Amazon workers to a union victory.",
+            "imgSrc":"./assets/new01.webp",
+            "description":"As the president and founder of the Amazon Labor Union (ALU), Christian Smalls is the David to Amazon’s Goliath. A former warehouse worker, he was infamously fired by Amazon after organizing a walkout in the early days of the pandemic. He led the ALU to victory in a historic unionization effort at the JFK8 Fulfilment Center on Staten Island, the first Amazon warehouse in the United States to unionize. Since leading the winning union drive, he’s met with President Joe Biden and was named one of Time’s most influential people of 2022."
+    }
+
+
+    ]
+
+
+}

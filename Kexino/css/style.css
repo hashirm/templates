@@ -1,0 +1,727 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+button00:hover, .marketing-service-section-11 button:hover, .marketing-service-section-04 .row button:hover, .marketing-service-section-02 button:hover, .contact-01 .d-flex button:hover, .section-10 div button:hover, .jillkin-man .flex-cont button:hover, .section-04 .button button:hover, .section-01 button:hover {
+  background-color: #FF8E00 !important;
+  color: white !important;
+  transform: scale(1.2);
+  transition: all 500ms linear;
+  -moz-transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+}
+
+.search-textbox {
+  display: none;
+  flex-direction: column;
+}
+.search-textbox .form-control:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
+ul {
+  margin: 0.5%;
+  padding: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+nav .logo {
+  height: 4rem;
+}
+nav .menu-items {
+  margin: 0px;
+}
+nav .menu-items li {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+nav .menu-items li:hover {
+  border-top: 3px solid #301497;
+}
+nav .menu-items li:hover a {
+  color: #301497;
+}
+nav .menu-items li .submenu {
+  width: 280px !important;
+  box-shadow: 2px 4px 8px rgb(179, 179, 179);
+  visibility: hidden;
+}
+nav .menu-items li .submenu:hover {
+  visibility: visible;
+}
+nav .menu-items li .submenu li {
+  text-align: center;
+  height: 2.5rem;
+  border: 0;
+  padding: 0px 1.5rem;
+}
+nav .menu-items li .submenu li a {
+  text-decoration: none;
+  color: black;
+}
+nav .menu-items .marketing-services:hover .submenu {
+  visibility: visible;
+}
+nav .menu-items .marketing-services:hover .submenu li:hover {
+  background-color: #FF8E00;
+}
+nav .menu-items .marketing-services:hover .submenu li:hover a {
+  color: #301497;
+}
+nav .menu-items .kexino:hover .submenu {
+  visibility: visible;
+}
+nav .menu-items .kexino:hover .submenu li:hover {
+  background-color: #FF8E00;
+}
+nav .menu-items .kexino:hover .submenu li:hover a {
+  color: #301497;
+}
+@media (max-width: 1024px) {
+  nav .menu-items {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  nav .social-links .menu-icon {
+    display: block !important;
+  }
+}
+nav .remove-height {
+  height: 0px;
+}
+nav .add-height {
+  height: 350px;
+}
+nav .mobile-menu-bg {
+  height: 0px;
+}
+@media (max-width: 1024px) {
+  nav .mobile-menu-bg {
+    transition: all 500ms ease;
+  }
+}
+nav .mobile-menu-bg .mobile-submenu li a {
+  text-decoration: none;
+  color: #301497;
+}
+
+.section-01 {
+  background: url(../assets/better-marketing-starts-here.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.section-01 div {
+  width: 39%;
+}
+@media (max-width: 991px) {
+  .section-01 div {
+    width: 55%;
+  }
+}
+@media (max-width: 780px) {
+  .section-01 div {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .section-01 div {
+    width: 96%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-02 .section-02-flexCont {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .section-02 .section-02-flexCont {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .section-02 .section-02-flexCont div {
+    width: 100% !important;
+  }
+}
+
+.section-03 .video-div {
+  /* Popup box BEGIN */
+  /* Popup box BEGIN */
+}
+.section-03 .video-div img.trigger_popup_fricc:hover {
+  box-shadow: 2px 4px 8px black;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transition: all 500ms ease-out;
+}
+.section-03 .video-div .hover_bkgr_fricc {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+  display: none;
+}
+.section-03 .video-div .hover_bkgr_fricc .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.section-03 .video-div .hover_bkgr_fricc > div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px 5%;
+}
+.section-03 .video-div .popupCloseButton {
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.section-03 .video-div .trigger_popup_fricc {
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.section-04 .section-04-flexCont > div {
+  width: 100% !important;
+}
+.section-04 .section-04-flexCont > div p {
+  margin-bottom: 3rem !important;
+}
+@media (max-width: 780px) {
+  .section-04 .section-04-flexCont {
+    flex-direction: column !important;
+    width: 90% !important;
+  }
+}
+
+.section-07 {
+  background-color: #ebeeef;
+}
+.section-07 .images-div {
+  width: 90%;
+}
+.section-07 img {
+  width: 12%;
+}
+
+.section-08 {
+  background: url(../assets/recent-small-business-marketing-clients.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 780px) {
+  .section-09 .section09-flexCont .flexItem00 {
+    justify-content: center !important;
+  }
+}
+.section-09 .section09-flexCont .flexItem00 .img-div-00 {
+  background-image: url(../assets/finding-new-customers-for-my-business.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 40rem;
+  min-height: 100%;
+}
+@media (max-width: 780px) {
+  .section-09 .section09-flexCont .flexItem00 .img-div-00 {
+    height: 100%;
+    width: 90% !important;
+  }
+}
+.section-09 .section09-flexCont .flexItem00 .img-div-00 .img-div-01 {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: -2rem -26rem;
+  height: 31rem;
+  width: 75%;
+  min-width: 100%;
+}
+@media (max-width: 780px) {
+  .section-09 .section09-flexCont .flexItem00 .img-div-00 .img-div-01 {
+    margin: 0 0;
+    height: 100%;
+    min-height: 100%;
+  }
+}
+
+.jillkin-man {
+  background-color: #ebeeef;
+}
+.jillkin-man .flex-cont {
+  width: 60%;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .jillkin-man .flex-cont {
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  .jillkin-man .flex-cont {
+    width: 80%;
+  }
+}
+@media (max-width: 780px) {
+  .jillkin-man .flex-cont {
+    width: 90%;
+  }
+}
+.jillkin-man .flex-cont img {
+  width: 150px;
+  height: 150px;
+}
+.section-10 {
+  gap: 2rem;
+}
+.section-10 div {
+  text-align: center;
+  width: 300px;
+}
+footer div {
+  background-color: hsl(204deg, 20%, 20%);
+  color: white;
+}
+@media (max-width: 780px) {
+  footer div .social-links {
+    justify-content: space-between;
+  }
+}
+footer div .social-links li i {
+  color: #7c8590;
+}
+footer div .social-links li i:hover {
+  color: white;
+}
+footer div .contact-us ul li {
+  margin: 5px 0px;
+}
+footer div .contact-us ul li a {
+  text-decoration: none;
+  color: #a4d8ff;
+}
+footer div .contact-us ul li a:hover {
+  color: white;
+}
+footer div .subSection {
+  background-color: hsla(0deg, 22%, 5%, 0.14);
+}
+footer div .subSection ul li {
+  margin: 0px 10px;
+}
+footer div .subSection ul li a {
+  text-decoration: none;
+  color: #a4d8ff;
+}
+footer div .subSection ul li a:hover {
+  color: white;
+}
+
+.path-section a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+.path-section a:hover {
+  color: #FF8E00;
+}
+
+.market-overview-sect-01 {
+  background: url(../assets/marketing-services-startups2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.market-overview-sect-01 div {
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  .market-overview-sect-01 div {
+    width: 90%;
+  }
+}
+@media (max-width: 780px) {
+  .market-overview-sect-01 div {
+    width: 99%;
+  }
+}
+.market-overview-sect-01 div h1, .market-overview-sect-01 div h1 i {
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+.market-overview-sect-01 div h1 i {
+  color: #a4d8ff;
+}
+.market-overview-sect-01 div h3 {
+  width: 45%;
+}
+@media (max-width: 1024px) {
+  .market-overview-sect-01 div h3 {
+    width: 60%;
+  }
+}
+@media (max-width: 780px) {
+  .market-overview-sect-01 div h3 {
+    width: 75%;
+  }
+}
+.market-overview-sect-01 div p:nth-of-type(1) {
+  width: 39%;
+}
+@media (max-width: 1024px) {
+  .market-overview-sect-01 div p:nth-of-type(1) {
+    width: 50%;
+  }
+}
+@media (max-width: 780px) {
+  .market-overview-sect-01 div p:nth-of-type(1) {
+    width: 75%;
+  }
+}
+
+.market-overview-sect-02 {
+  background: url(../assets/If-You-Build-It-They-Wont-Come2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.market-overview-sect-02 div {
+  width: 80%;
+}
+@media (max-width: 780px) {
+  .market-overview-sect-02 div {
+    width: 95%;
+  }
+}
+.market-overview-sect-02 div h1, .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i, .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 div h1 i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i, .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i, .marketing-for-small-businesses-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-02 .market-overview-sect-01 div h1 i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .market-overview-sect-01 div h1 i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-02 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-02 .market-overview-sect-01 div h1 i i i, .market-overview-sect-01 .market-overview-sect-02 div h1 i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 div h1 i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-02 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-02 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-02 div h1 i i i {
+  font-size: 3rem;
+}
+
+.market-overview-sect-03 .flex-cont .flexItem {
+  width: 60%;
+}
+@media (max-width: 780px) {
+  .market-overview-sect-03 .flex-cont .flexItem {
+    width: 95%;
+  }
+}
+.market-overview-sect-03 .flex-cont .flexItem-02 {
+  width: 80%;
+}
+@media (max-width: 780px) {
+  .market-overview-sect-03 .flex-cont .flexItem-02 {
+    width: 95%;
+  }
+}
+.market-overview-sect-03 .flex-cont .flexItem-02 div {
+  width: 340px;
+  text-align: center;
+}
+.market-overview-sect-03 .flex-cont .flexItem-02 div h3 {
+  color: blueviolet;
+}
+
+.market-overview-sect-04 {
+  background: url("../assets/small-business-marketing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.market-overview-sect-04 div {
+  width: 80%;
+}
+@media (max-width: 780px) {
+  .market-overview-sect-04 div {
+    width: 95%;
+  }
+}
+.market-overview-sect-04 div h1, .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i, .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 div h1 i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i, .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i, .marketing-for-small-businesses-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-04 .market-overview-sect-01 div h1 i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .market-overview-sect-01 div h1 i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-04 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-04 .market-overview-sect-01 div h1 i i i, .market-overview-sect-01 .market-overview-sect-04 div h1 i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 div h1 i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-04 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-04 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-04 div h1 i i i {
+  font-size: 3rem;
+}
+
+.market-overview-sect-05 {
+  background-image: url("../assets/sales-tools-creation.jpg");
+  background-attachment: fixed;
+}
+.market-overview-sect-05 div {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .market-overview-sect-05 div {
+    width: 95%;
+  }
+}
+@media (max-width: 780px) {
+  .market-overview-sect-05 div {
+    width: 95%;
+  }
+}
+.market-overview-sect-05 div h1, .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i, .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 div h1 i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i, .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i, .marketing-for-small-businesses-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-05 .market-overview-sect-01 div h1 i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .market-overview-sect-01 div h1 i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .market-overview-sect-01 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-01 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i i, .market-overview-sect-05 .market-overview-sect-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-05 .market-overview-sect-01 div h1 i i i, .market-overview-sect-01 .market-overview-sect-05 div h1 i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 div h1 i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i, .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .market-overview-sect-01 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .marketing-for-small-businesses-01 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .market-overview-sect-01 .marketing-for-small-businesses-02 .market-overview-sect-05 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 div h1 i i i i, .marketing-for-small-businesses-01 .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 div h1 i i i i, .marketing-for-small-businesses-02 .marketing-for-small-businesses-01 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i i, .market-overview-sect-01 .market-overview-sect-05 .marketing-for-small-businesses-02 div h1 i i i, .marketing-for-small-businesses-02 .market-overview-sect-01 .market-overview-sect-05 div h1 i i i {
+  font-size: 3rem;
+}
+
+.market-overview-sect-07 {
+  background-color: #f2c548;
+}
+
+.marketing-for-small-businesses-01 {
+  background: url("../assets/small-business-marketing-agency-business.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: blueviolet;
+}
+.marketing-for-small-businesses-01 div {
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  .marketing-for-small-businesses-01 div {
+    width: 90%;
+  }
+}
+@media (max-width: 780px) {
+  .marketing-for-small-businesses-01 div {
+    width: 99%;
+  }
+}
+.marketing-for-small-businesses-01 div h1, .marketing-for-small-businesses-01 div h1 i {
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+.marketing-for-small-businesses-01 div h1 i {
+  color: #a4d8ff;
+}
+.marketing-for-small-businesses-01 div h3 {
+  width: 45%;
+}
+@media (max-width: 1024px) {
+  .marketing-for-small-businesses-01 div h3 {
+    width: 60%;
+  }
+}
+@media (max-width: 780px) {
+  .marketing-for-small-businesses-01 div h3 {
+    width: 75%;
+  }
+}
+.marketing-for-small-businesses-01 div p:nth-of-type(1) {
+  width: 39%;
+}
+@media (max-width: 1024px) {
+  .marketing-for-small-businesses-01 div p:nth-of-type(1) {
+    width: 50%;
+  }
+}
+@media (max-width: 780px) {
+  .marketing-for-small-businesses-01 div p:nth-of-type(1) {
+    width: 75%;
+  }
+}
+
+.marketing-for-small-businesses-02 {
+  background: url("../assets/what-is-the-best-small-business-marketing-plan.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #326589;
+}
+.marketing-for-small-businesses-02 div {
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  .marketing-for-small-businesses-02 div {
+    width: 90%;
+  }
+}
+@media (max-width: 780px) {
+  .marketing-for-small-businesses-02 div {
+    width: 99%;
+  }
+}
+.marketing-for-small-businesses-02 div h1, .marketing-for-small-businesses-02 div h1 i {
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+.marketing-for-small-businesses-02 div h1 i {
+  color: #a4d8ff;
+}
+.marketing-for-small-businesses-02 div h3 {
+  width: 45%;
+}
+@media (max-width: 1024px) {
+  .marketing-for-small-businesses-02 div h3 {
+    width: 60%;
+  }
+}
+@media (max-width: 780px) {
+  .marketing-for-small-businesses-02 div h3 {
+    width: 75%;
+  }
+}
+.marketing-for-small-businesses-02 div p:nth-of-type(1) {
+  width: 39%;
+}
+@media (max-width: 1024px) {
+  .marketing-for-small-businesses-02 div p:nth-of-type(1) {
+    width: 50%;
+  }
+}
+@media (max-width: 780px) {
+  .marketing-for-small-businesses-02 div p:nth-of-type(1) {
+    width: 75%;
+  }
+}
+
+.contact-01 {
+  background: url("../assets/contact-marketing-agency.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 9.5rem !important;
+  padding-bottom: 9.5rem !important;
+}
+@media (max-width: 1024px) {
+  .contact-01 {
+    background-size: cover;
+  }
+}
+.contact-01 .d-flex {
+  width: 50%;
+}
+.contact-02 {
+  background-color: #326589;
+}
+
+.marketing-service-section-01 {
+  background: url(../assets/marketing-agency-services-small-business.png);
+  background-position: center;
+  background-size: 100%;
+}
+.marketing-service-section-01 .mainText {
+  width: 40%;
+}
+.marketing-service-section-01 .mainText h1, .marketing-service-section-01 .mainText .market-overview-sect-01 div h1 i, .market-overview-sect-01 div h1 .marketing-service-section-01 .mainText i, .marketing-service-section-01 .mainText .marketing-for-small-businesses-01 div h1 i, .marketing-for-small-businesses-01 div h1 .marketing-service-section-01 .mainText i, .marketing-service-section-01 .mainText .marketing-for-small-businesses-02 div h1 i, .marketing-for-small-businesses-02 div h1 .marketing-service-section-01 .mainText i {
+  font-size: 5.7rem;
+  line-height: 89%;
+}
+
+.marketing-service-section-02 .section-02-header {
+  padding: 0 18rem;
+}
+.marketing-service-section-02 .section-02-header .display-3 {
+  font-size: 3rem !important;
+}
+.marketing-service-section-02 .section-02-header p {
+  font-size: 1.5rem;
+}
+.marketing-service-section-03 {
+  background-color: #6a85b6;
+}
+.marketing-service-section-03 .row .fa-regular {
+  color: #FF8E00;
+  font-size: 24px;
+}
+.marketing-service-section-03 .row .fa-solid {
+  color: #FF8E00;
+  font-size: 24px;
+}
+.marketing-service-section-03 .row p {
+  font-size: 18px;
+}
+
+.marketing-service-section-04 {
+  background-image: linear-gradient(to right, rgb(90, 112, 171), rgb(42, 42, 122));
+}
+.marketing-service-section-04 .row p {
+  font-size: 18px;
+}
+.marketing-service-section-05 {
+  background: url("../assets/SEO-factors-for-website-16.png");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.marketing-service-section-06 {
+  background: url("../assets/digital-advertising-for-small-business.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+.marketing-service-section-06 p {
+  font-size: 18px;
+}
+
+.marketing-service-section-08 {
+  background: url("../assets/translation-services-management.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1024px) {
+  .marketing-service-section-08 {
+    background-size: cover;
+  }
+}
+.marketing-service-section-08 p {
+  font-size: 18px;
+}
+
+.market-services-section-07 {
+  background: url("../assets/social-media-marketing-for-small-businesses.jpg");
+  background-size: 100%;
+}
+.market-services-section-07 .w-50 {
+  width: 65% !important;
+}
+.market-services-section-07 .w-50 h1, .market-services-section-07 .w-50 .market-overview-sect-01 div h1 i, .market-overview-sect-01 div h1 .market-services-section-07 .w-50 i, .market-services-section-07 .w-50 .marketing-for-small-businesses-01 div h1 i, .marketing-for-small-businesses-01 div h1 .market-services-section-07 .w-50 i, .market-services-section-07 .w-50 .marketing-for-small-businesses-02 div h1 i, .marketing-for-small-businesses-02 div h1 .market-services-section-07 .w-50 i {
+  font-size: 48px;
+}
+.market-services-section-07 .w-50 p {
+  font-size: 18px;
+  width: 80% !important;
+}
+
+.marketing-service-section-09 {
+  background-image: linear-gradient(to right, rgb(209, 217, 231), rgb(164, 180, 206));
+}
+
+.marketing-service-section-11 {
+  background: url("../assets/business-woman-wanting-to-find-out-more.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.marketing-service-section-11 .w-25 {
+  width: 38% !important;
+}
+
+/*# sourceMappingURL=style.css.map */
