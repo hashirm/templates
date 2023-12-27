@@ -1,0 +1,26 @@
+@import '../../../../public/scss/common.scss';
+
+.footer{
+
+    background-color: $footer-bg;
+
+    .footerContent{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space;
+        grid-gap: 6rem;
+        
+        .flexContainer{
+            display: flex;
+            width: 50%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+
+}
+
+

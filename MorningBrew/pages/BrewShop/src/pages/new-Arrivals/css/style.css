@@ -1,0 +1,108 @@
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.removeColor {
+  border: 0px;
+}
+
+.addColor {
+  border: 1px solid blue;
+}
+
+.new-arrivals .main-image {
+  margin-top: 7.4rem;
+}
+.new-arrivals .main-image img {
+  border-radius: 20px;
+}
+.new-arrivals .productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2rem;
+}
+.new-arrivals .productsGrid .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(201, 194, 194);
+  border-radius: 15px;
+  width: 20%;
+  min-width: 311px;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.new-arrivals .productsGrid .item:hover .Add-to-bag {
+  bottom: 0px !important;
+}
+.new-arrivals .productsGrid .item img {
+  width: 80% !important;
+}
+.new-arrivals .productsGrid .item .tag {
+  background-color: #529ac7;
+  width: 150px;
+  height: 32px;
+  top: 2rem;
+  left: 8.72rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10px 50%);
+}
+.new-arrivals .productsGrid .item .tag .tagtext {
+  font-size: 1.7rem;
+  margin-bottom: 0rem;
+  font-weight: 700;
+}
+.new-arrivals .productsGrid .item .Add-to-bag {
+  background-color: white;
+  border-top: 1px solid rgb(219, 208, 208);
+  transition: 0.5s ease;
+  position: absolute;
+}
+.new-arrivals .productsGrid .item .Add-to-bag .variaties-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-arrivals .productsGrid .item .Add-to-bag div .colors div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.new-arrivals .productsGrid .item .Add-to-bag div .colors div:hover {
+  border: 1px solid blue;
+}
+.new-arrivals .productsGrid .item .Add-to-bag div .colors div div {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}
+.new-arrivals .productsGrid .item .Add-to-bag div .colors div div:hover {
+  border: none;
+}
+.new-arrivals .productsGrid .item .Add-to-bag .product-sizes div {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.new-arrivals .productsGrid .item .Add-to-bag .product-sizes div:hover {
+  border: 2px solid blue;
+}
+.new-arrivals .productsGrid .item .Add-to-bag .product-sizes div div {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+.new-arrivals .productsGrid .item .Add-to-bag .product-sizes div div:hover {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

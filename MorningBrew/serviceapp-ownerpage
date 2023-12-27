@@ -1,0 +1,1191 @@
+
+
+<div class="proprtydetail">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="proprtydetail_left" id="abc">
+          <h1 id="property_title"><?php echo preg_replace("/[^A-Za-z0-9?!]/", ' ', $apartmentdata->gi_title); ?><?php echo (isset($apartmentdata->countryname) && !empty($apartmentdata->countryname)) ? ', ' . ucfirst(strtolower($apartmentdata->countryname)) : ''; ?></h1>
+          <!-- <p>1 Suffolk Place, London, SW1Y 4BP, Charing Cross</p> -->
+          <p id="add">
+            <?php echo (isset($apartmentdata->street_num) && !empty($apartmentdata->street_num)) ?  $apartmentdata->street_num . ',' : ''; ?>
+            <?php echo (isset($apartmentdata->street) && !empty($apartmentdata->street)) ?  $apartmentdata->street . ',' : ''; ?>
+            <?php echo (isset($apartmentdata->city) && !empty($apartmentdata->city)) ?  $apartmentdata->city . ',' : ''; ?>
+            <?php echo (isset($apartmentdata->countryname) && !empty($apartmentdata->countryname)) ?  ucfirst($apartmentdata->countryname) : ''; ?>
+            <?php echo (isset($apartmentdata->postcode) && !empty($apartmentdata->postcode)) ?  ', ' . $apartmentdata->postcode : ''; ?>
+
+          </p>
+
+
+
+
+          <div class="chaning_cross">
+            <!-- <span><?php echo (isset($apartmentdata->city) && !empty($apartmentdata->city)) ?  $apartmentdata->city : ''; ?>Charing Cross </span> -->
+            <!--  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="24px" viewBox="0 0 30 24" enable-background="new 0 0 30 24" xml:space="preserve" class="bakerloo uk-svg" data-svg="/images/tube.svg">
+              <path d="M14.775,4.023c4.399,0,7.977,3.579,7.977,7.977s-3.579,7.977-7.977,7.977S6.797,16.399,6.797,12S10.376,4.023,14.775,4.023
+              M14.775,0c-6.627,0-12,5.373-12,12s5.373,12,12,12c6.627,0,12-5.373,12-12S21.402,0,14.775,0L14.775,0z"></path>
+              <rect y="9.392" width="30" height="5"></rect>
+            </svg>  
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="24px" viewBox="0 0 30 24" enable-background="new 0 0 30 24" xml:space="preserve" class="northern uk-svg" data-svg="/images/tube.svg">
+              <path d="M14.775,4.023c4.399,0,7.977,3.579,7.977,7.977s-3.579,7.977-7.977,7.977S6.797,16.399,6.797,12S10.376,4.023,14.775,4.023
+              M14.775,0c-6.627,0-12,5.373-12,12s5.373,12,12,12c6.627,0,12-5.373,12-12S21.402,0,14.775,0L14.775,0z"></path>
+              <rect y="9.392" width="30" height="5"></rect>
+            </svg>  -->
+          </div>
+          <div class="chaning_cross">
+            <!--   <span ><?php echo (isset($apartmentdata->countryname) && !empty($apartmentdata->countryname)) ?  ucfirst(strtolower($apartmentdata->countryname)) : ''; ?>Charing Cross</span> -->
+            <!--    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="24px" viewBox="0 0 30 24" enable-background="new 0 0 30 24" xml:space="preserve" class="bakerloo uk-svg" data-svg="/images/tube.svg">
+              <path d="M14.775,4.023c4.399,0,7.977,3.579,7.977,7.977s-3.579,7.977-7.977,7.977S6.797,16.399,6.797,12S10.376,4.023,14.775,4.023
+              M14.775,0c-6.627,0-12,5.373-12,12s5.373,12,12,12c6.627,0,12-5.373,12-12S21.402,0,14.775,0L14.775,0z"></path>
+              <rect y="9.392" width="30" height="5"></rect>
+            </svg>  
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="24px" viewBox="0 0 30 24" enable-background="new 0 0 30 24" xml:space="preserve" class="piccadilly uk-svg" data-svg="/images/tube.svg">
+              <path d="M14.775,4.023c4.399,0,7.977,3.579,7.977,7.977s-3.579,7.977-7.977,7.977S6.797,16.399,6.797,12S10.376,4.023,14.775,4.023
+              M14.775,0c-6.627,0-12,5.373-12,12s5.373,12,12,12c6.627,0,12-5.373,12-12S21.402,0,14.775,0L14.775,0z"></path>
+              <rect y="9.392" width="30" height="5"></rect>
+            </svg>   -->
+          </div>
+          <div class="bttons">
+            <a href="#enquery_form" class="button_fill">Make an enquiry</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="proprtydetail_right">
+          <div class="bttons">
+            <a href="#" class="button_fill" id="download">Download details</a>
+          </div>
+          <div class="apartstaus"><span>Apartment Types:</span> <?= $apartmentdata->apartmenttype; ?></div>
+          <div class="bttons backbtn">
+            <a href="<?= $_SERVER['HTTP_REFERER'] ?>" class="button_fill" id="">Back to Search Results</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="propertyDetailBanner" style="background: url(<?php echo ($apartmentimages) ? base_url() . "assets/uploads/appartments/" . $apartmentimages[0]->app_img_app_id . "/" . $apartmentimages[0]->app_img_img : base_url() . "assets/default/detail-default-img.jpg" ?>);">
+  <div class="heading">
+    <h1> <?php echo strtoupper('Properties Profile') ?></h1>
+    <div class="detail_desp" id="property_title"><?php echo preg_replace("/[^A-Za-z0-9?!]/", ' ', $apartmentdata->gi_title); ?></div>
+  </div>
+</div> -->
+<!-- <div class="OverviewPanelBg">
+  <div class="property_detail main-contant newDetailDesgin">
+    <div class="container csWidth">
+      <div class="row">
+        
+        <div class="col-8">
+          <div class="property_details_right" id="abc">
+            <h1>From $<?= $apartmentdata->price_monthly; ?></h1>
+            <h1><?php echo strtoupper('Enquire For Rates') ?> <span><strong>Apartment Types:</strong> <?= $apartmentdata->apartmenttype; ?></span></h1>
+            <span class="addressTop">
+              <strong id="add">
+                <?php echo (isset($apartmentdata->street_num) && !empty($apartmentdata->street_num)) ?  $apartmentdata->street_num . ',' : ''; ?>
+                <?php echo (isset($apartmentdata->street) && !empty($apartmentdata->street)) ?  $apartmentdata->street . ',' : ''; ?>
+                <?php echo (isset($apartmentdata->city) && !empty($apartmentdata->city)) ?  $apartmentdata->city . ',' : ''; ?>
+                <?php echo (isset($apartmentdata->countryname) && !empty($apartmentdata->countryname)) ?  ucfirst($apartmentdata->countryname) : ''; ?>
+                <?php echo (isset($apartmentdata->postcode) && !empty($apartmentdata->postcode)) ?  ', ' . $apartmentdata->postcode : ''; ?>
+                
+              </strong>
+            </span>
+            
+          </div>
+        </div>
+        <div class="col-4">
+          
+          <div class="bttons">
+            <a href="#enquery_form" class="button_fill">Make an enquiry</a>
+            <a href="#" class="button_fill" id="download">Download details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>-->
+
+<section class="swiper-container swiper-container-new" id="apartment_images" style="background:#f6f6f6; padding: 20px 0">
+  <div class="swiper-wrapper">
+    <?php
+    $s = 0;
+    if (!empty($apartmentimages)) {
+      foreach ($apartmentimages as $apartmentimage) { ?>
+        <div class="swiper-slide col-sm-4" style="background: none">
+
+          <?php
+
+          if (strpos($apartmentimage->app_img_img, "https://") !== false) {
+
+          ?>
+            <img src="<?php echo $apartmentimage->app_img_img; ?>" class="img-fluid" />
+
+          <?php
+
+          } else {
+          ?>
+            <img src="<?= base_url() ?>assets/uploads/appartments/<?php echo $apartmentimage->app_img_app_id; ?>/<?php echo $apartmentimage->app_img_img; ?>" class="img-fluid" />
+
+
+          <?php
+
+          }
+
+          ?>
+
+
+
+
+        </div>
+      <?php $s++;
+      }
+    } else { ?>
+      <div class="swiper-slide col-sm-4">
+        <img src="<?= base_url() ?>assets/default/appartment-placeholder-image01.jpg" class="img-fluid">
+        <a href="<?= base_url() ?>assets/default/appartment-placeholder-image01.jpg" class="open-lightbox"><i class="fas fa-search-plus"></i> Zoom</a>
+      </div>
+      <div class="swiper-slide col-sm-4">
+        <img src="<?= base_url() ?>assets/default/appartment-placeholder-image02.jpg" class="img-fluid">
+        <a href="<?= base_url() ?>assets/default/appartment-placeholder-image02.jpg" class="open-lightbox"><i class="fas fa-search-plus"></i> Zoom</a>
+      </div>
+      <div class="swiper-slide col-sm-4">
+        <img src="<?= base_url() ?>assets/default/appartment-placeholder-image03.jpg" class="img-fluid">
+        <a href="<?= base_url() ?>assets/default/appartment-placeholder-image03.jpg" class="open-lightbox"><i class="fas fa-search-plus"></i> Zoom</a>
+      </div>
+    <?php } ?>
+  </div>
+  <!-- Add Pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</section>
+
+<section class="new_panel newDetailPanel">
+  <div class="container csWidth">
+    <div class="row">
+      <div class="col-sm-12 property_desp facilitiesSetion" id="facilitiesSetion">
+        <div class="property_desp">
+          <h3>Property Overview</h3>
+        </div>
+        <ul>
+          <li><img src="<?= base_url() ?>assets/images/service-b.png">Maid service</li>
+          <li><img src="<?= base_url() ?>assets/images/air-condation.png">Air conditioning</li>
+          <li><img src="<?= base_url() ?>assets/images/reception-b.png">Reception</li>
+          <li><img src="<?= base_url() ?>assets/images/lift-b.png">Lift</li>
+          <li><img src="<?= base_url() ?>assets/images/Internet-b.png">Internet</li>
+          <li><img src="<?= base_url() ?>assets/images/fitness-b.png">Fitness centre</li>
+          <li><img src="<?= base_url() ?>assets/images/dishwasher-b.png">Dishwasher</li>
+          <li><img src="<?= base_url() ?>assets/images/tv-b.png"> TV</li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-sm-12" id="property_overview">
+        <div class="property_desp">
+          <p><?php echo str_replace('-', ' ', $apartmentdata->gi_brief_desc);  ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php
+define('appId', $apartmentdata->idapartment);
+//$holder = $apartmentdata;
+?>
+<section class="new_panel gray_bgb newDetailPanel" id="enquery_form">
+  <div class="container csWidth">
+    <div class="property_desp">
+      <?php if (isset($d_error) && !empty($d_error)) { ?>
+        <div class="alert alert-danger alert-rounded">
+          <button class="close" data-dismiss="alert">×</button>
+          <strong>Error!</strong> <?php echo (isset($d_error)) ? $d_error : ''; ?>
+        </div>
+      <?php } ?>
+      <h3>Make an Enquiry</h3>
+      <?php if (isset($_SESSION['type']) && $_SESSION['type'] == 'partner') {
+      ?>
+        <form class="" role="form" method="post" action="<?= base_url() . 'booking/bookingRequestPartner' ?>">
+        <?php } elseif (isset($_SESSION['type']) && $_SESSION['type'] == 'sale') {
+        ?>
+          <form class="" role="form" method="post" action="<?= base_url() . 'booking/bookingRequestSale' ?>">
+          <?php } else {
+          ?>
+            <form class="form-horizontal" role="form" method="post" action="<?= base_url('booking/bookingRequest/') . $lastsegment; ?>">
+            <?php } ?>
+            <input type="hidden" name="appid" value="<?= appId ?>" />
+            <?php
+            if (isset($_SESSION['guest_id']) && !empty($_SESSION['guest_id'])) {
+              $tU = $this->db->query("select * from apartment_bookings_users where app_book_u_id = '" . ($_SESSION['guest_id']) . "' ")->row();
+            }
+
+            ?>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="flied">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label>Username <sup>*</sup></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <input type="text" name="username" id="apr" value=<?= (isset($tU->app_book_username)) ? '"' . ($tU->app_book_username) . '" disabled' : '""'; ?> required>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flied">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label>Email<sup>*</sup></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <input type="text" name="email" id="email" value=<?= (isset($tU->app_book_email)) ? '"' . ($tU->app_book_email) . '" disabled' : '""'; ?> required>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-sm-4">
+                <div class="flied">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label>First Name <sup>*</sup></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <input type="text" name="firstname" id="firstname" value=<?= (isset($tU->app_book_first_name)) ? '"' . ($tU->app_book_first_name) . '" disabled' : '""'; ?> required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flied">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label>Tel (with country code)<sup>*</sup></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <input type="text" name="tel" id="tel" value="<?php echo $d_tel; ?>" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="flied">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label>Last Name <sup>*</sup></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <input type="text" name="lastname" id="lastname" value=<?= (isset($tU->app_book_last_name)) ? '"' . ($tU->app_book_last_name) . '" disabled' : '""'; ?> required>
+                    </div>
+                  </div>
+                </div>
+                <div class="flied">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label>No.of guests <sup>*</sup></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <select name="noofguest" id="noofguest" required>
+                        <option value="1" <?php if ($d_noofguest == '1') { ?> selected="selected" <?php } ?>>1</option>
+                        <option value="2" <?php if ($d_noofguest == '2') { ?> selected="selected" <?php } ?>>2</option>
+                        <option value="3" <?php if ($d_noofguest == '2') { ?> selected="selected" <?php } ?>>3</option>
+                        <option value="4" <?php if ($d_noofguest == '4') { ?> selected="selected" <?php } ?>>4</option>
+                        <option value="5" <?php if ($d_noofguest == '5') { ?> selected="selected" <?php } ?>>5</option>
+                        <option value="6" <?php if ($d_noofguest == '6') { ?> selected="selected" <?php } ?>>6</option>
+                        <option value="7" <?php if ($d_noofguest == '7') { ?> selected="selected" <?php } ?>>7</option>
+                        <option value="8" <?php if ($d_noofguest == '8') { ?> selected="selected" <?php } ?>>8</option>
+                        <option value="9" <?php if ($d_noofguest == '9') { ?> selected="selected" <?php } ?>>9</option>
+                        <option value="10" <?php if ($d_noofguest == '10') { ?> selected="selected" <?php } ?>>10</option>
+                        <option value="11" <?php if ($d_noofguest == '11') { ?> selected="selected" <?php } ?>>11</option>
+                        <option value="12" <?php if ($d_noofguest == '12') { ?> selected="selected" <?php } ?>>12</option>
+                        <option value="13" <?php if ($d_noofguest == '14') { ?> selected="selected" <?php } ?>>13</option>
+                        <option value="14" <?php if ($d_noofguest == '14') { ?> selected="selected" <?php } ?>>14</option>
+                        <option value="15" <?php if ($d_noofguest == '15') { ?> selected="selected" <?php } ?>>15</option>
+                        <option value="16" <?php if ($d_noofguest == '16') { ?> selected="selected" <?php } ?>>16</option>
+                        <option value="17" <?php if ($d_noofguest == '17') { ?> selected="selected" <?php } ?>>17</option>
+                        <option value="18" <?php if ($d_noofguest == '18') { ?> selected="selected" <?php } ?>>18</option>
+                        <option value="19" <?php if ($d_noofguest == '19') { ?> selected="selected" <?php } ?>>19</option>
+                        <option value="20+" <?php if ($d_noofguest == '20+') { ?> selected="selected" <?php } ?>>20+</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="flied">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label>Check-in <sup>*</sup></label>
+                        </div>
+                        <div class="col-sm-12">
+                          <input type="text" id="datepicker" name="fromDate" value="<?= $d_fromdate; ?>" required placeholder="Check-in (Optional)" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="flied">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label>Check-Out <sup>*</sup></label>
+                        </div>
+                        <div class="col-sm-12">
+                          <input type="text" id="datepicker2" name="toDate" min="<?= date("Y-m-d") ?>" value="<?= $d_todate; ?>" required placeholder="Check-in (Optional)" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="flied">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label>Message <sup>*</sup></label>
+                        </div>
+                        <div class="col-sm-12">
+                          <textarea id="mesArea" class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-sm-12" style="padding:20px 20%;">
+                    
+                 
+                               
+                      <div style="float: left;width: 50%;text-align: center;">
+                            
+                       <input name="captcha_input" type="text" id="captcha_input" placeholder="Captcha code enter" class="CaptchaTextBox form-control <?php if (form_error('captcha_input') != '') { ?> inputerror <?php } ?>" style="height: 50px;margin-top: 10px;width: 80%;" required> 
+                        <div id="captcha_input_error"></div>
+                   </div>
+                    <div style="float: left;width: 50%;text-align: right;" >
+                         <?php echo $captcha; ?>
+                   </div>
+                  </div>-->
+                  <div class="col-sm-8">
+                    <div class="fancycheckbox">
+                      <input id="privacypolicy" name="privacypolicy" value="1" type="checkbox">
+                      <label for="privacypolicy">Please tick this box to confirm that you've read our
+                        <a href="<?php echo base_url(); ?>privacy-policy">Privacy Policy</a></label>
+                    </div>
+                    <div class="fancycheckbox">
+                      <input id="termsconditions" name="termsconditions" value="1" type="checkbox">
+                      <label for="termsconditions">Please tick this box to accept our Client
+                        <a href="<?php echo base_url(); ?>terms-conditions">Terms & Conditions</a></label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8"></div>
+                  <div class="col-sm-4">
+                    <div class="flied policy_flied">
+                      <button type="submit">Send Enquiry</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </form>
+
+    </div>
+</section>
+<section class="new_panel info_tabs locationTabs responsiveTabs responsiveTabsDetail" id="other_information">
+
+  <div class="container csWidth">.
+    <div class="property_desp">
+      <h3>Other Information</h3>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a id="tab-A" href="#pane-A" class="nav-link active" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon.png">
+          <span>Location</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="tab-B" href="#pane-B" class="nav-link" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon-2.png">
+          <span>Street view</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="tab-C" href="#pane-C" class="nav-link" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon-3.png">
+          <span>Transport</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="tab-D" href="#pane-D" class="nav-link" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon-4.png">
+          <span>Unit&nbsp;Types</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="tab-E" href="#pane-E" class="nav-link" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon-5.png">
+          <span>Terms</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="tab-F" href="#pane-F" class="nav-link" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon-6.png">
+          <span>Price</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="tab-G" href="#pane-G" class="nav-link" data-toggle="tab" role="tab">
+          <img src="<?= base_url() ?>assets/default/tab-icon-7.png">
+          <span>Facilities</span>
+        </a>
+      </li>
+    </ul>
+
+
+    <div id="content" class="tab-content" role="tablist">
+      <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+        <div class="card-header" role="tab" id="heading-A">
+          <h5 class="mb-0">
+            <!-- Note: `data-parent` removed from here -->
+            <a data-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
+              <img src="<?= base_url() ?>assets/default/tab-icon.png">
+              <span>Location</span>
+            </a>
+          </h5>
+        </div>
+        <!-- Note: New place of `data-parent` -->
+        <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+          <div class="animte_panel">
+            <div class="maps">
+              <div class="embed-responsive-item" id="map" style="width: 1108px; height: 450px;"></div>
+
+
+
+
+              <script>
+                var customLabel = {
+                  restaurant: {
+                    label: 'R'
+                  },
+                  bar: {
+                    label: 'B'
+                  }
+                };
+
+
+                function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    center: new google.maps.LatLng(<?php echo $apartmentdata->lat; ?>, <?php echo $apartmentdata->lng; ?>),
+                    zoom: 12
+                  });
+                  var infoWindow = new google.maps.InfoWindow;
+
+                  // Change this depending on the name of your PHP or XML file
+                  downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+                    var xml = data.responseXML;
+                    var markers = xml.documentElement.getElementsByTagName('marker');
+                    Array.prototype.forEach.call(markers, function(markerElem) {
+                      var id = markerElem.getAttribute('id');
+                      var name = markerElem.getAttribute('name');
+                      var address = markerElem.getAttribute('address');
+                      var type = markerElem.getAttribute('type');
+                      var point = new google.maps.LatLng(
+                        parseFloat(markerElem.getAttribute('lat')),
+                        parseFloat(markerElem.getAttribute('lng')));
+
+                      var infowincontent = document.createElement('div');
+                      var strong = document.createElement('strong');
+                      strong.textContent = name
+                      infowincontent.appendChild(strong);
+                      infowincontent.appendChild(document.createElement('br'));
+
+                      var text = document.createElement('text');
+                      text.textContent = address
+                      infowincontent.appendChild(text);
+                      var icon = customLabel[type] || {};
+                      var marker = new google.maps.Marker({
+                        map: map,
+                        position: point,
+                        label: icon.label
+                      });
+                      marker.addListener('click', function() {
+                        infoWindow.setContent(infowincontent);
+                        infoWindow.open(map, marker);
+                      });
+                    });
+                  });
+                }
+
+                function initMap2() {
+                  var map = new google.maps.Map(document.getElementById('map2'), {
+                    center: new google.maps.LatLng(-33.863276, 151.207977),
+                    zoom: 12
+                  });
+                  var infoWindow = new google.maps.InfoWindow;
+
+                  // Change this depending on the name of your PHP or XML file
+                  downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+                    var xml = data.responseXML;
+                    var markers = xml.documentElement.getElementsByTagName('marker');
+                    Array.prototype.forEach.call(markers, function(markerElem) {
+                      var id = markerElem.getAttribute('id');
+                      var name = markerElem.getAttribute('name');
+                      var address = markerElem.getAttribute('address');
+                      var type = markerElem.getAttribute('type');
+                      var point = new google.maps.LatLng(
+                        parseFloat(markerElem.getAttribute('lat')),
+                        parseFloat(markerElem.getAttribute('lng')));
+
+                      var infowincontent = document.createElement('div');
+                      var strong = document.createElement('strong');
+                      strong.textContent = name
+                      infowincontent.appendChild(strong);
+                      infowincontent.appendChild(document.createElement('br'));
+
+                      var text = document.createElement('text');
+                      text.textContent = address
+                      infowincontent.appendChild(text);
+                      var icon = customLabel[type] || {};
+                      var marker = new google.maps.Marker({
+                        map: map,
+                        position: point,
+                        label: icon.label
+                      });
+                      marker.addListener('click', function() {
+                        infoWindow.setContent(infowincontent);
+                        infoWindow.open(map, marker);
+                      });
+                    });
+                  });
+                }
+
+
+
+
+                function downloadUrl(url, callback) {
+                  var request = window.ActiveXObject ?
+                    new ActiveXObject('Microsoft.XMLHTTP') :
+                    new XMLHttpRequest;
+
+                  request.onreadystatechange = function() {
+                    if (request.readyState == 4) {
+                      request.onreadystatechange = doNothing;
+                      callback(request, request.status);
+                    }
+                  };
+
+                  request.open('GET', url, true);
+                  request.send(null);
+                }
+
+                function doNothing() {}
+              </script>
+              <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAJOtCFslVKmPPcJJQo2738l0rDG-qgXE&callback=initMap">
+              </script>
+
+              </body>
+
+              </html>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+        <div class="card-header" role="tab" id="heading-B">
+          <h5 class="mb-0">
+            <a href="#collapse-A">
+              <img src="<?= base_url() ?>assets/default/tab-icon-2.png">
+              <span>Street view</span>
+            </a>
+          </h5>
+        </div>
+        <!-- <div id="collapse-B" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+          <div class="animte_panel">
+            <div id="maps" style="height:450px;"></div>
+          </div>
+        </div>
+      -->
+      </div>
+      <div id="pane-C" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+        <div class="card-header" role="tab" id="heading-C">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C">
+              <img src="<?= base_url() ?>assets/default/tab-icon-3.png">
+              <span>North America</span>
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-C" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+          <div class="animte_panel ">
+            <p>Nearest transport facilities and travel times from property</p>
+            <span>City Center : </span> <?php echo $apartmentdata->citycenter; ?> km <br>
+            <span>Airport : </span> <?php echo $apartmentdata->distanceairport; ?> km <br>
+            <span>Metro : </span> <?php echo $apartmentdata->distancemetro; ?> km <br>
+            <span>Bus Station : </span> <?php echo $apartmentdata->distancebusstation; ?> km <br>
+            <span>Beach : </span> <?php echo $apartmentdata->distancebeach; ?> km <br>
+          </div>
+        </div>
+      </div>
+      <div id="pane-D" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
+        <div class="card-header" role="tab" id="heading-D">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" href="#collapse-D" aria-expanded="false" aria-controls="collapse-D">
+              <img src="<?= base_url() ?>assets/default/tab-icon-4.png">
+              <span> South America</span>
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-D" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
+          <div class="animte_panel">
+            <div class="row">
+              <div class="col-sm-3">
+                <ul class="type_list">
+                  <h3>Studio Apartment</h3>
+                  <li>Queen size bed</li>
+                  <li>1 bathroom</li>
+                  <li>Kitchenette</li>
+                  <li>Approx 19 sqm</li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <ul class="type_list">
+                  <h3>1 Bedroom Apartment</h3>
+                  <li>Queen size bed</li>
+                  <li>1 bathroom</li>
+                  <li>Kitchenette</li>
+                  <li>Approx 27 sqm</li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <ul class="type_list">
+                  <h3>2 Bedroom Apartment</h3>
+                  <li>Queen size bed in 1<sup>st</sup> bedroom</li>
+                  <li>Twin beds in 2<sup>nd</sup> bedroom</li>
+                  <li>1 bathroom</li>
+                  <li>Kitchenette</li>
+                  <li>Approx 76 sqm</li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <ul class="type_list">
+                  <h3>1 -Bedroom Premier</h3>
+                  <li>Queen size bed</li>
+                  <li>1 bathroom</li>
+                  <li>Kitchenette</li>
+                  <li>Approx 54 sqm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pane-E" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-E">
+        <div class="card-header" role="tab" id="heading-E">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" href="#collapse-E" aria-expanded="false" aria-controls="collapse-E">
+              <img src="<?= base_url() ?>assets/default/tab-icon-5.png">
+              <span>Asia</span>
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-E" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-E">
+          <div class="animte_panel">
+            <b>The terms and conditions of changing a confirmed reservation at this particular property are:</b> <br>
+            <?php echo $apartmentdata->aprt_cancellation; ?>
+          </div>
+        </div>
+      </div>
+      <div id="pane-F" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-F">
+        <div class="card-header" role="tab" id="heading-F">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" href="#collapse-F" aria-expanded="false" aria-controls="collapse-F">
+              <img src="<?= base_url() ?>assets/default/tab-icon-6.png">
+              <span> Australia</span>
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-F" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-F">
+          <div class="animte_panel">
+            <div class="table-responsive pricetable">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Apartment Type</th>
+                    <th scope="col">3-7 nights<i class="far fa-moon"></i></th>
+                    <th scope="col">8-27 nights<i class="far fa-moon"></i></th>
+                    <th scope="col">28-89 nights<i class="far fa-moon"></i></th>
+                    <th scope="col">90+<i class="far fa-moon"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="row_title">Large Two-Bedroom Apartment</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                  </tr>
+                  <tr>
+                    <td class="row_title">One-Bedroom Apartment</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                  </tr>
+                  <tr>
+                    <td class="row_title">One-Bedroom Apartment - Water View</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                  </tr>
+                  <tr>
+                    <td class="row_title">Two-Bedroom Apartment</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                  </tr>
+                  <tr>
+                    <td class="row_title">Two-Bedroom - wheelchrir accessible</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                    <td>On Request</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="table_note">Please note : All rates shown above are nightly rates and are subject to local taxes. They are also a guide rate and are subject to change due to the length of booking, number of apartments booked and seasonal variations. Contact us for more details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pane-G" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-G">
+        <div class="card-header" role="tab" id="heading-G">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" href="#collapse-G" aria-expanded="false" aria-controls="collapse-G">
+              <img src="<?= base_url() ?>assets/default/tab-icon-7.png">
+              <span>
+                Africa
+              </span>
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-G" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-G">
+          <div class="animte_panel" id="fac">
+            <ul class="row">
+              <li class="col-sm-4">
+                <span class="float-left">
+                  <span data-toggle="tooltip" data-placement="top" title="<?php echo $apartmentdata->am_pay_parking_outside_message; ?>"> Pay parking (outside)</span></span>
+                <span class="float-right"><?php if ($apartmentdata->am_pay_parking_outside == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left"><span data-toggle="tooltip" data-placement="top" title="<?php echo $apartmentdata->am_pay_parking_outside_message; ?>"> Pay parking (outside)</span></span>
+                <span class="float-right"><?php if ($apartmentdata->am_pay_parking_outside == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left"><span data-toggle="tooltip" data-placement="top" title="Tooltip on top"> Free parking (outside)</span></span>
+                <span class="float-right"><?php if ($apartmentdata->am_free_parking == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left"><span data-toggle="tooltip" data-placement="top" title="Tooltip on top"> Pay parking (garage)</span></span>
+                <span class="float-right"><?php if ($apartmentdata->am_pay_parking_garage == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left"><span data-toggle="tooltip" data-placement="top" title="Tooltip on top"> Free parking (garage)</span></span>
+                <span class="float-right"><?php if ($apartmentdata->am_free_parking_garage == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">No parking available</span>
+                <span class="float-right"><?php if ($apartmentdata->am_free_parking_garage == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Lift / Elevator</span>
+                <span class="float-right"><?php if ($apartmentdata->am_elevator == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Sauna</span>
+                <span class="float-right"><?php if ($apartmentdata->am_outside_sauna == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Spa / Jacuzzi</span>
+                <span class="float-right"><?php if ($apartmentdata->am_jacuzzi == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Swimming Pool</span>
+                <span class="float-right"><?php if ($apartmentdata->am_swimming_pool == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Fitness Center</span>
+                <span class="float-right"><?php if ($apartmentdata->am_fitness_center == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Barbecue</span>
+                <span class="float-right"><?php if ($apartmentdata->am_outside_barbecue == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Outside Table</span>
+                <span class="float-right"><?php if ($apartmentdata->am_outside_table == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Washing Machine</span>
+                <span class="float-right"><?php if ($apartmentdata->am_outside_washing_machine == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Tumble Dryer</span>
+                <span class="float-right"><?php if ($apartmentdata->am_outside_tumble_dryer == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Outside Chairs</span>
+                <span class="float-right"><?php echo $apartmentdata->am_outside_chairs; ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Balcony/ies</span>
+                <span class="float-right"><?php if ($apartmentdata->am_bolcony == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Fireplace</span>
+                <span class="float-right"><?php if ($apartmentdata->am_fireplace == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Barbecue</span>
+                <span class="float-right"><?php if ($apartmentdata->am_barbecue == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Central Heating</span>
+                <span class="float-right"><?php if ($apartmentdata->am_centeral_heating == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Air Conditioning</span>
+                <span class="float-right"><?php if ($apartmentdata->am_air_conditioning == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Washing Machine</span>
+                <span class="float-right"><?php if ($apartmentdata->am_washing_machine == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Tumble Dryer</span>
+                <span class="float-right"><?php if ($apartmentdata->am_tumble_dryer == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Iron</span>
+                <span class="float-right"><?php if ($apartmentdata->am_iron == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">TV(s)</span>
+                <span class="float-right"><?php echo $apartmentdata->am_tvs; ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Cable / satellite TV</span>
+                <span class="float-right"><?php if ($apartmentdata->am_tv_satelite == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">DVD Player</span>
+                <span class="float-right"><?php if ($apartmentdata->am_dvd_player == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Toilet(s)</span>
+                <span class="float-right"><?php echo $apartmentdata->am_toilet; ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Shower(s)</span>
+                <span class="float-right"><?php echo $apartmentdata->am_shower; ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Bathtub(s)</span>
+                <span class="float-right"><?php echo $apartmentdata->am_bathtubs; ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Whirlpool Bath</span>
+                <span class="float-right"><?php if ($apartmentdata->am_whirl_pool == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Sauna</span>
+                <span class="float-right"><?php if ($apartmentdata->am_sauna == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Hairdryer</span>
+                <span class="float-right"><?php if ($apartmentdata->am_hair_dryer == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Towels</span>
+                <span class="float-right"><?php if ($apartmentdata->am_towels == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Linen</span>
+                <span class="float-right"><?php if ($apartmentdata->am_linen == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Kitchen chairs</span>
+                <span class="float-right"><?php echo $apartmentdata->am_kitchen_chair; ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Refrigerator</span>
+                <span class="float-right"> <?php if ($apartmentdata->am_refrigerator == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left"></i>Freezer</span>
+                <span class="float-right"><?php if ($apartmentdata->am_freezer == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Oven</span>
+                <span class="float-right"><?php if ($apartmentdata->am_oven == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Stove</span>
+                <span class="float-right"><?php if ($apartmentdata->am_stove == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Microwave</span>
+                <span class="float-right"><?php if ($apartmentdata->am_microwave == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Dishwasher</span>
+                <span class="float-right"><?php if ($apartmentdata->am_disher == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Coffee Maker</span>
+                <span class="float-right"><?php if ($apartmentdata->am_coffe_maker == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4 clearfix">
+                <span class="float-left">Tea Kettle</span>
+                <span class="float-right"><?php if ($apartmentdata->am_tea_kettle == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Kitchen table</span>
+                <span class="float-right"><?php if ($apartmentdata->am_kitchen_table == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Toys</span>
+                <span class="float-right"><?php if ($apartmentdata->am_toys == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Baby chair / high</span>
+                <span class="float-right"><?php if ($apartmentdata->am_baby_chairs == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">Baby bed / crib</span>
+                <span class="float-right"><?php if ($apartmentdata->am_baby_bed == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+              <li class="col-sm-4">
+                <span class="float-left">On-site playground</span>
+                <span class="float-right"><?php if ($apartmentdata->am_on_site_play_ground == 1) { ?> <i class="fa fa-check"></i><?php } else { ?> <i class="fas fa-times"></i> <?php } ?></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="new_panel SimilarAppar" style="padding-bottom: 60px">
+  <div class="apartments_stay apartments_new_listing fesi">
+    <div class="container csWidth">
+      <div class="property_desp">
+        <h3>Similar Apartment</h3>
+      </div>
+      <div class="row">
+        <?php if (isset($random_apartmentdata) && count($random_apartmentdata)) {
+          foreach ($random_apartmentdata as $rapartmentdata) { ?>
+            <div class="col-sm-4">
+              <div class="featured_apartment_silder_inner featured_apartment_silder_inner_b">
+                <a href="<?= base_url('apartments/details/' . str_replace(' ', '-', trim(preg_replace("/[^A-Za-z0-9?!]/", ' ', $rapartmentdata->gi_title))) . '/' . base64_encode($rapartmentdata->idapartment)) ?>">
+                  <div class="featured_apartment_img" style="display: block;">
+                    <?php
+
+                    $defaultImage = "<img class=\"d-block img-fluid\" src=\" " . (base_url()) . "/assets/images/Untitled-1.jpg\" alt=\"Image Not Available\"/>";
+
+                    $featuresImage = $this->db->query("select * from apartment as ap, apartment_images as img where ap.idapartment = '" . ($rapartmentdata->idapartment) . "' and ap.featured_img = img.app_img_id")->row();
+
+                    if (isset($featuresImage->app_img_img) && !empty($featuresImage->app_img_img)) {
+                      $imageName = (@getimagesize(base_url() . '/assets/uploads/appartments/' . $featuresImage->app_img_app_id . '/' . $featuresImage->app_img_img)) ? base_url() . '/assets/uploads/appartments/' . $featuresImage->app_img_app_id . '/' . $featuresImage->app_img_img : base_url() . '/assets/images/Untitled-1.jpg';
+                    ?>
+                      <img class="d-block img-fluid" src="<?= $imageName; ?>" alt="<?= $featuresImage->app_img_img ?>" />
+                    <?php
+                    } else {
+                      echo $defaultImage;
+                    } ?>
+                  </div>
+                  <div class="featured_apartment_content">
+
+                    <div class="featured_apartment_content_bottom">
+                      <a href="<?= base_url('apartments/details/' . str_replace(' ', '-', trim(preg_replace("/[^A-Za-z0-9?!]/", ' ', $rapartmentdata->gi_title))) . '/' . base64_encode($rapartmentdata->idapartment)) ?>">
+                        <h4><?= substr($rapartmentdata->gi_title, 0, 30) ?></h4>
+                      </a>
+                      <strong style="display: block;height: 72px;">
+                        <?php echo substr(str_replace('-', ' ', $rapartmentdata->gi_brief_desc), 0, 100); ?>
+                      </strong>
+                      <a class="btn btn-danger" href="<?= base_url('apartments/details/' . str_replace(' ', '-', trim(preg_replace("/[^A-Za-z0-9?!]/", ' ', $rapartmentdata->gi_title))) . '/' . base64_encode($rapartmentdata->idapartment)) ?>">View
+                      </a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+        <?php }
+        } ?>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="row" style="display: block">
+  <?php
+  /*selected values*/
+  if (defined('appId') && is_numeric(appId)) {
+    /*getting all confirmed and paid booking from bookings table*/
+    $this->db->select('app_book_date');
+    $dates = $this->db->get_where('apartment_bookings', ['app_book_app_id' => appId, 'app_book_paid' => 'yes'])->result_array();
+    if (count($dates) > 0) $datesFilter = array_map(function ($k) {
+      $d = Carbon::parse($k['app_book_date']);
+      return $d->timestamp;
+    }, array_values($dates));
+  }
+  ?>
+</div>
+
+<script>
+  $("#captcha_input").keyup(function() {
+    var captcha_input = $('#captcha_input').val();
+    console.log(captcha_input);
+    if (captcha_input.length >= 4) {
+      $.ajax({
+        url: "<?php echo base_url(); ?>Contactus/validate_captcha/" + captcha_input,
+        success: function(html) {
+          console.log(html);
+          if (html == '0') {
+            $(".policy_flied").hide();
+            $("#captcha_input_error").html('<span style="color:red;">Captcha Code Wrong</span>');
+          } else {
+            $("#captcha_input_error").empty();
+            $(".policy_flied").show();
+          }
+        }
+      });
+    }
+  });
+</script>
+<?php require_once __DIR__ . '/partials/footer_front.php'; ?>
+<script type="text/javascript">
+  (function($) {
+
+    // Open Lightbox
+    $('html').find('.open-lightbox').on('click', function(e) {
+      e.preventDefault();
+      var image = $(this).attr('href');
+      $('html').addClass('no-scroll');
+      $('body').append('<div class="lightbox-opened"><img src="' + image + '"></div>');
+    });
+
+    // Close Lightbox
+    $('body').on('click', '.lightbox-opened', function() {
+      $('html').removeClass('no-scroll');
+      $('.lightbox-opened').remove();
+    });
+
+  })(jQuery);
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+
+    var alldates = (function() {
+      var dateMutator = new Array();
+      $.each([<?php if (isset($datesFilter) && is_array($datesFilter) && count($datesFilter) > 0) foreach ($datesFilter as $k => $v) echo " " . ($v) . "000, ";   ?>], function(k, v) {
+        var newDateMutator = moment(v, 'Unix timestamp').format('x');
+        dateMutator.push(parseInt((newDateMutator.length <= 10) ? newDateMutator + '00' : newDateMutator));
+      });
+      return dateMutator;
+    })();
+
+    var date = new Date();
+    if (alldates.length == 0) alldates = [date.setDate(date.getDate())];
+
+    $(".datepickerDetailPage123").multiDatesPicker({
+      dateFormat: 'dd-mm-yy',
+      minDate: 0,
+      addDisabledDates: alldates,
+      mode: 'daysRange',
+      autoselectRange: [0, 1],
+    });
+
+    $('#toDate , #fromDate').datepicker({
+      minDate: 0,
+      dateFormat: 'dd-mm-yy',
+    });
+
+    //on first time load all entries
+    dateCalendar([<?php if (isset($datesFilter) && is_array($datesFilter) && count($datesFilter) > 0) foreach ($datesFilter as $k => $v) echo " '" . ($v) . "', "; ?>]);
+
+    /*calendar logic*/
+    function dateCalendar(selectedDates) {
+      selectedDates = (function() {
+        var dateMutator = new Array();
+        $.each(selectedDates, function(k, v) {
+          var newDateMutator = moment(v, 'Unix timestamp').format('x');
+          dateMutator.push(parseInt((newDateMutator.length <= 10) ? newDateMutator + '000' : newDateMutator));
+        });
+        return dateMutator;
+      })();
+
+      var date = new Date();
+      var tempDates = [date.setDate(date.getDate())];
+
+      selectedDates = ((Array.isArray(selectedDates) && selectedDates.length > 0) ? selectedDates : tempDates);
+
+      var firstOfTheYear = new Date();
+      $(".multiCalendarPicker").multiDatesPicker({
+        addDates: selectedDates,
+        numberOfMonths: [1, 1],
+        stepMonths: 1,
+        minDate: 1,
+        maxDate: 1
+      }, 'disabled');
+
+    }
+  });
+
+  var term;
+  var apr;
+  var amt;
+  var mPmt;
+
+  window.onload = function() {
+    document.getElementById("apr").focus();
+    document.getElementById("sbt").onclick = getValues;
+  };
+
+  //use toFixed(2) to set the precision of the mPayment. Use it on an int.
+  function getValues() {
+    term = document.getElementById("trm").value;
+    apr = document.getElementById("apr").value;
+    amt = document.getElementById("amt").value;
+    apr /= 1200;
+    term *= 12;
+    mPmt = calculatePayment();
+    document.getElementById("pmt").value = "$" + mPmt.toFixed(2);
+  };
+
+  function calculatePayment() {
+    var payment = amt * (apr * Math.pow((1 + apr), term)) / (Math.pow((1 + apr), term) - 1);
+    return payment;
+  }
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+
+
+<form method="post" action="<?= base_url('apartments/download_details') ?>" id="pdf2htmldataForm" style="display: none;">
+  <textarea name="images" id="images"></textarea>
+  <textarea name="htmldata" id="pdf2htmldata"></textarea>
+  <textarea name="facilities_htmldata" id="facilities_htmldata"></textarea>
+  <textarea name="other_property_information" id="other_property_information"></textarea>
+  <textarea name="addr" id="addr"></textarea>
+  <textarea name="property_title_of" id="property_title_of"></textarea>
+</form>

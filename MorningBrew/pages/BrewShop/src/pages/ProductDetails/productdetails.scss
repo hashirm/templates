@@ -1,0 +1,33 @@
+.ProductDetails{
+
+    .productDetailsGrid {
+
+        display: grid;
+        grid-template-columns: 55% 45%;
+
+        .shirtGrid{
+            display:grid;
+            grid-template-columns: 20% 80%;
+
+            .zoomview{
+                overflow: hidden;
+   
+                .image{
+                    transition:500ms ease;
+                img{
+                    position:relative;
+                  &:hover{
+                    transform: scale(1.2);
+                  }
+                }
+
+            }
+            }
+
+        }
+
+
+    }
+
+
+}

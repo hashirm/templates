@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+@mixin flexCenter($direction) {
+    display:center;
+    justify-content: center;
+    flex-direction: $direction;
+}   
+
+.articleContainer.container{
+    width:45%
+}

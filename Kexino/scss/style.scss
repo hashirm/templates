@@ -1,0 +1,1136 @@
+*,
+html,
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+$desktop: 1024px;
+$tablet: 991px;
+$small-tablet: 780px;
+$mobileSize: 600px;
+$mobile: 480px;
+$bg: "small-business-marketing-agency-business.png";
+
+
+button00 {
+
+
+
+    &:hover {
+        background-color: #FF8E00 !important;
+        color: white !important;
+        transform: scale(1.2);
+        transition: all 500ms linear;
+        -moz-transition: all 500ms ease-out;
+        -webkit-transition: all 500ms ease-out;
+    }
+
+
+}
+
+
+@mixin bg($background) {
+
+    background: url($background);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+        background-size: cover;
+    }
+
+
+}
+
+
+
+@mixin desktop {
+
+    @media (max-width:$desktop) {
+
+        @content;
+
+    }
+}
+
+@mixin tablet {
+
+    @media (max-width:$tablet) {
+
+        @content;
+
+    }
+}
+
+@mixin small-tablet {
+
+    @media (max-width:$small-tablet) {
+
+        @content;
+
+    }
+}
+
+@mixin mobileSize {
+
+    @media (max-width:$mobileSize) {
+
+        @content;
+
+    }
+}
+
+@mixin mobile {
+
+    @media (max-width:$mobile) {
+
+        @content;
+
+    }
+}
+
+@mixin section-01-kexino($bg) {
+
+    background: url($bg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    div {
+        width: 80%;
+
+        @include desktop {
+
+            width: 90%
+        }
+
+        @include small-tablet {
+            width: 99%;
+        }
+
+        h1 {
+            font-size: 4.6rem;
+            font-weight: bold;
+
+            i {
+                @extend h1;
+                color: #a4d8ff;
+            }
+        }
+
+        h3 {
+            width: 45%;
+
+            @include desktop {
+                width: 60%;
+            }
+
+            @include small-tablet {
+                width: 75%;
+            }
+        }
+
+        p:nth-of-type(1) {
+            width: 39%;
+
+            @include desktop() {
+                width: 50%;
+            }
+
+            @include small-tablet {
+                width: 75%;
+            }
+        }
+
+
+    }
+
+
+}
+
+.search-textbox {
+    display: none;
+    flex-direction: column;
+
+    .form-control:focus {
+        border-color: none !important;
+        box-shadow: none !important;
+    }
+
+}
+
+
+
+
+ul {
+
+    margin: .5%;
+    padding: 0;
+
+
+}
+
+nav {
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+
+    .logo {
+      
+        height: 4rem;
+
+    }
+
+    .menu-items {
+        // height:5rem;
+        // align-items: center;
+        margin: 0px;
+
+
+        li {
+
+            display: flex;
+            align-items: center;
+            height: 5rem;
+
+            &:hover {
+
+                a {
+                    color: #301497;
+                }
+
+                border-top: 3px solid #301497;
+
+            }
+
+            .submenu {
+                width: 280px !important;
+                box-shadow: 2px 4px 8px rgb(179, 179, 179);
+
+                visibility: hidden;
+
+                &:hover {
+
+
+                    visibility: visible;
+                }
+
+                li {
+                    text-align: center;
+                    height: 2.5rem;
+                    border: 0;
+                    padding: 0px 1.5rem;
+
+                    a {
+
+                        text-decoration: none;
+                        color: black;
+
+                    }
+                }
+
+
+            }
+        }
+
+        .marketing-services {
+
+            &:hover {
+
+                .submenu {
+                    visibility: visible;
+
+                    li {
+
+                        &:hover {
+
+                            background-color: #FF8E00;
+
+                            a {
+                                color: #301497;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+
+        }
+
+        .kexino {
+
+            &:hover {
+                .submenu {
+
+                    visibility: visible;
+
+                    li {
+
+                        &:hover {
+
+                            background-color: #FF8E00;
+
+                            a {
+                                color: #301497;
+                            }
+
+                        }
+
+                    }
+
+
+
+                }
+
+            }
+
+
+        }
+
+
+
+        @include desktop {
+            display: none !important;
+        }
+
+    }
+
+
+
+
+    .social-links {
+
+        .menu-icon {
+            @include desktop {
+                display: block !important;
+            }
+        }
+    }
+
+    .remove-height {
+
+        height: 0px;
+
+    }
+
+    .add-height {
+
+        height: 350px;
+    }
+
+
+    .mobile-menu-bg {
+
+        height: 0px;
+
+        @include desktop {
+            transition: all 500ms ease;
+        }
+
+        .mobile-submenu {
+            li {
+                a {
+                    text-decoration: none;
+                    color: #301497;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.section-01 {
+    background: url(../assets/better-marketing-starts-here.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    button {
+
+        @extend button00;
+    }
+
+    div {
+
+        width: 39%;
+
+
+        @include tablet {
+
+            width: 55%;
+
+        }
+
+        @include small-tablet {
+            width: 75%;
+        }
+
+        @include mobile {
+
+            width: 96%;
+
+        }
+
+
+    }
+
+
+}
+
+.section-02 {
+
+    .section-02-flexCont {
+
+        @include desktop() {
+
+            flex-direction: column !important;
+            align-items: center;
+            width: 100% !important;
+
+        }
+
+        @include mobile {
+
+            text-align: center;
+
+        }
+
+        div {
+
+            @include desktop() {
+
+
+                width: 100% !important;
+
+            }
+
+        }
+
+    }
+
+}
+
+.section-03 {
+
+    .video-div {
+
+
+        img.trigger_popup_fricc {
+
+
+            &:hover {
+                box-shadow: 2px 4px 8px black;
+                transform: scale(1.1);
+                transition: all 200ms ease-in;
+                transition: all 500ms ease-out;
+            }
+
+        }
+
+
+
+        /* Popup box BEGIN */
+
+        .hover_bkgr_fricc {
+
+            text-align: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(2555, 255, 255, .8);
+            z-index: 9;
+            display: none;
+
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+
+            >div {
+
+
+                display: inline-block;
+
+                vertical-align: middle;
+
+                position: relative;
+                border-radius: 8px;
+                padding: 15px 5%;
+            }
+        }
+
+        .popupCloseButton {
+            background-color: #fff;
+            border: 3px solid #999;
+            border-radius: 50px;
+            cursor: pointer;
+            display: inline-block;
+            font-family: arial;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            position: fixed;
+            top: 10%;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+
+        }
+
+        .trigger_popup_fricc {
+            cursor: pointer;
+            font-size: 20px;
+
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        /* Popup box BEGIN */
+
+
+    }
+
+
+}
+
+.section-04 {
+
+    .button {
+        button {
+
+            @extend button00;
+        }
+    }
+
+    .section-04-flexCont {
+
+        >div {
+
+            width: 100% !important;
+
+            p {
+                margin-bottom: 3rem !important;
+            }
+        }
+
+        @include small-tablet() {
+            flex-direction: column !important;
+            width: 90% !important;
+        }
+
+
+    }
+
+
+}
+
+.section-07 {
+
+    background-color: #ebeeef;
+
+    .images-div {
+        width: 90%;
+    }
+
+    img {
+        width: 12%;
+    }
+
+}
+
+.section-08 {
+
+    background: url(../assets/recent-small-business-marketing-clients.jpg);
+    background-size: cover;
+
+}
+
+.section-09 {
+
+    .section09-flexCont {
+
+        .flexItem00 {
+
+            @include small-tablet {
+
+                justify-content: center !important;
+
+            }
+
+
+            .img-div-00 {
+
+                background-image: url(../assets/finding-new-customers-for-my-business.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                height: 40rem;
+                min-height: 100%;
+
+                @include small-tablet() {
+
+                    height: 100%;
+                    width: 90% !important;
+
+                }
+
+                .img-div-01 {
+                    background-color: rgb(255, 255, 255, 0.8);
+                    margin: -2rem -26rem;
+                    height: 31rem;
+                    width: 75%;
+                    min-width: 100%;
+
+                    @include small-tablet {
+
+                        margin: 0 0;
+                        height: 100%;
+                        min-height: 100%;
+
+
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+.jillkin-man {
+
+    background-color: #ebeeef;
+
+    .flex-cont {
+
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+
+        @include desktop {
+
+            flex-direction: column;
+
+        }
+
+        @include tablet {
+            width: 80%;
+        }
+
+        @include small-tablet {
+            width: 90%;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        button {
+            @extend button00;
+        }
+
+    }
+
+}
+
+.section-10 {
+    gap: 2rem;
+
+    div {
+        text-align: center;
+        width: 300px;
+
+        button {
+
+            @extend button00;
+        }
+    }
+
+}
+
+footer {
+
+    div {
+        background-color: hsl(204deg 20% 20%);
+        color: white;
+
+        .social-links {
+
+            @include small-tablet {
+
+                justify-content: space-between;
+            }
+
+
+            li {
+                i {
+                    color: #7c8590;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .contact-us {
+
+            ul {
+
+                li {
+
+                    margin: 5px 0px;
+
+                    a {
+                        text-decoration: none;
+                        color: #a4d8ff;
+
+                        &:hover {
+                            color: white;
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+        .subSection {
+
+            background-color: hsl(0deg 22% 5% / 14%);
+
+            ul {
+
+                li {
+
+                    margin: 0px 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: #a4d8ff;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+// market-overview
+
+.path-section {
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8rem;
+
+        &:hover {
+            color: #FF8E00;
+        }
+    }
+}
+
+
+.market-overview-sect-01 {
+    background: url(../assets/marketing-services-startups2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    div {
+        width: 80%;
+
+        @include desktop {
+
+            width: 90%
+        }
+
+        @include small-tablet {
+            width: 99%;
+        }
+
+        h1 {
+            font-size: 4.6rem;
+            font-weight: bold;
+
+            i {
+                @extend h1;
+                color: #a4d8ff;
+            }
+        }
+
+        h3 {
+            width: 45%;
+
+            @include desktop {
+                width: 60%;
+            }
+
+            @include small-tablet {
+                width: 75%;
+            }
+        }
+
+        p:nth-of-type(1) {
+            width: 39%;
+
+            @include desktop() {
+                width: 50%;
+            }
+
+            @include small-tablet {
+                width: 75%;
+            }
+        }
+
+
+    }
+
+}
+
+.market-overview-sect-02 {
+
+    background: url(../assets/If-You-Build-It-They-Wont-Come2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    div {
+        width: 80%;
+
+        @include small-tablet {
+            width: 95%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+}
+
+.market-overview-sect-03 {
+
+
+    .flex-cont {
+
+        .flexItem {
+
+            width: 60%;
+
+            @include small-tablet {
+                width: 95%;
+            }
+        }
+
+
+        .flexItem-02 {
+
+            width: 80%;
+
+            @include small-tablet {
+                width: 95%;
+            }
+
+            div {
+                width: 340px;
+                text-align: center;
+
+                h3 {
+                    color: blueviolet
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.market-overview-sect-04 {
+    background: url("../assets/small-business-marketing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    div {
+
+
+        width: 80%;
+
+        @include small-tablet {
+            width: 95%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+    }
+}
+
+.market-overview-sect-05 {
+
+    background-image: url("../assets/sales-tools-creation.jpg");
+    background-attachment: fixed;
+
+    div {
+
+        width: 50%;
+
+        @include desktop {
+
+            width: 95%;
+
+        }
+
+        @include small-tablet {
+            width: 95%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.market-overview-sect-07 {
+
+    background-color: #f2c548;
+
+}
+
+// marketing-for-small-businesses
+
+.marketing-for-small-businesses-01 {
+
+    @include section-01-kexino("../assets/small-business-marketing-agency-business.png");
+    background-color: blueviolet;
+
+}
+
+.marketing-for-small-businesses-02 {
+
+    @include section-01-kexino("../assets/what-is-the-best-small-business-marketing-plan.png");
+    background-color: #326589;
+
+}
+
+// contact
+
+
+.contact-01 {
+
+    @include bg("../assets/contact-marketing-agency.jpg");
+
+    padding-top: 9.5rem !important;
+    padding-bottom: 9.5rem !important;
+
+    .d-flex {
+
+        width: 50%;
+
+        button {
+            @extend button00;
+
+        }
+
+    }
+
+}
+
+.contact-02 {
+
+    background-color: #326589;
+}
+
+// marketing-Services
+
+.marketing-service-section-01 {
+
+    background: url(../assets/marketing-agency-services-small-business.png);
+    background-position: center;
+    background-size: 100%;
+
+    .mainText {
+        width: 40%;
+
+        h1 {
+            font-size: 5.7rem;
+            line-height: 89%;
+        }
+
+    }
+}
+
+.marketing-service-section-02 {
+
+    .section-02-header {
+        padding: 0 18rem;
+
+        .display-3 {
+            font-size: 3rem !important;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    button{
+
+        @extend button00;
+    
+    }
+
+}
+.marketing-service-section-03{
+
+    background-color:#6a85b6;
+
+    .row{
+
+        .fa-regular{
+
+            color:#FF8E00;
+            font-size: 24px;
+
+        }
+        .fa-solid{
+            color:#FF8E00;
+            font-size: 24px;
+        }
+
+        p{
+
+            font-size: 18px;
+        }
+
+
+
+    }
+
+}
+
+.marketing-service-section-04{
+
+    background-image: linear-gradient(to right, rgb(90, 112, 171), rgb(42, 42, 122));
+
+    .row{
+
+        p{
+            font-size: 18px;
+        }
+
+        button{
+
+            @extend button00;
+        }
+
+    }
+}
+
+.marketing-service-section-05{
+
+    background: url("../assets/SEO-factors-for-website-16.png");
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+.marketing-service-section-06{
+    background: url("../assets/digital-advertising-for-small-business.jpg");
+    background-size: 100%;
+    background-position: center;
+
+    p{
+
+        font-size: 18px;
+    }
+
+}
+
+.marketing-service-section-08{
+
+  @include bg("../assets/translation-services-management.jpg");
+
+    p{
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+.market-services-section-07{
+
+    background: url("../assets/social-media-marketing-for-small-businesses.jpg");
+    background-size: 100%;
+
+    .w-50{
+
+        width: 65% !important;
+
+        h1{
+            font-size: 48px;
+        }
+
+        p{
+
+            font-size: 18px;
+            width:80% !important;
+        }
+
+    }
+   
+
+}
+
+.marketing-service-section-09{
+    background-image: linear-gradient(to right, rgb(209, 217, 231), rgb(164, 180, 206));
+}
+
+.marketing-service-section-11{
+
+    background:url("../assets/business-woman-wanting-to-find-out-more.jpg");   
+    background-size:100%;
+    background-attachment: fixed;
+
+    .w-25{
+
+        width:38% !important;
+
+    }
+
+    button{
+
+        @extend button00;
+    }
+
+}

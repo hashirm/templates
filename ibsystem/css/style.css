@@ -1,0 +1,124 @@
+*, body, html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.web-bg {
+  background-image: url(../assets/mask-group@3x.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.web-bg .labtop-image-div {
+  background: url(../assets/macbook@3x.avif);
+  background-repeat: no-repeat;
+  background-size: 1066px 466px;
+  height: 442px;
+  width: 1072px;
+}
+@media (max-width: 1280px) {
+  .web-bg .labtop-image-div {
+    background: none;
+    width: 100%;
+  }
+}
+@media (max-width: 590px) {
+  .web-bg .labtop-image-div {
+    align-items: center;
+  }
+  .web-bg .labtop-image-div video {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (max-width: 960px) {
+  .web-bg .tablet-width {
+    width: 90% !important;
+  }
+}
+
+.web-bg-02 {
+  background-color: #1977F1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.web-bg-02 img {
+  top: -109px;
+  z-index: 0;
+}
+@media (min-width: 1600px) {
+  .web-bg-02 img {
+    top: -184px;
+  }
+}
+@media (max-width: 1280px) {
+  .web-bg-02 img {
+    top: -6px;
+  }
+}
+@media (max-width: 960px) {
+  .web-bg-02 img {
+    top: 0px;
+  }
+}
+@media (max-width: 960px) {
+  .web-bg-02 {
+    height: 238px;
+  }
+}
+@media (max-width: 800px) {
+  .web-bg-02 {
+    height: 190px;
+  }
+}
+@media (max-width: 590px) {
+  .web-bg-02 {
+    height: 116px;
+  }
+}
+@media (max-width: 960px) {
+  .web-bg-02 .tablet-width {
+    width: 90% !important;
+  }
+}
+@media (max-width: 960px) and (max-width: 590px) {
+  .web-bg-02 .tablet-width {
+    width: 95% !important;
+  }
+}
+.web-bg-02 .form-div {
+  position: relative;
+  top: 273px;
+  z-index: 3;
+}
+@media (max-width: 800px) {
+  .web-bg-02 .form-div {
+    top: 220px;
+  }
+}
+@media (max-width: 590px) {
+  .web-bg-02 .form-div {
+    top: 150px;
+  }
+}
+
+.bg-dark {
+  position: relative;
+  top: 186px;
+}
+@media (max-width: 960px) {
+  .bg-dark .w-75 {
+    width: 100% !important;
+  }
+  .bg-dark .w-75 .w-25 {
+    width: 50% !important;
+  }
+}
+@media (max-width: 960px) and (max-width: 590px) {
+  .bg-dark .w-75 .w-25 {
+    width: 90% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

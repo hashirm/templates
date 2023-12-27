@@ -1,0 +1,203 @@
+*, body, html{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+$big-screen:1600px;
+$tablet-width: 960px;
+$tablet-width-02: 800px;
+$desktop-width: 1280px;
+$mobile-width:590px;
+
+
+@mixin big-screen{
+    @media (min-width:$big-screen){
+        @content;
+    }
+}
+
+@mixin desktop-one{
+
+    @media (max-width:$desktop-width) {
+        @content;
+    }
+
+}
+@mixin tablet-width{
+
+    @media (max-width:$tablet-width) {
+        @content;
+    }
+
+}
+
+@mixin tablet-width-02{
+
+    @media (max-width:$tablet-width-02) {
+        @content;
+    }
+
+}
+
+@mixin mobile-width{
+
+    @media (max-width:$mobile-width) {
+        @content;
+    }
+
+}
+
+.web-bg{
+    background-image: url(../assets/mask-group@3x.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .labtop-image-div{
+        background: url(../assets/macbook@3x.avif);
+        background-repeat: no-repeat;
+        background-size: 1066px 466px;
+        height: 442px;
+        width:1072px;
+
+        @include desktop-one{
+
+            background: none;
+            width: 100%;
+    
+        }
+        @include mobile-width{
+
+            video{
+
+                width:350px;
+                height: 250px;
+                
+
+            }
+
+            align-items: center;
+
+
+
+        }
+       
+    }
+
+    @include tablet-width{
+
+        .tablet-width{
+
+        width: 90% !important;
+    }
+    }
+
+}
+
+.web-bg-02{
+
+    background-color: #1977F1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+    img{
+
+        top: -109px;
+        z-index:0;
+
+        @include big-screen(){
+            top: -184px;
+
+        }
+    
+        @include desktop-one{
+
+        top:-6px;
+      
+        }
+
+        @include tablet-width{
+        top:0px;
+       
+         }
+
+    }
+
+    @include tablet-width{
+
+        height:238px;
+
+
+    }
+    @include tablet-width-02{
+        height:190px;
+    }
+
+    @include mobile-width{
+        height: 116px;
+    }
+
+    @include tablet-width{
+
+        .tablet-width{
+
+        width: 90% !important;
+
+        @include mobile-width{
+            width: 95% !important;
+        }
+    }
+    }
+
+
+    .form-div{
+        position: relative;
+        top:273px;
+        z-index:3;
+    
+        @include tablet-width-02{
+
+            top:220px;
+
+        }
+
+        @include mobile-width{
+            
+            top: 150px;
+        
+        }
+    
+    } 
+
+
+}
+
+.bg-dark{
+
+    position: relative;
+    top:186px;
+
+    @include tablet-width{
+
+        .w-75{
+
+        width: 100% !important;
+
+            .w-25{
+
+                width: 50% !important;
+
+                @include mobile-width(){
+                    width:90% !important;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+

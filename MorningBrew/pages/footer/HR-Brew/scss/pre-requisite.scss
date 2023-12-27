@@ -1,0 +1,18 @@
+
+@mixin zeroMP{
+    margin:0;
+    padding:0;
+}
+
+*, html, body{
+
+    box-sizing: border-box;
+    @include zeroMP();
+    font-size: 10px;
+    font-family:$font-family;
+
+}
+
+p{
+    @include zeroMP();
+}

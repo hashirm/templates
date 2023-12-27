@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+
+    --font-family:'Poppins', sans-serif;
+    --color:#1c7ff2;
+    --bg-color:#1c7ff2;
+
+}
+
+*, html, body{
+    box-sizing: border-box;
+    font-family:var(--font-family);
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.text-portion{
+    padding:10rem 17rem 0rem 7rem;
+}
+
+.text-portion h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color);
+    margin:2rem 0;
+    line-height: 5rem;
+}
+
+.text-portion p{
+    font-size: 1.5rem;
+
+}
+
+.text-portion .privacy{
+    position: relative;
+    font-size: 1.5rem;
+    top:23rem;
+    left:70rem;
+    color:rgb(180, 170, 170)
+}
+.label-checkbox{
+    font-size:1.3rem
+}
+
+.image-portion{
+    background-color:var(--bg-color) ;
+}
+
+.logo{
+    width: 40%;
+
+}
+
+.textBox{
+    width:90%;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.textBox form span{
+    margin-right: 18rem;
+}
+
+.textBox .buttn{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.my-3{
+
+    margin-top: 3rem !important;
+}
+
+.textBox .text{
+    font-size:1.5rem;
+    width:80%;
+    border-radius: 5px;
+    padding:1rem;
+}
+
+@media screen and (max-width:768px) {
+
+    .main-grid{
+
+        grid-template-columns: 100%;
+
+    }
+    
+    .text-portion .privacy{
+
+        position: static;
+
+        
+    }
+}

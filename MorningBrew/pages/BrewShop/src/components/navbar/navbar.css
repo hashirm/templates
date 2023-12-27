@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+:root{
+
+    --font-family:'Poppins', sans-serif;
+
+}
+
+*,html,body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+}
+
+.nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: white;
+    height:7em;
+    box-shadow: 0px 0px 8px rgb(205, 196, 196);
+    z-index: 1;
+}
+
+.container{
+
+    width: 90%;
+    margin: 0 auto;
+    padding:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  
+}
+
+.menu-container{
+    width:1030px;
+}
+.gameSection-container{
+    max-width: 1050px;
+}
+.moneywithkatie-container{
+    max-width: 1140px;
+}
+
+
+.menuContent{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.menuContent .logo a img{
+width:12em;
+
+}
+
+.menuContent .menuItems{
+    display: flex;
+}
+
+.menuContent .menuItems ul{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    list-style-type: none;
+    display: flex;
+    
+}
+.menuContent .menuItems ul.menuItems-list > li:nth-of-type(1){
+
+    margin-left: 0;
+    height:7rem
+
+}
+
+
+
+.menuContent .menuItems ul li{
+    display: flex;    
+    margin-left: 4rem;
+    position: relative;
+    align-items: center
+
+}
+
+/* .menuContent .menuItems ul li .subMenu{
+    left: 0;
+} */
+
+.menuContent .menuItems ul li:hover .subMenu{
+    visibility: inherit;
+    display: block;
+}
+
+.menuContent .menuItems ul li:hover .subMenu ul{
+    display: block;
+}
+
+.menuContent .menuItems ul li:hover .subMenu ul li{
+    margin-left: 0;
+}
+
+.menuContent .menuItems ul li a{
+   color: black;
+    font-size: 1.5rem;
+}
+.menuContent a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menuContent .menuIcon{
+    display: none;
+}
+
+.subscribe-width{
+    width:160px;
+}
+
+.subMenu{
+    display: none;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 0px 3px rgb(152, 144, 144);
+    left:-1rem;
+    top:7rem;
+    width:19rem;
+    border-radius: 3px;
+    visibility: hidden;
+    transition:all 200ms ease-in-out;
+}
+ 
+.podcast{
+
+    width:48rem; 
+
+}
+
+.featured{
+    width: 22rem;
+}
+
+.courses{
+
+    width: 10rem;
+}
+
+/* .menuContent .menuItems ul li .brand:hover ~.subMenu{
+
+    display: block;
+
+} */
+.dis-block{
+    /* display: block; */
+   /* visibility: visible; */
+}
+
+/* 
+.subMenu div ul{
+    
+    list-style-type: none;
+    padding-left:0  
+
+}*/
+
+.subMenu div ul li a{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.subMenu div ul li a:hover{
+
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+    text-decoration-color: rgb(68, 0, 128) !important;
+}
+.subMenu div ul li{
+    cursor: pointer;
+}
+
+.subMenu div{
+    padding:1.5rem 2.5rem;
+   
+}
+
+.mobileSlide{
+
+   display: none;
+   
+}
+
+.game-thumbnail-height{
+    height: 200px;
+    width: 320px;
+}

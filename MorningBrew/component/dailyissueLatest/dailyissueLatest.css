@@ -1,0 +1,48 @@
+.Greatretrofit.container{
+    width:48%;
+}
+
+.Greatretrofit .round{
+    border-radius: 15px;
+}
+
+.Greatretrofit .title p:nth-of-type(1){
+    font-size: 1.8rem;
+    margin-bottom: 0rem !important;
+    font-weight: 400;
+}
+
+.Greatretrofit .title p:nth-of-type(2){
+    font-size: 1.2rem;
+    
+}
+
+.Greatretrofit .round p:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.Greatretrofit .round p:nth-of-type(2) img {
+    width:12%;
+}
+
+.round p:nth-of-type(3){
+    font-size: 1.5rem;
+
+}
+.round p:nth-of-type(4){
+    font-size: 1.5rem;
+
+}
+.round p:nth-of-type(5){
+    font-size: 1.2rem;
+
+}
+.round p:nth-of-type(6){
+    font-size: 1rem;
+
+}
+
+.round p:nth-of-type(1) img {
+    width:12%;
+}

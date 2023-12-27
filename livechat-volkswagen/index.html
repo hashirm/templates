@@ -1,0 +1,215 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crowdchat</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="app.js">
+
+    </head>
+
+    <body>
+
+        <div class="livechat">
+            <div class="sidebar">
+                <img src="./assets/img/logo.png" alt="">
+                <div style="height:200px">
+                </div>
+                <ul>
+                    <li><i class="fa-regular fa-clock"></i></li><br>
+                    <li><i class="fa-regular fa-calendar"></i></li><br>
+                    <li><i class="fa-solid fa-brush"></i> </li><br>
+                    <li><i class="fa-solid fa-user-group"></i></li><br>
+                    <li><i class="fa-solid fa-video"></i></li><br>
+                </ul>
+
+
+
+
+
+                <div style="height:150px">
+
+                </div>
+                <div class="msg-img">
+                </div>
+
+            </div>
+            <div class="video">
+                <div class="titles">
+                    <h3 style="font-family:Lato;margin: 10px 0px;"><i class="fa-solid fa-arrow-left"></i> &nbsp; Crowd Chat
+                    </h3>
+                 
+                    <hr>
+                    <div class="user-video-title">
+                    <div>
+                    <h5 style="font-family:Lato;margin: 15px auto;"><i class="fa-solid fa-user-group"></i> &nbsp; invited to the call &nbsp; <span style="background-color:darkslategray;padding:7px 10px;color:white;border-radius: 8px;">6</span></h5>
+                    </div>
+                    <div></div>
+                    <div>
+                        <h5 style="font-family:Lato;margin: 15px auto;color:rgb(89, 112, 112)"><a style="background-color:rgb(89, 112, 112);padding:7px 10px;color:white;border-radius: 8px;text-decoration: none;" href="#">+</a>&nbsp; Add user to the call  &nbsp; </h5>
+                    </div>
+                </div>
+                
+               </div>
+                <div class="user-video">
+                            <img class="video-img" src="./assets/img/uservideochat-2.jpg" alt="">
+                            <!-- <video class="video-img"  id="video" width="200" height="100" autoplay></video>
+                           
+                            <canvas id="canvas" width="200" height="100" ></canvas> -->
+                    <!-- <video id='video' controls="controls" preload='none' width="600">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                        <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+                        <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg' />
+                    </video> -->
+
+                    <div class="user-video-inner">
+                        <div class="user">
+
+                            <div class="user-img">
+                                <img src="./assets/img/user-image.jpg" alt="" srcset="">
+                            </div>
+                            <div class="user-text">
+                                <p>Publisher</p>
+                                <p class="name">Kate Smith</p>
+                            </div>
+
+                            <!-- <div style="width:280px;max-width: 100%;">
+
+                            </div> -->
+
+                            <div class="timer" style="">
+
+                                <span><i class="fa-regular fa-circle-stop"></i>&nbsp; 1:00</span>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="participants">
+                            <img src="./assets/img/participants-1.jpg" alt="" srcset="">
+                            <img src="./assets/img/participants-2.jpg" alt="" srcset="">
+                            <img src="./assets/img/participants-3.jpg" alt="" srcset="">
+                        </div>
+
+
+                        <div class="setting-adjustment">
+                    
+                            <div class="round-button ><a href="#"><i class="fa-solid fa-maximize enlarge-screen-button"
+                                        style=""></i></a></div>
+                            <div class="round-button"><a href="#"><i class="fa-solid fa-microphone-slash mic-button"
+                                        style=""></i></a></div>
+                            <div class="round-button-phone"><a id="snap" href="#"><i class="fa-solid fa-phone-volume"></i></a></div>
+                            <div class="round-button"><a href="#"><i class="fa-solid fa-video"></i></a></div>
+                            <div class="round-button"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="chatbox" style="display: contents;">
+                <section class="msger">
+                    <header class="msger-header">
+                        <div class="msger-header-title">
+                            GroupChat
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div class="chatbox-messages">
+                          <a href="#">Messages</a>
+                        </div>
+                        <div class="chatbox-participants">
+                            <a href="#" style="background: none;">participants</a>
+                        </div>
+                    </header>
+
+                    <main class="msger-chat">
+                        <p class="sender-name">Jennifer Lopez</p>
+                        <div class="msg left-msg">
+                            <div class="msg-img"></div>
+                            <div class="msg-bubble">
+                                <div class="msg-info">
+                                </div>
+                                <div class="msg-text">
+                                    Hi, welcome to
+                                    me a message. 😄
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg left-msg">
+                            <div class="msg-img">
+
+                                <img src="background-image: url(./assets/img/avatar1.jpg)" alt="">
+
+
+                            </div>
+
+                            <div class="msg-bubble">
+                                <div class="msg-info">
+                                   
+                                </div>
+
+                                <div class="msg-text">
+                                    Hi, welcome to me a message. 😄
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sender-name">You</p>
+                       
+                   
+                        <div class="msg left-msg">
+                            <div class="msg-img">
+
+                                <img src="background-image: url(./assets/img/avatar1.jpg)" alt="">
+
+                            </div>
+
+                            <div class="msg-bubble">
+                                <div class="msg-info">
+                                </div>
+
+                                <div class="msg-text">
+                                    Hi, welcome to me a message. 😄
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                         
+                    </main>
+
+
+                    <label class="label-typingBox" for="typingBox"></label>
+                    <form class="msger-inputarea">
+                        <input type="text" name="typingBox" class="msger-input" placeholder="Enter your message...">
+                        <button type="submit" class="msger-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                   
+                </section>
+            </div>
+
+
+
+
+        </div>
+
+        <script src="app.js">
+
+                   
+
+
+
+        </script>
+
+    </body>
+
+</html>
