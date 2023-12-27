@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298" height="42" viewBox="0 0 298 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#a4bdeb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1378dc"/>
+      <stop offset="1" stop-color="#171717"/>
+    </linearGradient>
+    <filter id="Path_3601" x="9" y="23" width="90" height="19" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#dedede" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3265">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3266">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3286" x="0" y="0" width="298" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3286-2" x="0" y="0" width="298" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161" result="color-4"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-5"/>
+      <feComposite operator="in" in="color-4"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Upload_File" x="31" y="25" width="61" height="15" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color-5"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-6"/>
+      <feComposite operator="in" in="color-5"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3681" data-name="Group 3681" transform="translate(-392 -4994)">
+    <g id="Group_2725" data-name="Group 2725" transform="translate(-554 4349)">
+      <rect id="Rectangle_1080" data-name="Rectangle 1080" width="90" height="19" rx="2" transform="translate(955 668)" opacity="0.56" fill="url(#linear-gradient)"/>
+      <g data-type="innerShadowGroup">
+        <path id="Path_3601-2" data-name="Path 3601" d="M2,0H88a2,2,0,0,1,2,2V17a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(955 668)" opacity="0.56" fill="url(#linear-gradient-2)"/>
+        <g transform="matrix(1, 0, 0, 1, 946, 645)" filter="url(#Path_3601)">
+          <path id="Path_3601-3" data-name="Path 3601" d="M2,0H88a2,2,0,0,1,2,2V17a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(9 23)" fill="#fff" opacity="0.56"/>
+        </g>
+      </g>
+      <g id="Group_2577" data-name="Group 2577" transform="translate(959.5 673.5)">
+        <g data-type="innerShadowGroup">
+          <path id="Path_3265-2" data-name="Path 3265" d="M362.543,477.612a2.627,2.627,0,0,1-.448-.176.943.943,0,0,1-.457-.856q0-2.079,0-4.158a1.179,1.179,0,0,1,.031-.275.992.992,0,0,1,.957-.756c.589-.012,1.179-.007,1.769,0a.334.334,0,0,1,.358.33.338.338,0,0,1-.367.322c-.549,0-1.1,0-1.646,0-.275,0-.408.125-.408.383q0,2.075,0,4.149c0,.262.128.385.4.385h6.8c.276,0,.4-.123.4-.385q0-2.075,0-4.149c0-.258-.133-.382-.408-.382q-.818,0-1.637,0a.354.354,0,0,1-.326-.162.321.321,0,0,1,.26-.489c.031,0,.063,0,.094,0,.539,0,1.078,0,1.618,0a1.013,1.013,0,0,1,1.093,1.036q0,1.205,0,2.411,0,.869,0,1.739a1,1,0,0,1-.881,1.028.087.087,0,0,0-.024.013Z" transform="translate(-361.638 -468.612)" fill="#009151"/>
+          <g transform="matrix(1, 0, 0, 1, -13.5, -28.5)" filter="url(#Path_3265)">
+            <path id="Path_3265-3" data-name="Path 3265" d="M362.543,477.612a2.627,2.627,0,0,1-.448-.176.943.943,0,0,1-.457-.856q0-2.079,0-4.158a1.179,1.179,0,0,1,.031-.275.992.992,0,0,1,.957-.756c.589-.012,1.179-.007,1.769,0a.334.334,0,0,1,.358.33.338.338,0,0,1-.367.322c-.549,0-1.1,0-1.646,0-.275,0-.408.125-.408.383q0,2.075,0,4.149c0,.262.128.385.4.385h6.8c.276,0,.4-.123.4-.385q0-2.075,0-4.149c0-.258-.133-.382-.408-.382q-.818,0-1.637,0a.354.354,0,0,1-.326-.162.321.321,0,0,1,.26-.489c.031,0,.063,0,.094,0,.539,0,1.078,0,1.618,0a1.013,1.013,0,0,1,1.093,1.036q0,1.205,0,2.411,0,.869,0,1.739a1,1,0,0,1-.881,1.028.087.087,0,0,0-.024.013Z" transform="translate(-348.14 -440.11)" fill="#fff"/>
+          </g>
+        </g>
+        <g data-type="innerShadowGroup">
+          <path id="Path_3266-2" data-name="Path 3266" d="M460.332,348a2.429,2.429,0,0,1,.282.21c.6.591.863.765,1.458,1.358a.422.422,0,0,1,.148.292.365.365,0,0,1-.2.355.361.361,0,0,1-.406-.027.831.831,0,0,1-.1-.091c-.37-.369-.82-.75-.839-.783l-.043.027v.12c0,2.043,0,2.285,0,4.328a1.05,1.05,0,0,1-.008.178.381.381,0,0,1-.754-.042c0-.049,0-.1,0-.147,0-2.036,0-2.271,0-4.307v-.151c-.042.038-.069.061-.094.086-.379.379-.356.311-.734.691a.4.4,0,0,1-.347.139.384.384,0,0,1-.233-.645c.153-.159.311-.313.467-.469.453-.453.5-.462.958-.912a2.463,2.463,0,0,1,.281-.21Z" transform="translate(-455.748 -348)" fill="#009151"/>
+          <g transform="matrix(1, 0, 0, 1, -13.5, -28.5)" filter="url(#Path_3266)">
+            <path id="Path_3266-3" data-name="Path 3266" d="M460.332,348a2.429,2.429,0,0,1,.282.21c.6.591.863.765,1.458,1.358a.422.422,0,0,1,.148.292.365.365,0,0,1-.2.355.361.361,0,0,1-.406-.027.831.831,0,0,1-.1-.091c-.37-.369-.82-.75-.839-.783l-.043.027v.12c0,2.043,0,2.285,0,4.328a1.05,1.05,0,0,1-.008.178.381.381,0,0,1-.754-.042c0-.049,0-.1,0-.147,0-2.036,0-2.271,0-4.307v-.151c-.042.038-.069.061-.094.086-.379.379-.356.311-.734.691a.4.4,0,0,1-.347.139.384.384,0,0,1-.233-.645c.153-.159.311-.313.467-.469.453-.453.5-.462.958-.912a2.463,2.463,0,0,1,.281-.21Z" transform="translate(-442.25 -319.5)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 392, 4994)" filter="url(#Path_3286)">
+        <path id="Path_3286-3" data-name="Path 3286" d="M4,0A3.891,3.891,0,0,1,8,3.771V276.229A3.891,3.891,0,0,1,4,280a3.891,3.891,0,0,1-4-3.771V3.771A3.891,3.891,0,0,1,4,0Z" transform="translate(289 6) rotate(90)" fill="#acacac"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 392, 4994)" filter="url(#Path_3286-2)">
+        <path id="Path_3286-4" data-name="Path 3286" d="M4,0A3.891,3.891,0,0,1,8,3.771V276.229A3.891,3.891,0,0,1,4,280a3.891,3.891,0,0,1-4-3.771V3.771A3.891,3.891,0,0,1,4,0Z" transform="translate(289 6) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <text id="Upload_File-2" data-name="Upload File" transform="translate(423 5031)" fill="#009151" font-size="12" font-family="Lato-Regular, Lato" letter-spacing="0.005em"><tspan x="0" y="0">Upload File</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 392, 4994)" filter="url(#Upload_File)">
+        <text id="Upload_File-3" data-name="Upload File" transform="translate(31 37)" fill="#fff" font-size="12" font-family="Lato-Regular, Lato" letter-spacing="0.005em"><tspan x="0" y="0">Upload File</tspan></text>
+      </g>
+    </g>
+    <text id="File_size_limit_12MB" data-name="File size limit 12MB" transform="translate(559 5033)" fill="#707070" font-size="15" font-family="Lato-Italic, Lato" font-style="italic" letter-spacing="0.005em"><tspan x="0" y="0">File size limit 12MB</tspan></text>
+  </g>
+</svg>

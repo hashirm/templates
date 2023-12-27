@@ -1,0 +1,15 @@
+<svg id="thailand" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <path id="Path_3499" data-name="Path 3499" d="M10,0H30A10,10,0,0,1,40,10V30A10,10,0,0,1,30,40H10A10,10,0,0,1,0,30V10A10,10,0,0,1,10,0Z" transform="translate(0)" fill="#4586ff" opacity="0.45"/>
+  <g id="Group_1771" data-name="Group 1771" transform="translate(2.018 2.018)">
+    <g id="Group_612" data-name="Group 612" transform="translate(5.028 7.515)">
+      <path id="Path_492" data-name="Path 492" d="M-59.54,88.891h-15.8a6.892,6.892,0,0,0-7.118,6.627v14.749a6.891,6.891,0,0,0,7.118,6.627h15.8a6.892,6.892,0,0,0,7.118-6.627V95.518a6.892,6.892,0,0,0-7.118-6.627Z" transform="translate(82.463 -88.891)" fill="gray"/>
+    </g>
+    <g id="Group_613" data-name="Group 613" transform="translate(0 0)">
+      <path id="Path_493" data-name="Path 493" d="M-47.7,94.178H-82.89A6.505,6.505,0,0,1-82.5,92.74a7.1,7.1,0,0,1,6.583-4.533h21.265a7.073,7.073,0,0,1,6.572,4.533A5.937,5.937,0,0,1-47.7,94.178Z" transform="translate(83.005 -88.207)" fill="#ec1c24"/>
+      <path id="Path_494" data-name="Path 494" d="M-47.475,89.923V94.7H-82.9V89.923a6.87,6.87,0,0,1,.114-1.2h35.2A5.913,5.913,0,0,1-47.475,89.923Z" transform="translate(82.9 -82.826)" fill="#fff"/>
+      <path id="Path_495" data-name="Path 495" d="M-47.475,90.28v4.774a5.688,5.688,0,0,1-.114,1.173h-35.2a6.607,6.607,0,0,1-.114-1.173V90.28Z" transform="translate(82.9 -66.714)" fill="#fff"/>
+      <rect id="Rectangle_71" data-name="Rectangle 71" width="35.423" height="11.907" transform="translate(0.003 11.764)" fill="#241d4e"/>
+      <path id="Path_496" data-name="Path 496" d="M-47.7,90.8a5.883,5.883,0,0,1-.387,1.461,7.063,7.063,0,0,1-6.572,4.521H-75.919A7.078,7.078,0,0,1-82.5,92.258,5.882,5.882,0,0,1-82.89,90.8Z" transform="translate(83.005 -61.355)" fill="#ec1c24"/>
+    </g>
+  </g>
+</svg>

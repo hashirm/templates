@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Puerto_Rico" data-name="Puerto Rico" transform="translate(0 0.01)">
+    <path id="Path_3486" data-name="Path 3486" d="M4,0H23a4,4,0,0,1,4,4V23a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(0 -0.01)" fill="#4586ff" opacity="0.45"/>
+    <g id="Group_1805" data-name="Group 1805" transform="translate(1.356 1.356)">
+      <g id="Group_1804" data-name="Group 1804">
+        <g id="Group_1803" data-name="Group 1803">
+          <g id="Group_1802" data-name="Group 1802">
+            <path id="Path_1745" data-name="Path 1745" d="M-68.214,17.761a4.774,4.774,0,0,1-.337,1.814A4.873,4.873,0,0,1-73.088,22.7H-87.736a4.771,4.771,0,0,1-3.337-1.348,4.888,4.888,0,0,1-1.2-1.781,4.774,4.774,0,0,1-.337-1.814Z" transform="translate(92.615 1.708)" fill="#ec0302"/>
+            <rect id="Rectangle_613" data-name="Rectangle 613" width="24.409" height="4.942" transform="translate(0 14.601)" fill="#fff"/>
+            <rect id="Rectangle_614" data-name="Rectangle 614" width="24.409" height="4.943" transform="translate(0 9.733)" fill="#ec0302"/>
+            <rect id="Rectangle_615" data-name="Rectangle 615" width="24.409" height="4.942" transform="translate(0 4.867)" fill="#fff"/>
+            <path id="Path_1746" data-name="Path 1746" d="M-68.214,20.336h-24.4a5.09,5.09,0,0,1,.337-1.822,4.94,4.94,0,0,1,1.192-1.781,4.777,4.777,0,0,1,3.345-1.348h14.647a4.861,4.861,0,0,1,4.537,3.129A5.089,5.089,0,0,1-68.214,20.336Z" transform="translate(92.615 -15.385)" fill="#ec0302"/>
+          </g>
+          <path id="Path_1747" data-name="Path 1747" d="M-78.355,26.4l-2.854,2.446-5.7,4.875-4.144,3.546a4.816,4.816,0,0,1-1.215-1.756,4.6,4.6,0,0,1-.341-1.789V19.1a4.905,4.905,0,0,1,.341-1.8,4.866,4.866,0,0,1,1.207-1.756L-86.9,19.1l5.692,4.859Z" transform="translate(92.615 -14.199)" fill="#0f51ee"/>
+        </g>
+        <path id="Path_1748" data-name="Path 1748" d="M-88.831,16.415l.842,2.592h2.725l-2.2,1.6.841,2.592-2.2-1.6-2.2,1.6.842-2.592-2.2-1.6h2.725Z" transform="translate(94.171 -7.99)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

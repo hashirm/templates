@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.143" height="19.143" viewBox="0 0 19.143 19.143">
+  <defs>
+    <filter id="Ellipse_1" x="0" y="0" width="19.143" height="19.143" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_1-2" x="1.858" y="1.858" width="15.428" height="15.428" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="select" transform="translate(-657 -655)">
+    <g id="Group_3226" data-name="Group 3226" transform="translate(657 655)">
+      <g data-type="innerShadowGroup">
+        <circle id="Ellipse_1-3" data-name="Ellipse 1" cx="9.572" cy="9.572" r="9.572" fill="#4586ff"/>
+        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_1)">
+          <circle id="Ellipse_1-4" data-name="Ellipse 1" cx="9.572" cy="9.572" r="9.572" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_3231" data-name="Group 3231" transform="translate(659.858 657.858)">
+      <g data-type="innerShadowGroup">
+        <circle id="Ellipse_1-5" data-name="Ellipse 1" cx="7.714" cy="7.714" r="7.714" transform="translate(-1 -1)" fill="#3475ef"/>
+        <g transform="matrix(1, 0, 0, 1, -2.86, -2.86)" filter="url(#Ellipse_1-2)">
+          <circle id="Ellipse_1-6" data-name="Ellipse 1" cx="7.714" cy="7.714" r="7.714" transform="translate(1.86 1.86)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_3232" data-name="Group 3232" transform="translate(1.676 1.742)">
+      <line id="Line_5" data-name="Line 5" x2="2.688" y2="2.344" transform="translate(661.5 662.421)" fill="none" stroke="#dedede" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_6" data-name="Line 6" y1="8.587" transform="translate(669.934 658.383) rotate(42)" fill="none" stroke="#dedede" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

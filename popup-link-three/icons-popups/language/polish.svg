@@ -1,0 +1,12 @@
+<svg id="polish" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="Rectangle_95" data-name="Rectangle 95" width="40" height="40" rx="10" transform="translate(0 0)" fill="#4586ff" opacity="0.45"/>
+  <g id="Group_1768" data-name="Group 1768" transform="translate(2.018 2.018)">
+    <g id="Group_647" data-name="Group 647" transform="translate(0.361)">
+      <path id="Path_534" data-name="Path 534" d="M-75.762,59.61H-59.95a6.9,6.9,0,0,0,7.12-6.638V38.239A6.9,6.9,0,0,0-59.95,31.6H-75.762a6.893,6.893,0,0,0-7.108,6.638V52.972a6.893,6.893,0,0,0,7.108,6.638Z" transform="translate(82.87 -31.601)" fill="gray"/>
+    </g>
+    <g id="Group_648" data-name="Group 648" transform="translate(0 0.096)">
+      <path id="Path_535" data-name="Path 535" d="M-82.9,43.827V33.093h35.425V43.827a7.355,7.355,0,0,1-.5,2.638,7.117,7.117,0,0,1-6.6,4.53H-75.815a7.1,7.1,0,0,1-6.584-4.53A6.875,6.875,0,0,1-82.9,43.827Z" transform="translate(82.9 -15.57)" fill="#fff"/>
+      <path id="Path_536" data-name="Path 536" d="M-82.9,49.486V38.765a6.919,6.919,0,0,1,.5-2.638,7.072,7.072,0,0,1,6.584-4.518h21.243a7.088,7.088,0,0,1,6.6,4.518,7.405,7.405,0,0,1,.5,2.638V49.486Z" transform="translate(82.9 -31.609)" fill="#db153b"/>
+    </g>
+  </g>
+</svg>

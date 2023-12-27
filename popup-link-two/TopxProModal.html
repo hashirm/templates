@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Topfx pro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/hierarchy-select.min.css">-->
+    <!-- Demo CSS -->
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+    <style>
+      /* .modal-dialog{
+            border-radius: 10px;
+        } */
+
+      @media screen {
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button>
+   -->
+    <!-- Modal -->
+    <div
+      class="topfxpro modal fade show"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="false"
+      style="display: block">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              <div></div>
+            </h1>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            
+    
+            
+              </button> -->
+            <div class="lang-dropdown dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                data-bs-toggle="dropdown"
+                style="width: 90px; height: 36px; padding: 8px 13px 7px 7px"
+              >
+                <span
+                  class="lang-flag"
+                  style="
+                    background-image: url(./icons-popups/language/English.svg);
+                    background-size: cover;
+                    width: 17px;
+                    height: 17px;
+                    display: inline-table;
+                  "
+                ></span>
+                <span class="lang-text ms-0">EN</span>
+              </button>
+              <div class="dropdown-menu p-0 bg-primary">
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x1"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/chinise.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">ZH</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x2"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/polish.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">PL</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x3"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/italian.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">IT</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x4"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/arabic.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">AR</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x5"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/thailand.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">TH</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x6"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/vietnamise.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">VI</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x7"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/English.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">MS</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x8"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/france.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">FR</span>
+                </a>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  value="x9"
+                  href="#"
+                >
+                  <span
+                    style="
+                      background-image: url(./icons-popups/language/spanish.svg);
+                      background-size: cover;
+                      width: 17px;
+                      height: 17px;
+                      display: inline-table;
+                    "
+                  ></span>
+                  <span class="lang-text">SP</span>
+              </a>
+              </div>
+            </div>
+
+            <!--   <p id="toChange">gg</p> -->
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex flex-column title-subtitle-steps">
+              <div class="activateyouraccount">
+                  <h3 class="">Activate your account</h3>
+                  <p class="popup-subtitle">
+                    Please complete the KYC application in order to verify your
+                    profile.
+                  </p>
+              </div>
+              <div>
+                <div class="d-flex flex-column">
+                  <div class="popup-steps">
+                    <div class="popup-step step-1">
+                      <div class="step-num step-num-one">1</div>
+                      <div class="step-num step-num-two position-absolute" style="right:23px">2</div>
+                      <div class="step-num step-num-three position-absolute" style="right:5px">3</div>
+                    
+                    </div>
+                    <div class="popup-step step-2">
+                      <div class="step-num step-num-two">2</div>
+                    </div>
+                    <div class="popup-step step-3">
+                      <div class="step-num step-num-three">3</div>
+                    </div>
+                  </div>
+                  <div class="step-names-div d-flex justify-content-around">
+                    <div class="step-names step-one-name">
+                      <p>Personal details</p>
+                    </div>
+                    <div class="step-names step-two-name">
+                      <p>Questionnaire</p>
+                    </div>
+                    <div class="step-names step-three-name">
+                      <p>KYC Upload</p>
+                    </div>
+                  </div>
+                  <div class="step-names-div d-flex justify-content-center dots">
+                    <div class="dot-1 active">
+
+                    </div>
+                    <div class="dot-2">
+
+                    </div>
+                    <div class="dot-3">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+                
+                <div class="popup-form-title popupInactive">
+                  <h4>Questionnaire</h4>
+                </div>
+
+                
+              <div class="second-step popupInactive">
+
+                <div class="questionnairs">
+                  <div class="leverage-currency d-flex align-items-center justify-content-between">
+                    <div>
+                      <label class="firslabel mb-md-2 mb-1">Are you a US citizen for tax purposes?</label>
+                      <div class="currencies-dropdown currency dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                         
+                          <div id="myTable">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                                
+                             <span>Administrative</span>
+                            
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+                                <span>Architecture and engineering</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                             
+                            <span>Arts entertainment sport & media</span>
+                         
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>Banking</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                               <span>Financial operations</span>
+                       
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                                
+                                   <span>Cleaning & maintenance
+                            </span>
+                           
+                            <input type="checkbox" style="width:20px;height: 20px;">
+                
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                                <span>Construction & extraction</span>
+                                
+                              <input type="checkbox" style="width:20px;height: 20px;">
+    
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="7" href="#">
+                                <span>Education & library</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Farming, fishing & forestry</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Government employees</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Healthcare & medical</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="mb-md-2 mb-1">What is you Level of Education?</label>
+                      <div class="currencies-dropdown leverage dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                            Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                              <span>1:1</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+    
+                              <span>1:2</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:5</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:10</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                              <span>1:20</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                              <span>1:25</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="leverage-currency d-flex align-items-center justify-content-between mt-4">
+                    <div>
+                      <label class="firslabel mb-md-2 mb-1">Are you a US citizen for tax purposes?</label>
+                      <div class="currencies-dropdown currency dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                          Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                         
+                          <div id="myTable">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                                
+                             <span>Administrative</span>
+                            
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+                                <span>Architecture and engineering</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                             
+                            <span>Arts entertainment sport & media</span>
+                         
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>Banking</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                              <span>Financial operations</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                                
+                            <span>Cleaning & maintenance</span>
+                            <input type="checkbox" style="width:20px;height: 20px;">
+                
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                                <span>Construction & extraction</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="7" href="#">
+                                <span>Education & library</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Farming, fishing & forestry</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Government employees</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Healthcare & medical</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="mb-md-2 mb-1">What is you Level of Education?</label>
+                      <div class="currencies-dropdown leverage dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                            Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                              <span>1:1</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+                              <span>1:2</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:5</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:10</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                              <span>1:20</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                              <span>1:25</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="leverage-currency d-flex align-items-center justify-content-between mt-4">
+                    <div>
+                      <label class="firslabel mb-md-2 mb-1">Are you a US citizen for tax purposes?</label>
+                      <div class="currencies-dropdown currency dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                          Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                         
+                          <div id="myTable">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                                
+                             <span>Administrative</span>
+                            
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+                                <span>Architecture and engineering</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                             
+                            <span>Arts entertainment sport & media</span>
+                         
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>Banking</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                               <span>Financial operations</span>
+                       
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                                
+                                   <span>Cleaning & maintenance
+                            </span>
+                           
+                            <input type="checkbox" style="width:20px;height: 20px;">
+                
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                                <span>Construction & extraction</span>
+                                
+                              <input type="checkbox" style="width:20px;height: 20px;">
+    
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="7" href="#">
+                                <span>Education & library</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Farming, fishing & forestry</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Government employees</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Healthcare & medical</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="mb-md-2 mb-1">What is you Level of Education?</label>
+                      <div class="currencies-dropdown leverage dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                            Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                              <span>1:1</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+    
+                              <span>1:2</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:5</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:10</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                              <span>1:20</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                              <span>1:25</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="leverage-currency d-flex align-items-center justify-content-between mt-4">
+                    <div>
+                      <label class="firslabel mb-md-2 mb-1">Are you a US citizen for tax purposes?</label>
+                      <div class="currencies-dropdown currency dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                         
+                          <div id="myTable">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                                
+                             <span>Administrative</span>
+                            
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+                                <span>Architecture and engineering</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                             
+                            <span>Arts entertainment sport & media</span>
+                         
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>Banking</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                               <span>Financial operations</span>
+                       
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                                
+                                   <span>Cleaning & maintenance
+                            </span>
+                           
+                            <input type="checkbox" style="width:20px;height: 20px;">
+                
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                                <span>Construction & extraction</span>
+                                
+                              <input type="checkbox" style="width:20px;height: 20px;">
+    
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="7" href="#">
+                                <span>Education & library</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Farming, fishing & forestry</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Government employees</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Healthcare & medical</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="mb-md-2 mb-1">What is you Level of Education?</label>
+                      <div class="currencies-dropdown leverage dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                            Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                              <span>1:1</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+    
+                              <span>1:2</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:5</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:10</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                              <span>1:20</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                              <span>1:25</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="last-question leverage-currency d-flex align-items-center justify-content-between mt-4" style="">
+                    <div>
+                      <label class="firslabel mb-md-2 mb-1">Are you a US citizen for tax purposes?</label>
+                      <div class="currencies-dropdown currency dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                         
+                          <div id="myTable">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                                
+                             <span>Administrative</span>
+                            
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+                                <span>Architecture and engineering</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                             
+                            <span>Arts entertainment sport & media</span>
+                         
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>Banking</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                               <span>Financial operations</span>
+                       
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                                
+                                   <span>Cleaning & maintenance
+                            </span>
+                           
+                            <input type="checkbox" style="width:20px;height: 20px;">
+                
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                                <span>Construction & extraction</span>
+                                
+                              <input type="checkbox" style="width:20px;height: 20px;">
+    
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="7" href="#">
+                                <span>Education & library</span>
+                          
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Farming, fishing & forestry</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Government employees</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="8" href="#">
+                                <span>Healthcare & medical</span>
+                                <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="mb-md-2 mb-1">What is you Level of Education?</label>
+                      <div class="currencies-dropdown leverage dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                            Please Select
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a class="dropdown-item coin-individual" data-value="1" href="#">
+                              <span>1:1</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="2" href="#">
+    
+                              <span>1:2</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:5</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="3" href="#">
+                              <span>1:10</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="4" href="#">
+                              <span>1:20</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="5" href="#">
+                              <span>1:25</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                            <a class="dropdown-item coin-individual" data-value="6" href="#">
+                              <span>1:30</span>
+                              <input type="checkbox" style="width:20px;height: 20px;">
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex justify-content-between align-items-center continue-back-button">
+                  <div class="d-flex backbtn">
+                    <div class="backward-icon">
+                      <img src="./right-arrow.png" alt="" srcset="">
+                    </div>
+                    <button class="submit-button stepback-button btn">STEP BACK</button>      
+                  </div>
+                  <div class="d-flex justify-content-end continueButton">
+                    <button type="submit" class="submit-button btn">CONTINUE</button> 
+                    <div class="continue-icon">
+                      <img src="./right-arrow.png" alt="" srcset="">
+                    </div>
+                  </div>
+              </div>
+              </div>
+
+
+                <!-- Details -->
+
+                <div class="popup-form-titleDetails details popupActive">
+                  <h4>Details</h4>
+                </div>
+                <form action="">
+                <div class="append-questionnairs popupActive dummy">
+                  
+                  
+                
+                  <div class="leverage-currency d-flex align-items-center justify-content-between">
+                    <div>
+
+                      <div class="currencies-dropdown currency dropdown">
+                        <input
+                        required 
+                        name="FirstName"
+                          type="text"
+                          class="btn dropdown-toggle"
+                          placeholder="First Name"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="currencies-dropdown leverage dropdown">
+                        <input
+                        required
+                        name="lastName"
+                          type="text"
+                          class="btn dropdown-toggle"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between mt-5 dob-phonenumber">
+                    <div class="d-flex justify-content-between timeInput">
+                      <div class="currencies-dropdown dayTime leverage dropdown">
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Days
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="1"
+                              href="#"
+                            >
+                              <span>1</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="2"
+                              href="#"
+                            >
+                              <span>2</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="3"
+                              href="#"
+                            >
+                              <span>3</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="3"
+                              href="#"
+                            >
+                              <span>4</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="4"
+                              href="#"
+                            >
+                              <span>5</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="5"
+                              href="#"
+                            >
+                              <span>6</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>7</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>8</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>9</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>10</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>11</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>12</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>13</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>14</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>15</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>16</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>17</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>18</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>19</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>20</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>21</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>22</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>23</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>24</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>25</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>26</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>27</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>28</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>29</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>30</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>31</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="currencies-dropdown monthTime leverage dropdown"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Month
+                        </button>
+                        <div class="dropdown-menu">
+                          <div id="myTable-leverage">
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="1"
+                              href="#"
+                            >
+                              <span>JANUARY</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="2"
+                              href="#"
+                            >
+                              <span>FEBRUARY</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="3"
+                              href="#"
+                            >
+                              <span>MARCH</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="3"
+                              href="#"
+                            >
+                              <span>APRIL</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="4"
+                              href="#"
+                            >
+                              <span>MAY</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="5"
+                              href="#"
+                            >
+                              <span>JUNE</span>
+                            </a>
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>JULY</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>AUGUST</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>SEPTEMBER</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>OCTOBER</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>NOVEMBER</span>
+                            </a>
+
+                            <a
+                              class="dropdown-item coin-individual"
+                              data-value="6"
+                              href="#"
+                            >
+                              <span>DECEMBER</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="currencies-dropdown yearTime leverage dropdown"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle"
+                          data-bs-toggle="dropdown">
+                          <span id="abc">year</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="ddlYears" id="myTable-leverage">
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mobileWidth">
+                      <div class="currencies-dropdown leverage dropdown d-flex">
+                        <div
+                          class="currencies-dropdown phonecode leverage dropdown ms-0"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-primary dropdown-toggle ms-0 border-0"
+                            data-bs-toggle="dropdown"
+                          >
+                          <span id="code">+000</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="countryPhonecodes" id="myTable-leverage">
+                      
+                            </div>
+                          </div>
+                        </div>
+                        <input
+                          type="number"
+                          class="inputNumber"
+                          placeholder="-- --- -----"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="leverage-currency d-flex align-items-center justify-content-between mt-4">
+                    <div>
+                      <div class="currencies-dropdown currency dropdown">
+                        <label class="text-white" for="">Enter Address</label>
+                        <input
+                          type="text"
+                          class="btn dropdown-toggle activestepOne"
+                          placeholder="Address"
+                        />
+
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="currencies-dropdown leverage d-flex gap-3 mt-md-4"
+                      >
+                        <div
+                          class="currencies-dropdown zipcode leverage dropdown ms-0"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-primary dropdown-toggle ms-0 border-0"
+                            data-bs-toggle="dropdown"
+                          >
+                            Zip Code
+                          </button>
+                          <div class="dropdown-menu">
+                            <div id="myTable-leverage">
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="1"
+                                href="#"
+                              >
+                                <span>1:1</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="2"
+                                href="#"
+                              >
+                                <span>1:2</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="3"
+                                href="#"
+                              >
+                                <span>1:5</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="3"
+                                href="#"
+                              >
+                                <span>1:10</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="4"
+                                href="#"
+                              >
+                                <span>1:20</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="5"
+                                href="#"
+                              >
+                                <span>1:25</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="currencies-dropdown cityname leverage dropdown ms-0"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-primary dropdown-toggle ms-0 border-0"
+                            data-bs-toggle="dropdown"
+                          >
+                            City Name
+                          </button>
+                          <div class="dropdown-menu">
+                            <div id="myTable-cityname">
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="1"
+                                href="#"
+                              >
+                                <span>1:1</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="2"
+                                href="#"
+                              >
+                                <span>1:2</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="3"
+                                href="#"
+                              >
+                                <span>1:5</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="3"
+                                href="#"
+                              >
+                                <span>1:10</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="4"
+                                href="#"
+                              >
+                                <span>1:20</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="5"
+                                href="#"
+                              >
+                                <span>1:25</span>
+                              </a>
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+
+                              <a
+                                class="dropdown-item coin-individual"
+                                data-value="6"
+                                href="#"
+                              >
+                                <span>1:30</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-end continueButton">
+                    <button type="submit" class="submit-button btn">CONTINUE</button> 
+                    <div class="continue-icon">
+                      <img src="./right-arrow.png" alt="" srcset="">
+                    </div>
+                  </div>
+                
+                </div>
+
+              </form>
+
+
+                <!-- Finish Step 3 -->
+
+
+                <div class="popup-form-titleFinish popupInactive">
+                  <h4>Finish</h4>
+                  <p>To complete your account activation, please provide us with a valid proof of ID and residence. Once we review them, we will notify you if your application has been approved.</p>
+                  <div class="last-stage d-flex gap-5">
+                    <div class="id-passport w-100">
+                      <h6>ID or Passport</h6>
+                      <p>A colored copy of your national ID card (both sides) or your passport with an expiration date of no earlier than 6 months.</p>
+                      <div class="progressbar-upload-id-passport my-2 ps-0 pe-2 d-flex flex-column justify-content-center align-items-start rounded-5">
+                        
+                          <div class="progressbar-progress rounded-5">
+                          </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-upload-idpassport">
+                          <input id="id-passport" type="file">
+                          <button class="id-passport-btn">
+                              Upload File
+                          </button>
+                        </div>
+                        <p>File size limit 12MB</p>
+                      </div>
+                    </div>
+                    <div class="proof-of-residence w-100">
+                      <h6>Proof of Residence</h6>
+                      <p>A utility bill, bank statement or stamped letter from your financial institutions issued within the last 6 months, with your name and address clearly visible.</p>
+                      <div class="progressbar-upload-por my-2 ps-0 pe-2 d-flex flex-column justify-content-center align-items-start rounded-5">
+                          <div class="progressbar-por-progress rounded-5">
+
+                          </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-upload-por">
+                          <input id="id-por" type="file">
+                          <button class="id-por-btn">
+                              Upload File
+                          </button>
+                        </div>
+                        <p>File size limit 12MB</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="disclaimer">
+
+                    <form action="">
+                    <div class="d-flex align-items-start gap-2 keeplogin">
+                      <div class="customcheck">
+                        <input type="checkbox" name="disclaimer-one" id="disclaimer-checkbox-one" value="1"  class="largerCheckbox">
+                        <div class="Fcheckbox"></div>
+                      </div>
+                          
+                          <label class="mb-2" for="disclaimer-one">
+                            Derivative products are suitable as part of my investment objectives and attitude towards risk and I am able to assess the risks involved in trading them, including the possibility that I may lose all of my capital.
+                          </lable>
+                    </div>
+                    <div class="d-flex align-items-start gap-2 keeplogin">
+                     
+                      <div class="customcheck">
+                        <input type="checkbox" name="disclaimer-one" id="disclaimer-checkbox-two" value="2"  class="largerCheckbox">
+                        <div class="Fcheckbox"></div>
+                      </div>
+                        <label for="disclaimer-two">
+                          I confirm that I have read and understood the TopFX Terms and Conditions and I agree to be bound by these documents. I also confirm that I understand the full nature and risk of trading forex, CFDs and other derivative products.
+                        </label>
+            
+                    </div>
+                    </form>
+                    <div class="activate-account-button text-end">
+                        <button type="button" class="btn btn-success border-0 rounded-0">
+                          ACTIVATE ACCOUNT
+                        </button>
+                    </div>
+                    <p>
+                      TopFX is the tradename of Fondex Global Limited which is an exempted Company incorporated and registered under the laws of Bermuda with registration number 54010.<br> Please read our full: <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                    </p>
+
+
+                  </div>
+
+
+
+                  
+                </div>
+
+                <div class="application-successfully-submitted d-flex flex-column justify-content-between d-none">
+                  <div>
+                      <h4>Your application has been submitted</h4>
+                      <p>Thank you for completing the account activation process. We will review your application and notify you by email in case we need extra documents or as soon as your account is approved.</p>
+                  </div>
+                  <div class="footer-text">
+                      <p>TopFX is the tradename of Fondex Global Limited which is an exempted Company incorporated and registered under the laws of Bermuda with registration number 54010. Please read our full: <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+
+                  </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- <div class="submit-button-wrapper d-flex justify-content-between" style="width: 100%;">
+                
+               
+                  
+                  
+                </div> -->
+
+
+            
+
+          </div>
+      <!--<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button> 
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+    <script type="text/javascript">
+      // $("#exampleModal").addClass('show');
+
+      $(document).ready(function () {
+        $(window).load(function () {
+          $("#exampleModal").modal("show");
+        });
+      });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hierarchy Select Js -->
+    <!-- <script src="js/hierarchy-select.min.js"></script> -->
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
