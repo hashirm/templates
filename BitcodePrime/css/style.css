@@ -1,8 +1,12 @@
-
-.bitCode-prime .logo-sec img{
-    width:16rem;
+.bitCode-prime .logo-sec img {
+  width: 16rem;
 }
-
+.owl-item {
+  text-align: center;
+}
+.owl-dots {
+  display: none;
+}
 /* * {
     box-sizing: border-box;
   }
@@ -30,4 +34,3 @@
   .owl-carousel {
     position: relative;
   } */
-  
