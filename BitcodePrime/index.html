@@ -32,7 +32,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div class="d-grid d-lg-block d-md-block d-sm-block text-center">
                     <button class="btn btn-lg border-0 mx-1" type="button" style="background-color: white;box-shadow:0px 0px 6px rgb(179, 176, 176,0.7);">Login</button>
-                    <a href="#registerationForm" class="btn btn-lg border-0 text-white mt-md-0 mt-lg-0 mt-sm-0 mt-2" type="button" style="background: #ffab00;text-decoration: none;">Register</a>
+                    <a href="" class="btn btn-lg border-0 text-white mt-md-0 mt-lg-0 mt-sm-0 mt-2" type="button" style="background: #ffab00;text-decoration: none;">Register</a>
                 </div>
             </div>
             <!-- <div class="col-lg-1" style="align-items: center;">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="container mt-5">
                     <div class="row gap-3 gap-lg-0 align-items-stretch">
-                        <div class="col-lg-5 pt-0 px-2 px-lg-4 d-flex">
+                        <div class="col-lg-5 pt-0 px-2 px-lg-4 d-flex sectionsignup">
                             <form class="bg-white p-5 rounded-3 px-4" action="" id="registerationForm">
                                 <lable>Name:</lable>
                                 <input type="text" class="form-control">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="text-center pt-3">
-                    <a href="#registerationForm" class="btn-lg rounded text-white border-0 px-5" style="background: #ffab00;text-decoration: none;">Register</a>
+                    <a href="" class="btn-lg rounded text-white border-0 px-5" style="background: #ffab00;text-decoration: none;">Register</a>
                 </div>
             </div>
         </section>
@@ -162,7 +162,7 @@
                         were few options for people who didn't have any work experience. This couldn't keep going, so
                         Bitcode Prime was born. It enables you to make trades while the algorithm in the software does
                         the work for you.</p>
-                    <a class="btn-lg rounded border-0 text-white" style="background: #ffab00;text-decoration: none;"> Register for
+                    <a href="" class="btn-lg rounded border-0 text-white" style="background: #ffab00;text-decoration: none;"> Register for
                         free</a>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                 </div>
             </div>
             <div class="text-center pb-5">
-                <a href="#registerationForm" class="btn-lg rounded text-white border-0" style="background: #ffab00;text-decoration: none;">Register for
+                <a href="" class="btn-lg rounded text-white border-0" style="background: #ffab00;text-decoration: none;">Register for
                     Free</a>
             </div>
         </section>
@@ -330,7 +330,7 @@
                             Bitcode Prime was born. It enables you to make trades while the algorithm in the software
                             does
                             the work for you.</p>
-                        <a href="#registerationForm" class="btn-lg rounded border-0 text-white" style="background: #ffab00;text-decoration: none;"> Register for
+                        <a href="" class="btn-lg rounded border-0 text-white" style="background: #ffab00;text-decoration: none;"> Register for
                             free</a>
                     </div>
                     <div class="col-lg-5">
@@ -439,7 +439,7 @@
                     </div>
                 </div>
                 <div class="text-center pt-5 pb-5">
-                    <a href="#registerationForm" class="btn-lg rounded text-white border-0" style="background: #ffab00;text-decoration: none;">Register for
+                    <a href="" class="btn-lg rounded text-white border-0" style="background: #ffab00;text-decoration: none;">Register for
                         Free</a>
                 </div>
                 <div>
@@ -476,7 +476,7 @@
                         you’re up to date with any changes on the market.</p>
                 </div>
                 <div class="text-start pt-2 pb-5">
-                    <a href="#registerationForm" class="btn-lg rounded text-white border-0" style="background: #ffab00;text-decoration: none;">Register for
+                    <a href="" class="btn-lg rounded text-white border-0" style="background: #ffab00;text-decoration: none;">Register for
                         Free</a>
                 </div>
             </div>
@@ -573,8 +573,19 @@
     })
     
      const button = document.querySelectorAll(".btn.text-white");
+     const sectionsignup = document.querySelector(".sectionsignup");
+    
     console.log(button);
-    </script>
+    button.forEach(element =>{
+
+        element.addEventListener('click',(e) =>{
+            e.preventDefault();
+            sectionsignup.scrollIntoView({behaviour:'smooth'})
+        })
+
+    }
+    )
+  </script>
   
 </body>
 
