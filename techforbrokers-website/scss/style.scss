@@ -1,4 +1,6 @@
-*, html, body {
+*,
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,8 +15,6 @@ ul {
 nav {
   background: transparent;
 }
-
-
 
 @media (max-width: 1024px) {
   nav .menu-items {
@@ -65,9 +65,7 @@ nav .mobile-menu-bg {
 @media (max-width: 600px) {
   .bg-video .w-25 {
     width: 75% !important;
-   
-}
-  
+  }
 }
 @media (max-width: 600px) {
   .bg-video .mobile-height {
@@ -80,7 +78,9 @@ nav .mobile-menu-bg {
   font-size: 3rem;
 }
 
-.bg-video .text-main h1, .bg-video .text-main .section-03 h1 span, .section-03 h1 .bg-video .text-main span {
+.bg-video .text-main h1,
+.bg-video .text-main .section-03 h1 span,
+.section-03 h1 .bg-video .text-main span {
   font-size: 3.5rem;
   font-weight: 800;
   filter: drop-shadow(2px 4px 6px black);
@@ -117,12 +117,15 @@ nav .mobile-menu-bg {
     margin-left: 0.6rem;
   }
 }
-.tfbltd h1, .tfbltd .section-03 h1 span, .section-03 h1 .tfbltd span {
+.tfbltd h1,
+.tfbltd .section-03 h1 span,
+.section-03 h1 .tfbltd span {
   font-weight: bolder;
   font-size: 2rem;
 }
 
-.tfbltd h1 span, .section-03 h1 .tfbltd span span {
+.tfbltd h1 span,
+.section-03 h1 .tfbltd span span {
   font-size: 2rem;
 }
 
@@ -146,7 +149,8 @@ nav .mobile-menu-bg {
   color: white !important;
 }
 
-.section-03 h1, .section-03 h1 span {
+.section-03 h1,
+.section-03 h1 span {
   font-weight: bolder;
   font-size: 2rem;
 }
@@ -202,15 +206,18 @@ nav .mobile-menu-bg {
   background-size: 100% 100%;
 }
 
-.section-04 h3, .section-04 .section-05 h3 span, .section-05 h3 .section-04 span {
+.section-04 h3,
+.section-04 .section-05 h3 span,
+.section-05 h3 .section-04 span {
   font-weight: bolder;
 }
 
 .section-04 p {
-  font-size: 1.5    rem;
+  font-size: 1.5 rem;
 }
 
-.section-05 h3, .section-05 h3 span {
+.section-05 h3,
+.section-05 h3 span {
   font-size: 2rem;
   font-weight: bolder;
   color: black;
@@ -270,7 +277,6 @@ nav .mobile-menu-bg {
   }
 }
 @media (max-width: 780px) {
-  
   .footer .w-50 {
     width: 95% !important;
   }
@@ -279,13 +285,18 @@ nav .mobile-menu-bg {
   .footer .w-50 {
     width: 95% !important;
   }
-  .position-absolute.text-main.w-50 h1{
-    width:70% !important;
+  .position-absolute.text-main.w-50 h1 {
+    width: 70% !important;
   }
 }
 @media (max-width: 480px) {
   .footer .w-50 {
     width: 100% !important;
+  }
+  .bg-video .text-main h1,
+  .bg-video .text-main .section-03 h1 span,
+  .section-03 h1 .bg-video .text-main span {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 600px) {
