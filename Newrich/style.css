@@ -265,6 +265,51 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
   padding-bottom: 47px;
 }
 
+/* section-04 CSS */
+.section-04 {
+  background-color: lightblue;
+  padding: 60px 0;
+}
+.section-04 .section-04-content {
+  max-width: 635px;
+}
+.section-04 .accordion-button::after {
+  background-image: url(./assets/plus-lg.svg) !important;
+}
+
+.section-04 .section-04-content h2 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+.section-04-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+}
+.section-04 .section-04-content a {
+  background: rgba(255, 84, 62, 1);
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 32px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: none;
+}
+
+.section-04 .accordion-flush .accordion-item .accordion-button {
+  padding: 0 10px;
+  border-radius: 4px;
+}
+.section-04 .accordion-flush .accordion-item {
+  border: 0;
+  margin-bottom: 20px;
+}
+.section-04 .accordion-flush .accordion-item:last-child {
+  margin-bottom: 50px;
+}
 @media screen and (max-width: 1199px) and (min-width: 1101px) {
   .heroSection .heroSection-content h1 {
     font-size: 36px;
