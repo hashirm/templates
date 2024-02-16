@@ -306,10 +306,365 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
 .section-04 .accordion-flush .accordion-item {
   border: 0;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 .section-04 .accordion-flush .accordion-item:last-child {
   margin-bottom: 50px;
 }
+
+/* section-06 */
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .row {
+  padding-top: 40px;
+}
+
+.pricing .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 41px 40px 24px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  background: #fff;
+  height: 100%;
+  border-top: 19px solid #fff;
+}
+
+.pricing h2 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+  color: rgba(255, 84, 62, 1);
+}
+.pricing .section-title p {
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 32px;
+  color: rgba(142, 142, 142, 1);
+}
+
+.pricing .box img {
+  margin-bottom: 20px;
+}
+
+.pricing .box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(142, 142, 142, 1);
+}
+.pricing .box .priceBox-end p {
+  font-size: 14px;
+  font-weight: 500px;
+  color: rgba(142, 142, 142, 1);
+  line-height: 23px;
+}
+.pricing h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: rgba(36, 37, 41, 1);
+}
+
+.pricing h4 {
+  font-size: 32px;
+  color: rgba(36, 37, 41, 1);
+  font-weight: 600;
+  /* font-family: "Jost", sans-serif; */
+  margin-bottom: 25px;
+}
+
+.pricing h4 sup {
+  font-size: 32px;
+}
+
+.pricing h4 span {
+  color: rgba(36, 37, 41, 1);
+  font-size: 16px;
+}
+
+.pricing ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricing ul li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+}
+
+.pricing ul i {
+  color: #28a745;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.pricing .buy-btn {
+  display: inline-block;
+  padding: 12px 83px;
+  border-radius: 4px;
+  color: #47b2e4;
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+}
+
+.pricing .buy-btn:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.pricing .featured {
+  border-top-color: #47b2e4;
+}
+.pricing .essentialBox {
+  border-top-color: rgba(254, 106, 36, 1);
+}
+.pricing .enterpriseBox {
+  border-top-color: rgba(37, 75, 90, 1);
+}
+.pricing .enterpriseBox p {
+  margin-bottom: 42px;
+}
+
+.pricing .essentialBox .buy-btn {
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+}
+.pricing .enterpriseBox .buy-btn {
+  background-color: rgba(37, 75, 90, 1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pricing .featured .buy-btn {
+  background: rgba(30, 153, 204, 1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pricing .featured .buy-btn:hover {
+  background: #23a3df;
+}
+.pricing .priceBox-end {
+  margin-top: 72px;
+}
+
+/*============= footer CSS ===============*/
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: rgba(255, 84, 62, 1);
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #fff;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 26px;
+}
+.footer-logo a {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 57px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.google-bg {
+  background: #dd4b39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  /* display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px; */
+}
+.footer-widget ul li a:hover {
+  color: #474341;
+}
+.footer-widget ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #fff;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 1px;
+  background: rgba(255, 223, 185, 1);
+  padding: 13px 32px;
+  border: none;
+  top: 2px;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: rgb(255 84 62);
+  padding: 25px 0;
+}
+
+.copyright-area .container .row {
+  border-top: 1px solid #fff;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.fab {
+  font-family: "Font Awesome 6 Brands" !important;
+}
+.footer-section .footer-content .navLink-footer {
+  max-width: 600px;
+}
+
+@media (max-width: 992px) {
+  .pricing .box {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing .box {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing .box {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+
 @media screen and (max-width: 1199px) and (min-width: 1101px) {
   .heroSection .heroSection-content h1 {
     font-size: 36px;
