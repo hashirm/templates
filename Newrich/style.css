@@ -907,18 +907,45 @@ ul {
   font-size: 24px;
 }
 
-.section-05 .phase-01{
-  
+.section-05 .phase-02 p {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-left: 0px;
+}
+
+.section-05 .phase-02 .stepName {
+  margin-left: 16px;
+}
+.section-05 .phase-02 {
+  font-size: 10px;
+  max-width: 689px;
+}
+
+.section-05 .arrow-right {
+  margin-top: -28px;
+  margin-left: 120px;
+  margin-bottom: -17px;
+}
+.section-05 .arrow-left {
+  margin-top: -22px;
+  margin-right: 138px;
+  margin-bottom: -11px;
 }
 
 .section-05 .phase-01 p {
   font-size: 10px;
   line-height: 18px;
   font-weight: 400;
+  margin-left: 10px;
 }
 .section-05 .phase-01 {
   font-size: 10px;
-  max-width: 753px;
+  max-width: 689px;
+}
+
+.section-05 .section-05-title {
+  margin-bottom: 24px;
 }
 
 @keyframes animate-loading {
@@ -1117,6 +1144,52 @@ ul {
   .contact .php-email-form textarea {
     height: 176px;
   }
+
+  /* section 05 css */
+  /* 
+  .section-05 .steps .number {
+    font-size: 24px;
+  }
+
+  .section-05 .steps .stepName {
+    font-size: 16px;
+  }
+  .section-05 .steps {
+    align-items: baseline !important;
+  }
+  .section-05 .phase-01 p {
+    font-size: 12px;
+  }
+  .section-05 .phase-01 img {
+    width: 50px;
+    height: 50px;
+  }
+  .section-05 .phase-02 img {
+    width: 50px;
+    height: 50px;
+  }
+  .section-05 .phase-01 {
+    max-width: 500px;
+  }
+  .section-05 .phase-02 {
+    max-width: 436px;
+  }
+  .section-05 .arrow-left {
+    margin-top: 0px;
+    margin-right: 192px;
+    margin-bottom: 0px;
+  }
+  .section-05 .phase-02-parent {
+    justify-content: start !important;
+  }
+  .section-05 .arrow-right {
+    margin-top: -4px;
+    margin-left: -142px;
+    margin-bottom: 0px;
+  }
+  .section-05 .fundamental-step {
+    margin-left: 10px;
+  } */
 }
 @media (max-width: 920px) {
   nav .navbar .logo a {
@@ -1321,6 +1394,45 @@ ul {
   }
   .contact .info .info-titles p {
     text-align: center;
+  }
+
+  .section-05 .arrow-left {
+    display: none !important;
+  }
+  .section-05 .arrow-right {
+    display: none !important;
+  }
+  .section-05 .steps .number {
+    font-size: 24px;
+  }
+  .section-05 .steps .stepName {
+    font-size: 14px;
+  }
+  .section-05 .phase-02 .stepName {
+    margin: 10px 0;
+  }
+  .section-05 .phase-02 img {
+    width: 65px;
+    height: 65px;
+  }
+  .section-05 .phase-01 img {
+    width: 65px;
+    height: 65px;
+  }
+  .section-05 .phase-01 p {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .section-05 .phase-02 p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .section-05 .fundamental-step {
+    margin-bottom: 25px;
+  }
+  .section-05 .phase-02 {
+    margin-bottom: 25px;
   }
 }
 
