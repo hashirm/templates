@@ -19,6 +19,15 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
     />
     <link
+      href="./assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -323,7 +332,34 @@
           </div>
         </div>
       </section>
-      <section class="section-05"></section>
+      <section class="section-05 py-5">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="text-white text-center d-inline-block">HOW IT WORKS</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div
+              class="phase-01 d-flex justify-content-center align-items-center gap-2"
+            >
+              <div
+                class="steps d-flex text-white justify-content-center align-items-center"
+              >
+                <span class="number">01</span
+                ><span class="stepName">Fundamental</span>
+              </div>
+              <div>
+                <img src="./assets/section-05-img-01.png" alt="" />
+              </div>
+              <div>
+                <p class="text-white mb-0 ms-4">
+                  This section aims to establish a foundational understanding of
+                  the core concepts and theories that govern the subject matter.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- ======= Pricing Section ======= -->
       <section id="pricing" class="pricing section-06 py-5">
@@ -350,8 +386,8 @@
 
                 <div class="priceBox-end d-flex flex-column align-items-center">
                   <img class="mb-2" src="./assets/Group.png" alt="" />
-                  <p class="mb-1">5 users or more?</p>
-                  <p class="mb-0">REquest a demo for your team.</p>
+                  <p class="mb-1 text-center">5 users or more?</p>
+                  <p class="mb-0 text-center">REquest a demo for your team.</p>
                 </div>
               </div>
             </div>
@@ -373,8 +409,8 @@
 
                 <div class="priceBox-end d-flex flex-column align-items-center">
                   <img class="mb-2" src="./assets/Group.png" alt="" />
-                  <p class="mb-1">5 users or more?</p>
-                  <p class="mb-0">REquest a demo for your team.</p>
+                  <p class="mb-1 text-center">5 users or more?</p>
+                  <p class="mb-0 text-center">REquest a demo for your team.</p>
                 </div>
               </div>
             </div>
@@ -392,17 +428,114 @@
                   by the readable content.
                 </p>
                 <h4>$29/<span>mo</span></h4>
-                <a href="#" class="buy-btn">Get Started</a>
+                <a href="#" class="buy-btn">Buy Now</a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End Pricing Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact section-10 py-5">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+              <div class="info">
+                <div class="info-titles">
+                  <h3>Contact Us</h3>
+                  <h2>How can I help you?</h2>
+                  <p>Fill in the form and drop an email</p>
+                </div>
+                <div class="phone p-2 mb-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/carbon_phone.png" alt="" srcset="" />
+                    <p class="p-0 m-0">+1 5589 55488 55s</p>
+                  </div>
+                </div>
+                <div class="email p-2 mb-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/carbon_email.png" alt="" srcset="" />
+                    <p class="p-0 m-0">info@example.com</p>
+                  </div>
+                </div>
+                <div class="address p-2 mb-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/ep_location.png" alt="" srcset="" />
+                    <p class="p-0 m-0">street #12 gulburg phase II Lahore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      required
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      required
+                      placeholder="Email Address"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    required
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
     </main>
     <footer class="footer-section">
       <div class="container">
-        <div class="footer-content pt-5 pb-5">
+        <div class="footer-content pt-5">
           <div class="row gap-5">
             <div class="col-xl-4 col-lg-4 mb-50">
               <div class="footer-widget">
@@ -428,10 +561,7 @@
                     </form>
                   </div>
                   <div class="footer-text mb-25">
-                    <p>
-                      Don’t miss to subscribe to our new feeds, kindly fill the
-                      form below.
-                    </p>
+                    <p>You have unsubscribe at anytime</p>
                   </div>
                 </div>
               </div>
@@ -478,7 +608,7 @@
       </div>
       <div class="copyright-area">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center pt-3">
             <div class="col-xl-4 col-lg-4 text-center text-lg-left">
               <div class="copyright-text">
                 <p class="text-white">
@@ -497,11 +627,9 @@
             <div class="col-xl-4 col-lg-4 d-none d-lg-block text-right">
               <div class="footer-menu">
                 <ul class="text-white">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Terms</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Policy</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Term of Services</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Login</a></li>
                 </ul>
               </div>
             </div>
