@@ -315,6 +315,13 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing {
+  background: url("./assets/price-section-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 3rem 0 7rem;
+}
+
 .pricing .row {
   padding-top: 40px;
 }
@@ -375,6 +382,13 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
   /* font-family: "Jost", sans-serif; */
   margin-bottom: 25px;
 }
+.pricing h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  max-width: 223px;
+  margin-bottom: 22px;
+}
 
 .pricing h4 sup {
   font-size: 32px;
@@ -434,7 +448,7 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
   border-top-color: rgba(37, 75, 90, 1);
 }
 .pricing .enterpriseBox p {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .pricing .essentialBox .buy-btn {
@@ -725,6 +739,7 @@ ul {
   padding: 62px 0 24px 43px;
   height: 430px;
 }
+
 .section-09-bg h2 {
   font-size: 48px;
   font-weight: 700;

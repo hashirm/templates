@@ -69,27 +69,51 @@
                   <li>
                     <a href="#">How to Use</a>
                     <i class="bx bxs-chevron-right arrow"></i>
+                    <ul class="deep-sub-menu">
+                      <li><a href="#">Code of Conduct</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Best Practices</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#">Tutorials</a
                     ><i class="bx bxs-chevron-right arrow"></i>
+                    <ul class="deep-sub-menu">
+                      <li><a href="#">Code of Conduct</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Best Practices</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#">Guidelines</a
                     ><i class="bx bxs-chevron-right arrow"></i>
+                    <ul class="deep-sub-menu">
+                      <li><a href="#">Code of Conduct</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Best Practices</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#">Help</a
                     ><i class="bx bxs-chevron-right arrow"></i>
+                    <ul class="deep-sub-menu">
+                      <li><a href="#">Code of Conduct</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Best Practices</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#">Theme “build”</a
                     ><i class="bx bxs-chevron-right arrow"></i>
+                    <ul class="deep-sub-menu">
+                      <li><a href="#">Code of Conduct</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Best Practices</a></li>
+                    </ul>
                   </li>
                   <li class="more">
                     <a href="#">Instruction Manual</a>
                     <i class="bx bxs-chevron-right arrow more-arrow"></i>
-
                     <ul class="deep-sub-menu">
                       <li><a href="#">Code of Conduct</a></li>
                       <li><a href="#">Terms of Service</a></li>
@@ -204,6 +228,10 @@
       </section>
       <section class="section-03">
         <!-- Bar Chart -->
+
+        <div class="container py-5">
+          <canvas id="myChart"></canvas>
+        </div>
       </section>
       <section class="section-04">
         <div class="container">
@@ -415,7 +443,7 @@
       </section>
 
       <!-- ======= Pricing Section ======= -->
-      <section id="pricing" class="pricing section-06 py-5">
+      <section id="pricing" class="pricing section-06">
         <div class="container" data-aos="fade-up">
           <div class="section-title text-center">
             <h2>Pricing Plan</h2>
@@ -480,7 +508,9 @@
                   It is a long established fact that a reader will be distracted
                   by the readable content.
                 </p>
-                <h4>$29/<span>mo</span></h4>
+                <h5 class="text-center">
+                  Custom solution for teams of 5 or more users
+                </h5>
                 <a href="#" class="buy-btn">Buy Now</a>
               </div>
             </div>
@@ -488,12 +518,25 @@
         </div>
       </section>
       <!-- End Pricing Section -->
+
+      <!-- gallery section 07 -->
+
+      <section class="gallery section-07"></section>
+
+      <!-- section -08 -->
       <section class="section-08 container">
         <div
           class="section-08-content d-flex flex-column-reverse flex-md-row flex-lg-row align-items-center"
         >
           <div>
-            <img src="./assets/section-08-img-1440.png" alt="" srcset="" />
+            <img
+              src="./assets/section-08-img-1440.png"
+              alt=""
+              srcset="
+                ./assets/section-08-img.png      1100w,
+                ./assets/section-08-img-1440.png 1336w
+              "
+            />
           </div>
           <div>
             <a href="" class="whyChoose text-white py-2 px-3 rounded"
@@ -744,7 +787,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.com/libraries/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
