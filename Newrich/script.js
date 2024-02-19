@@ -35,13 +35,15 @@ navlinks.forEach((link) => {
 
 const ctx = document.getElementById("myChart");
 
-new Chart(ctx, {
+console.log(ctx);
+
+const mychart = new Chart(ctx, {
   type: "bar",
   data: {
     labels: ["January", "February", "March", "April", "May", "June"],
     datasets: [
       {
-        label: ["# of Votes"],
+        label: "vote",
         data: [2.5, 3.5, 5.5, 4.5, 5, 7.5],
         backgroundColor: [
           "rgba(255, 84, 62, 0.2)",
@@ -53,7 +55,7 @@ new Chart(ctx, {
           "rgba(153, 102, 255, 0.2)",
           "rgba(201, 203, 207, 0.2)",
         ],
-        barThickness: 115,
+        barThickness: 105,
         borderColor: [
           "rgb(255, 84, 62)",
           "rgb(30, 153, 204)",
@@ -70,21 +72,31 @@ new Chart(ctx, {
   },
   options: {
     plugins: {
-      labels: {
-        render: "label",
-        fontColor: "#000",
-        fontSize: 16,
-        fontWeight: "bold",
-        fontFamily: "'Poppins', sans-serif",
-        position: "top",
+      datalabels: {
+        formatter: function (value, context) {
+          return null; // return null to hide the labels
+        },
       },
     },
     scales: {
       y: {
         ticks: {
+          font: {
+            size: 20,
+            family: "Poppins",
+          },
+
           suggestedMin: 10,
           callback: function (value, index, values) {
             return "$" + value * 100; // Add a dollar sign before the value
+          },
+        },
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 20,
+            family: "Poppins",
           },
         },
       },
@@ -93,4 +105,31 @@ new Chart(ctx, {
 });
 
 const canvas = document.querySelector("canvas");
-console.log(canvas);
+
+if (window.innerWidth <= 1100) {
+  mychart.data.datasets.forEach((ele) => (ele.barThickness = 65));
+  mychart.options.scales.y.ticks.font.size = 16;
+  mychart.options.scales.x.ticks.font.size = 16;
+  mychart.update();
+}
+if (window.innerWidth <= 600) {
+  mychart.data.datasets.forEach((ele) => (ele.barThickness = 40));
+  mychart.options.scales.y.ticks.font.size = 14;
+  mychart.options.scales.x.ticks.font.size = 14;
+  canvas.style.height = "481px !important";
+  mychart.update();
+}
+
+mychart.data.datasets.forEach((ele) => console.log(ele.label));
+
+/**
+ * Animation on scroll
+ */
+window.addEventListener("load", () => {
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+});

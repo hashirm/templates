@@ -263,19 +263,32 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
   padding-bottom: 47px;
 }
 
+/* section-03 */
+
+.section-03 h2 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
 /* section-04 CSS */
 .section-04 {
-  background-color: lightblue;
+  background: url(./assets/Rectangle-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
   padding: 60px 0;
 }
 .section-04 .section-04-content {
   max-width: 635px;
 }
+.section-04 img {
+  width: 380px;
+}
 .section-04 .accordion-button::after {
   background-image: url(./assets/plus-lg.svg) !important;
 }
 
-.section-04 .section-04-content h2 {
+.section-04 .section-04-content > h2 {
   font-size: 44px;
   font-weight: 600;
   line-height: 52px;
@@ -286,6 +299,13 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
   font-weight: 500;
   line-height: 29px;
 }
+
+.section-04-content h3 i {
+  color: red;
+  font-family: "FontAwesome" !important;
+  padding: 1px 5px;
+}
+
 .section-04 .section-04-content a {
   background: rgba(255, 84, 62, 1);
   text-decoration: none;
@@ -298,7 +318,7 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
 }
 
 .section-04 .accordion-flush .accordion-item .accordion-button {
-  padding: 0 10px;
+  padding: 15px 10px;
   border-radius: 4px;
 }
 .section-04 .accordion-flush .accordion-item {
@@ -308,6 +328,10 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
 }
 .section-04 .accordion-flush .accordion-item:last-child {
   margin-bottom: 50px;
+}
+
+.section-04 .section-04-content .bg-better {
+  background-color: #ff543e;
 }
 
 /* section-06 */
@@ -473,6 +497,25 @@ nav .navbar .links li:hover a:not(.sub-menu li a) {
 }
 .pricing .priceBox-end {
   margin-top: 72px;
+}
+
+/* section-07 gallery CSS */
+
+.gallery-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+.gallery-content img {
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+.gallery h2 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
 }
 
 /*============= footer CSS ===============*/
@@ -702,6 +745,21 @@ ul {
   .section-09-bg {
     height: auto !important;
   }
+  .section-08 .img-1440 {
+    display: none !important;
+  }
+  .section-08 .img-768 {
+    display: block !important;
+  }
+  .section-08 h2 {
+    font-size: 24px !important;
+  }
+  .section-08 .section-08-content {
+    column-gap: 9px !important;
+  }
+  .section-08 h2 {
+    margin-bottom: 63px !important;
+  }
 }
 
 /* section-08-css */
@@ -722,14 +780,16 @@ ul {
   background-color: rgba(255, 150, 20, 1);
 }
 
-.section-08 > a {
+.section-08 a {
   background-color: rgba(255, 85, 62, 1);
 }
 
 .section-08 a {
   text-decoration: none;
 }
-
+.section-08 .img-768 {
+  display: none;
+}
 /* section -09 css */
 
 .section-09-bg {
@@ -1050,7 +1110,7 @@ ul {
   .heroSection {
     background: url("./assets/768/hero-img-768.png");
     background-repeat: no-repeat;
-    height: 614px;
+    height: 532px;
     background-position: top right;
   }
 
@@ -1302,6 +1362,51 @@ ul {
   .section-05 .fundamental-step {
     margin-left: 10px;
   } */
+
+  .section-04 {
+    background: url(./assets/Rectangle-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 60px 0;
+  }
+  .section-04 img {
+    width: 225px !important;
+  }
+  .section-04 .container div {
+    align-items: center;
+    column-gap: 25px;
+    row-gap: 15px;
+  }
+  .section-04-content h3 {
+    font-size: 16px;
+  }
+  .section-04-content h2 {
+    font-size: 24px;
+  }
+  .section-04-content p {
+    font-size: 14px;
+  }
+  .accordion-flush .accordion-item .accordion-button {
+    font-size: 14px !important;
+  }
+  .section-04 .accordion-flush .accordion-item:last-child {
+    margin-bottom: 26px;
+  }
+  .section-08 .img-1440 {
+    display: none;
+  }
+  .section-08 .img-768 {
+    display: block;
+  }
+  .section-08 h2 {
+    font-size: 24px;
+  }
+  .section-08 .section-08-content {
+    column-gap: 9px;
+  }
+  .section-08 h2 {
+    margin-bottom: 63px;
+  }
 }
 @media (max-width: 920px) {
   nav .navbar .logo a {
@@ -1450,6 +1555,27 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .gallery-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-03 .progress {
+    width: 140px !important;
+    height: 16px !important;
+  }
+  .section-03 .progressSection h4 {
+    font-size: 14px;
+  }
+
+  .section-04 {
+    background-position: bottom center;
+    background-color: #f7f7f7;
+  }
+
+  .section-04 .section-04-content > h2 {
+    font-size: 24px !important;
+  }
+
   .heroSection {
     background: url("./assets/375px/hero-img-375.png");
     background-repeat: no-repeat;
@@ -1583,6 +1709,9 @@ ul {
   }
   .footer-widget ul li a {
     font-size: 14px;
+  }
+  .section-08 h2 {
+    margin-bottom: 18px;
   }
 }
 

@@ -14,6 +14,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -34,6 +35,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -139,7 +141,7 @@
           </div>
         </div>
       </nav>
-      <section class="heroSection">
+      <section class="heroSection pb-4">
         <div class="container">
           <div class="d-flex">
             <div class="heroSection-content">
@@ -196,12 +198,14 @@
     </header>
     <main>
       <section class="section-02">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div
             class="d-flex flex-column flex-md-row flex-lg-row justify-content-between align-items-center"
           >
             <div
               class="section-02-content d-flex flex-column align-items-center align-items-md-start align-items-lg-start"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               <img src="./assets/elegro.png" alt="elegro" srcset="" />
               <h2 class="text-center text-md-start text-lg-start">
@@ -215,6 +219,8 @@
             </div>
             <div
               class="d-flex flex-column align-items-center gap-5 section-02-img"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <img
                 src="./assets/section-02-img.png"
@@ -229,30 +235,119 @@
       <section class="section-03">
         <!-- Bar Chart -->
 
-        <div class="container py-5">
-          <canvas id="myChart"></canvas>
+        <div class="container pt-4 pb-2" data-aos="fade-up">
+          <h2>Overview</h2>
+          <div
+            class="progressSection d-flex gap-2 gap-md-4 gap-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="d-flex flex-column flex-lg-row flex-md-row gap-2 gap-md-4 gap-lg-4"
+            >
+              <div>
+                <h4>January</h4>
+                <div class="d-inline-flex gap-2">
+                  <h4 class="d-inline-block">23%</h4>
+                  <div class="progress" style="width: 173px; height: 24px">
+                    <div
+                      class="progress-bar bg-danger"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="50"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <h4>February</h4>
+                <div class="d-inline-flex gap-2">
+                  <h4 class="d-inline-block">15%</h4>
+                  <div class="progress" style="width: 173px; height: 24px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 15%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="50"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4>March</h4>
+              <div class="d-inline-flex gap-2">
+                <h4 class="d-inline-block">48%</h4>
+                <div class="progress" style="width: 173px; height: 24px">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 48%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="50"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <canvas data-aos="fade-up" data-aos-delay="200" id="myChart"></canvas>
         </div>
       </section>
+
       <section class="section-04">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div
             class="d-flex justify-content-between flex-column flex-md-row flex-lg-row"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <div>
+              <div
+                class="section-04-content d-block d-md-none d-lg-none text-center"
+              >
+                <h3 class="text-danger text-center">[some faq’S]</h3>
+                <h2>A simple process.</h2>
+              </div>
               <img
-                class="w-100"
+                class=""
                 src="./assets/section-04-img.png"
                 alt=""
                 srcset=""
               />
             </div>
-            <div class="section-04-content">
-              <h3 class="text-danger">[some faq’S]</h3>
-              <h2>A simple process.</h2>
+            <div
+              class="section-04-content"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3 class="text-danger d-none d-md-block d-lg-block">
+                [some faq’S]
+              </h3>
+              <h2 class="d-none d-md-block d-lg-block">A simple process.</h2>
               <div>
-                <h3 class="bg-danger text-white p-2 rounded">
-                  Which is better: Owning the solar power system or having a
-                  power purchase agreement?
+                <h3
+                  class="bg-better text-white p-2 rounded d-flex align-items-center"
+                >
+                  <div>
+                    Which is better: Owning the solar power system or having a
+                    power purchase agreement?
+                  </div>
+
+                  <span
+                    style="
+                      width: 26px;
+                      height: 26px;
+                      background-color: white;
+                      border-radius: 50%;
+                    "
+                  >
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
                 </h3>
               </div>
               <p>
@@ -361,7 +456,12 @@
         </div>
       </section>
       <section class="section-05 py-5">
-        <div class="container">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div class="section-05-title d-flex flex-column align-items-center">
             <h2 class="text-white text-center d-inline-block">HOW IT WORKS</h2>
           </div>
@@ -521,40 +621,79 @@
 
       <!-- gallery section 07 -->
 
-      <section class="gallery section-07"></section>
+      <section class="gallery section-07 pt-5">
+        <h2 class="pb-4">Gallery</h2>
+        <div class="container gallery-content" data-aos="fade-up">
+          <div>
+            <img src="./assets/gallery-img-01.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-02.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-03.png" alt="" srcset="" />
+          </div>
+          <div>
+            <img src="./assets/gallery-img-04.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-05.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-06.png" alt="" srcset="" />
+          </div>
+          <div>
+            <img src="./assets/gallery-img-07.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-08.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-09.png" alt="" srcset="" />
+          </div>
+          <div>
+            <img src="./assets/gallery-img-10.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-11.png" alt="" srcset="" />
+            <img src="./assets/gallery-img-12.png" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
 
       <!-- section -08 -->
       <section class="section-08 container">
         <div
-          class="section-08-content d-flex flex-column-reverse flex-md-row flex-lg-row align-items-center"
+          class="section-08-content d-flex flex-column-reverse flex-md-row flex-lg-row align-items-center justify-content-center"
+          data-aos="fade-up"
         >
-          <div>
+          <div class="d-flex flex-column align-items-center">
             <img
+              class="img-1440"
               src="./assets/section-08-img-1440.png"
               alt=""
-              srcset="
-                ./assets/section-08-img.png      1100w,
-                ./assets/section-08-img-1440.png 1336w
-              "
+              srcset=""
             />
+            <img
+              class="img-768"
+              src="./assets/section-08-img.png"
+              alt=""
+              srcset=""
+            />
+            <a
+              href=""
+              class="getinTouch d-inline-block d-lg-none d-md-none text-white py-3 px-2 rounded mt-5"
+              >Get In Touch Free</a
+            >
           </div>
-          <div>
+          <div
+            class="d-flex flex-column align-items-center align-items-lg-start align-items-md-start"
+          >
             <a href="" class="whyChoose text-white py-2 px-3 rounded"
               >Why Choose SaasPlate</a
             >
-            <h2>Knock Our Support and Get Reply within 15 minutes</h2>
+            <h2 class="text-center text-md-start text-lg-start">
+              Knock Our Support and Get Reply within 15 minutes
+            </h2>
+            <a
+              href=""
+              class="getinTouch d-none d-md-inline-block d-lg-inline-block text-white py-3 px-2 rounded"
+              >Get In Touch Free</a
+            >
           </div>
         </div>
-
-        <a href="" class="getinTouch text-white py-3 px-2 rounded"
-          >Get In Touch Free</a
-        >
       </section>
 
       <!-- Subscription Section 09  -->
 
       <section class="section-09 container">
-        <div class="section-09-bg">
+        <div class="section-09-bg" data-aos="fade-up">
           <div class="text-white">
             <h2>Start Your Project With Appie.</h2>
             <p>We will email you only about this product.</p>
@@ -585,7 +724,11 @@
       <section id="contact" class="contact section-10 py-5">
         <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div
+              class="col-lg-6 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="info">
                 <div class="info-titles">
                   <h3>Contact Us</h3>
@@ -613,7 +756,11 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div
+              class="col-lg-6 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <form
                 action="forms/contact.php"
                 method="post"
@@ -787,6 +934,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/vendor/aos/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
