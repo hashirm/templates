@@ -133,3 +133,22 @@ window.addEventListener("load", () => {
     mirror: false,
   });
 });
+
+const herosection = document.querySelector(".heroSection");
+const nav = document.querySelector("header nav");
+
+console.log(herosection);
+
+const stickyNav = (entries) => {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) nav.classList.add("stickyNav");
+  else nav.classList.remove("stickyNav");
+};
+
+const observer = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0.1,
+});
+
+observer.observe(herosection);
