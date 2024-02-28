@@ -8,6 +8,111 @@ console.log(navlinks);
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+
+const ctx = document.getElementById("myChart");
+// const myChart;
+
+class App {
+  #myChart;
+  #canvas;
+
+  constructor() {
+    this._loadGraph();
+    this._loadMobilegraph();
+  }
+
+  _loadGraph() {
+    this.#myChart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [
+          {
+            label: "vote",
+            data: [2.5, 3.5, 5.5, 4.5, 5, 7.5],
+            backgroundColor: [
+              "rgba(255, 84, 62, 0.2)",
+              "rgba(30, 153, 204, 0.2)",
+              "rgba(46,198,163,0.2)",
+              "rgba(107, 3, 137, 0.2)",
+              "rgba(255, 222, 85, 0.2)",
+              "rgba(110, 111, 128, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(201, 203, 207, 0.2)",
+            ],
+            barThickness: 105,
+            borderColor: [
+              "rgb(255, 84, 62)",
+              "rgb(30, 153, 204)",
+              "rgb(46,198,163)",
+              "rgb(107, 3, 137)",
+              "rgb(255, 222, 85)",
+              "rgb(54, 162, 235)",
+              "rgb(153, 102, 255)",
+              "rgb(201, 203, 207)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        plugins: {
+          datalabels: {
+            formatter: function (value, context) {
+              return null; // return null to hide the labels
+            },
+          },
+        },
+        scales: {
+          y: {
+            ticks: {
+              font: {
+                size: 20,
+                family: "Poppins",
+              },
+
+              suggestedMin: 10,
+              callback: function (value, index, values) {
+                return "$" + value * 100; // Add a dollar sign before the value
+              },
+            },
+          },
+          x: {
+            ticks: {
+              font: {
+                size: 20,
+                family: "Poppins",
+              },
+            },
+          },
+        },
+      },
+    });
+  }
+
+  _loadMobilegraph() {
+    this.#canvas = document.querySelector("canvas");
+
+    if (window.innerWidth <= 1100) {
+      this.#myChart.data.datasets.forEach((ele) => (ele.barThickness = 65));
+      this.#myChart.options.scales.y.ticks.font.size = 16;
+      this.#myChart.options.scales.x.ticks.font.size = 16;
+      this.#myChart.update();
+    }
+    if (window.innerWidth <= 600) {
+      this.#myChart.data.datasets.forEach((ele) => (ele.barThickness = 40));
+      this.#myChart.options.scales.y.ticks.font.size = 14;
+      this.#myChart.options.scales.x.ticks.font.size = 14;
+      canvas.style.height = "481px !important";
+      this.#myChart.update();
+    }
+
+    this.#myChart.data.datasets.forEach((ele) => console.log(ele.label));
+  }
+}
+
+const app = new App();
+
 menuOpenBtn.onclick = function () {
   navLinks.style.left = "0";
 };
@@ -33,94 +138,9 @@ navlinks.forEach((link) => {
   });
 });
 
-const ctx = document.getElementById("myChart");
-
 console.log(ctx);
 
-const mychart = new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
-    datasets: [
-      {
-        label: "vote",
-        data: [2.5, 3.5, 5.5, 4.5, 5, 7.5],
-        backgroundColor: [
-          "rgba(255, 84, 62, 0.2)",
-          "rgba(30, 153, 204, 0.2)",
-          "rgba(46,198,163,0.2)",
-          "rgba(107, 3, 137, 0.2)",
-          "rgba(255, 222, 85, 0.2)",
-          "rgba(110, 111, 128, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(201, 203, 207, 0.2)",
-        ],
-        barThickness: 105,
-        borderColor: [
-          "rgb(255, 84, 62)",
-          "rgb(30, 153, 204)",
-          "rgb(46,198,163)",
-          "rgb(107, 3, 137)",
-          "rgb(255, 222, 85)",
-          "rgb(54, 162, 235)",
-          "rgb(153, 102, 255)",
-          "rgb(201, 203, 207)",
-        ],
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      datalabels: {
-        formatter: function (value, context) {
-          return null; // return null to hide the labels
-        },
-      },
-    },
-    scales: {
-      y: {
-        ticks: {
-          font: {
-            size: 20,
-            family: "Poppins",
-          },
-
-          suggestedMin: 10,
-          callback: function (value, index, values) {
-            return "$" + value * 100; // Add a dollar sign before the value
-          },
-        },
-      },
-      x: {
-        ticks: {
-          font: {
-            size: 20,
-            family: "Poppins",
-          },
-        },
-      },
-    },
-  },
-});
-
-const canvas = document.querySelector("canvas");
-
-if (window.innerWidth <= 1100) {
-  mychart.data.datasets.forEach((ele) => (ele.barThickness = 65));
-  mychart.options.scales.y.ticks.font.size = 16;
-  mychart.options.scales.x.ticks.font.size = 16;
-  mychart.update();
-}
-if (window.innerWidth <= 600) {
-  mychart.data.datasets.forEach((ele) => (ele.barThickness = 40));
-  mychart.options.scales.y.ticks.font.size = 14;
-  mychart.options.scales.x.ticks.font.size = 14;
-  canvas.style.height = "481px !important";
-  mychart.update();
-}
-
-mychart.data.datasets.forEach((ele) => console.log(ele.label));
+// const mychart =
 
 /**
  * Animation on scroll
