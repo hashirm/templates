@@ -2,14 +2,15 @@
 let navbar = document.querySelector(".navbar");
 let navlinks = document.querySelectorAll(".navbar .nav-links .links > li");
 
-console.log(navlinks);
-
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-
 const ctx = document.getElementById("myChart");
+
+const herosection = document.querySelector(".heroSection");
+const nav = document.querySelector("header nav");
+
 // const myChart;
 
 class App {
@@ -19,6 +20,7 @@ class App {
   constructor() {
     this._loadGraph();
     this._loadMobilegraph();
+    this.menuOpen();
   }
 
   _loadGraph() {
@@ -103,42 +105,41 @@ class App {
       this.#myChart.data.datasets.forEach((ele) => (ele.barThickness = 40));
       this.#myChart.options.scales.y.ticks.font.size = 14;
       this.#myChart.options.scales.x.ticks.font.size = 14;
-      canvas.style.height = "481px !important";
+      this.#canvas.style.height = "481px !important";
       this.#myChart.update();
     }
 
     this.#myChart.data.datasets.forEach((ele) => console.log(ele.label));
   }
+
+  menuOpen() {
+    menuOpenBtn.onclick = function () {
+      navLinks.style.left = "0";
+    };
+    menuCloseBtn.onclick = function () {
+      navLinks.style.left = "-100%";
+    };
+    navlinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        // let lists = document.querySelectorAll(
+        //   ".navbar .nav-links .links > li > ul.sub-menu"
+        // );
+
+        // lists.forEach((li) => {
+        //   if (li.classList.contains("show1")) li.classList.remove("show1");
+        // });
+
+        console.log(
+          e.target.parentElement.querySelector("ul").classList.toggle("show1")
+        );
+      });
+    });
+  }
 }
 
 const app = new App();
 
-menuOpenBtn.onclick = function () {
-  navLinks.style.left = "0";
-};
-menuCloseBtn.onclick = function () {
-  navLinks.style.left = "-100%";
-};
-
 // sidebar submenu open close js code
-
-navlinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    // let lists = document.querySelectorAll(
-    //   ".navbar .nav-links .links > li > ul.sub-menu"
-    // );
-
-    // lists.forEach((li) => {
-    //   if (li.classList.contains("show1")) li.classList.remove("show1");
-    // });
-
-    console.log(
-      e.target.parentElement.querySelector("ul").classList.toggle("show1")
-    );
-  });
-});
-
-console.log(ctx);
 
 // const mychart =
 
@@ -153,9 +154,6 @@ window.addEventListener("load", () => {
     mirror: false,
   });
 });
-
-const herosection = document.querySelector(".heroSection");
-const nav = document.querySelector("header nav");
 
 console.log(herosection);
 
