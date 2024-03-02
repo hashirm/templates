@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en" data-random-animation="false" data-animation="11">
+
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
+    <meta name="description" content="Personal Website" />
+    <meta name="author" content="Muhammad Hashir" />
+    <meta name="PICS-Label" content="img/favicon-(1).ico" />
+
+    <!--Page Title-->
+    <title>M. Hashir</title>
+
+    <!--Plugins Css-->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!--Main Styles Css-->
+    <link rel="stylesheet" href="css/style-dark.css">
+
+    <link rel="stylesheet" href="css/style-demo.css">
+
+    <!--Color Css-->
+    <link class="site-color" rel="stylesheet" href="css/blue-color.css">
+
+    <!--Modernizr Js-->
+    <script src="js/modernizr.js"></script>
+
+    <!--Favicons-->
+    <link rel="shortcut icon" href="img/favicon-(1).png" type="image/x-icon">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122650090-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-122650090-3');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="theme-options dark">
+        <div class="toggle-btn">
+            <span><i class="fas fa-cog"></i></span>
+        </div>
+        <div class="theme-menu">
+            <div class="page-transitions">
+                <h4>Page Animation</h4>
+                <select class="demo-select form-control" id="anim-type">
+                    <option>Choose</option>
+                    <option value="0">Random</option>
+
+                </select>
+            </div>
+            <div class="theme-color">
+                <h4 class="mt-20">Colors</h4>
+                <ul>
+                    <li><a href="css/blue-color.css" style="background-color: #00A3E1;;"></a></li>
+                    <li><a href="css/red-color.css" style="background-color: #E82A2A;"></a></li>
+                    <li><a href="css/green-color.css" style="background-color: #6ac045;"></a></li>
+                    <li><a href="css/yellow-color.css" style="background-color: #D1A71D;"></a></li>
+                    <li><a href="css/pink-color.css" style="background-color: #FF1493;"></a></li>
+                    <li><a href="css/purple-color.css" style="background-color: #5078FF;"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Preloader Start-->
+    <div class="preloader">
+        <div class="loader">
+            <!--Your Name-->
+            <h4>MUHAMMAD HASHIR</h4>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--Preloader End-->
+
+    <div id="page">
+
+        <!--Header Start-->
+        <header>
+            <div class="header-content">
+
+                <!--Mobile Header-->
+                <div class="header-mobile">
+                    <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                    <h2>M. HASHIR</h2>
+                </div>
+
+                <!--Main Header-->
+                <div class="header-main" data-simplebar>
+                    <div class="image-container">
+                        <h2 class="header-name" style="font-size:17px">MUHAMMAD HASHIR</h2>
+                        <img src="img/Profile/profile-pic.png" alt="profile-pic">
+                    </div>
+
+                    <!--Nav Menus-->
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="#home" class="pt-link active"><span class="nav-menu-icon"><i
+                                            class="lnr lnr-home"></i></span>Home </a> </li>
+                            <li><a href="#about" class="pt-link"><span class="nav-menu-icon"><em
+                                            class="lnr lnr-user"></em></span>About ME</a></li>
+                            <li><a href="#resume" class="pt-link"><span class="nav-menu-icon"><i
+                                            class="lnr lnr-license"></i></span>Resume</a></li>
+                            <li><a href="#portfolio" class="pt-link"><span class="nav-menu-icon"><em
+                                            class="lnr lnr-briefcase"></em></span>Portfolio</a></li>
+                            <!-- <li><a href="#blog" class="pt-link"><span class="nav-menu-icon"><i
+                                            class="lnr lnr-book"></i></span>Blog</a></li> -->
+                            <li><a href="#contact" class="pt-link"><span class="nav-menu-icon"><i
+                                            class="lnr lnr-envelope"></i></span>Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Nav Footer-->
+                    <div class="nav-footer">
+                        <!--Social Links-->
+                        <ul class="social">
+                            <li><a href="skype:muhammad.hashir83" target="_blank"><i class="fab fa-skype"></i></a></li>
+                            <li><a href="https://wa.me/00923369868965" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/m-hashir" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://instagram.com/m_hashir_12?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <!--Copyright Text-->
+                        <div class="copy">
+                            <p>2018 &copy; Cosmo-theme<br>All Right Reserved.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!--Header End-->
+
+
+        <!--Main Start-->
+        <div id="main" class="site-main">
+
+            <!--Banner Section Start-->
+            <section id="home" class="banner-section pt-page"
+                style="background-image: url('img/background/home-bg1.jpg')">
+
+                <!-- particles.js container -->
+                <!-- <div id="particles-js"></div> -->
+
+                <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+                <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+                <script src="js/script.js"></script>
+
+
+
+
+                <div class="banner-content">
+                    <!--Banner Text-->
+                    <h1 class="mb-20">MUHAMMAD <span>HASHIR</span></h1>
+
+                    <!--Animated Text-->
+                    <p class="cd-headline clip is-full-width">
+                        <span>I am a </span>
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">Front-End Developer</b>
+                            <b>UI/UX Designer</b>
+                            <b>Graphic Designer</b>
+                            <b>Freelancer</b>
+                        </span>
+                    </p>
+
+                </div>
+
+            </section>
+            <!--Banner Section End-->
+
+
+            <!--About Section Start-->
+            <section id="about" class="about-section pt-page">
+                <div class="section-container">
+                    <!--Page Heading-->
+                    <div class="page-heading">
+                        <span class="icon"><i class="lnr lnr-user"></i></span>
+                        <h2>About Me</h2>
+                    </div>
+
+                    <!-- About Info Row Start-->
+                    <div class="row about mb-70">
+
+                        <div class="col-lg-8">
+                            <!--Personal Intro-->
+                            <h3 class="mb-20"></h3>
+                            <p>Innovative, task-driven professional with 3+ years of experience as a Front-End Developer
+                                across diverse industries. Equipped with
+                                a record of success in consistently identifying and providing the technological needs of
+                                companies through ingenious innovation. Proficient in developing UI/UX designs using
+                                modern tools including React JS & SASS, fixing issues and maintenance of web
+                                application.</p>
+
+
+                            <!--Signature Image-->
+                            <div class="signature mt-20">
+                                <img src="img/Signature/signature-hashir.png" alt="signature">
+                            </div>
+                        </div>
+
+                        <!--Personal Info-->
+                        <div class="col-lg-4">
+                            <div class="about-info">
+                                <h3 class="mb-20">Personal Information</h3>
+                                <ul>
+                                    <li><span class="title">Name</span><span class="value">Muhammad Hashir</span></li>
+                                    <li><span class="title">Age</span><span class="value">28</span></li>
+                                    <li><span class="title">Residence</span><span class="value">Islamabad,
+                                            Pakistan</span></li>
+                                    <li><span class="title">Address</span><span class="value">Street 109, G9/4,
+                                            Islamabad</span></li>
+                                    <li><span class="title">Email</span><span
+                                            class="value">muhammadhashir752@gmail.com</span></li>
+                                    <li><span class="title">Phone</span><span class="value">(+92) 336 9868965</span>
+                                    </li>
+                                    <!--<li><span class="title">Freelance</span><span class="value">Available</span></li>-->
+                                </ul>
+                                <div class="resume-button mt-30">
+                                    <a class="btn-main" href="img/Profile/Profile.pdf" target="_blank" download>Download
+                                        Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About Info Row End-->
+
+                    <!--Services Row Start-->
+                    <!--<div class="row services mb-30">
+                            <div class="col-md-12">
+                                <div class="subheading">
+                                    <h3>Services</h3>
+                                </div>
+                            </div>
+
+                            <!--Service Item-->
+                    <!--<div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-laptop"></i></div>
+                                    <h4>Web Development</h4>
+                                    <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                                </div>
+                            </div>
+
+                            <!--Service Item-->
+                    <!--<div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-eye"></i></div>
+                                    <h4>Web Design</h4>
+                                    <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                                </div>
+                            </div>
+
+                            <!--Service Item-->
+                    <!--<div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-laptop-phone"></i></div>
+                                    <h4>Responsive Design</h4>
+                                    <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                                </div>
+                            </div>
+
+                            <!--Service Item-->
+                    <!--<div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-camera"></i></div>
+                                    <h4>Photography</h4>
+                                    <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Services Row End-->
+
+                    <!--Clients Row Start-->
+                    <!--<div class="row clients mb-70">
+                            <div class="col-md-12">
+                                <div class="subheading">
+                                    <h3>Clients</h3>
+                                </div>
+                            </div>
+
+                            <div class="owl-carousel owl-theme">
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-01.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-02.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-03.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-04.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-05.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-06.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-07.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-08.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!--Client Logo-->
+                    <!--<div class="client-logo">
+                                    <a href="#">
+                                        <img src="img/clients/client-09.png" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Clients Row End-->
+
+                    <!--Testimonials Row Start-->
+                    <div class="row testimonials mb-50 h-auto">
+                        <div class="col-md-12">
+                            <div class="subheading">
+                                <h3>Testimonials</h3>
+                            </div>
+                            <div class="owl-carousel owl-theme">
+
+                                <!--Testimonail Item-->
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>fast, and fabulous, really excellent service, thank you.<br> Would highly
+                                            recommend! <a href="#">Verify Testimonial</a><br>....</p>
+
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="img/testimonials/author-1.png" alt="">
+                                        <div class="meta-info">
+                                            <h4>Rehlinger Rehlinger</h4>
+                                            <p>Ilford, GB</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Testimonail Item-->
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>I enjoyed working with Muhamed. His response time is very good and he's happy
+                                            to make adjustment and corrections. He has a good knowledge of the software.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="img/testimonials/author-2.png" alt="">
+                                        <div class="meta-info">
+                                            <h4>Femi O</h4>
+                                            <p>London, GB</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Testimonail Item-->
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>Excellent work with Muhammad. Never fails to ensure my design brief is met,
+                                            and exceeded!<br>....</p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="img/testimonials/author-4.png" alt="">
+                                        <div class="meta-info">
+                                            <h4>Kenny C</h4>
+                                            <p>Brondbyvester, DK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Testimonail Item-->
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>Muhammad is excellent to work with very prompt in response. Also i find him
+                                            very patient, Creative with his designs</p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="img/testimonials/--author-3.jpg" alt="">
+                                        <div class="meta-info">
+                                            <h4>Mike B</h4>
+                                            <p>Halifax, Canada</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Testimonials Row End-->
+
+                    </div>
+                </div>
+            </section>
+            <!--About Section Start-->
+
+
+            <!--Resume Section Start-->
+            <section id="resume" class="resume-section pt-page">
+                <div class="section-container">
+                    <div class="page-heading">
+                        <span class="icon"><i class="lnr lnr-license"></i></span>
+                        <h2>My Resume.</h2>
+                    </div>
+
+                    <!--Education & Experience Row Start-->
+                    <div class="row mb-20">
+
+                        <!--Experience Column Start-->
+                        <div class="col-lg-6">
+                            <div class="subheading">
+                                <h3>Experience</h3>
+                            </div>
+                            <ul class="experience">
+
+                                <!--Experience Item-->
+                                <li>
+                                    <span class="line-left"></span>
+                                    <div class="content">
+                                        <h4>FRONT-End DEVELOPER & DESIGNER</h4>
+                                        <h5>ZAM SOFTWARE SOLUTION, ISLAMABAD, PAKISTAN</h5>
+                                        <p class="info">
+                                            Currently, I am working as a Front-End Developer & Designer at ZAM Software
+                                            Solution, based in Islamabad, Pakistan.
+                                        </p>
+                                    </div>
+                                    <span class="year">
+                                        <span class="to">2023</span>
+                                        <span class="from">2019</span>
+                                    </span>
+                                </li>
+
+                                <!--Experience Item-->
+                                <li>
+                                    <span class="line-left"></span>
+                                    <div class="content">
+                                        <h4>UI/UX, Graphic Designer</h4>
+                                        <h5>PEOPLE PER HOUR</h5>
+                                        <p class="info">
+                                            I have been worked as a Freelance UI/UX and Graphic Designer using People
+                                            per hour.
+                                        </p>
+                                    </div>
+                                    <span class="year">
+                                        <span class="to">2019</span>
+                                        <span class="from">2017</span>
+                                    </span>
+                                </li>
+
+                                <!--Experience Item-->
+                                <!-- <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>SWIMMER</h4>
+                                            <h5>HEYBELIADA, ISTANBUL</h5>
+                                            <p class="info">
+                                                
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2011</span>
+                                            <span class="from">2006</span>
+                                        </span>
+                                    </li> -->
+
+                            </ul>
+                        </div>
+                        <!--Experience Column End-->
+
+                        <!--Education Column Start-->
+                        <div class="col-lg-6">
+                            <div class="subheading">
+                                <h3>Education</h3>
+                            </div>
+
+                            <ul class="education">
+
+                                <!--Education Item-->
+                                <li>
+                                    <span class="line-left"></span>
+                                    <div class="content">
+                                        <h4>SOFTWARE ENGINEERING</h4>
+                                        <h5>IQRA NATIONAL UNIVERSITY, PESHAWAR, PAKISTAN</h5>
+                                        <p class="info">
+                                            I did my graduation in Software engineering and awarded a gold medal on
+                                            behalf being my batch topper.
+                                        </p>
+                                    </div>
+                                    <span class="year">
+                                        <span class="to">2018</span>
+                                        <span class="from">2014</span>
+                                    </span>
+                                </li>
+
+                                <!--Education Item-->
+                                <li>
+                                    <span class="line-left"></span>
+                                    <div class="content">
+                                        <h4>PROFESSIONAL FRONT-END DEVELOPER CERTIFICATION</h4>
+                                        <h5>METAVERSE</h5>
+                                        <p class="info">
+                                            I have completed professional Front-End development certification that is
+                                            offered by metaverse on course era.
+                                        </p>
+                                    </div>
+                                    <span class="year">
+                                        <span class="to">2023</span>
+                                        <span class="from">2022</span>
+                                    </span>
+                                </li>
+
+                                <!--Education Item-->
+                                <!-- <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>AHMET KABAKLI PRIMARY SCHOOL</h4>
+                                            <h5>BASAKSEHIR, ISTANBUL</h5>
+                                            <p class="info">
+                                            
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2013</span>
+                                            <span class="from">2011</span>
+                                        </span>
+                                    </li> -->
+                            </ul>
+                        </div>
+                        <!--Education Column End-->
+
+                    </div>
+                    <!--Education & Experience Row End-->
+
+
+                    <!--Skills Row Start-->
+                    <div class="row">
+
+                        <!--Coding Skills Column Start-->
+                        <div class="col-lg-6 skills">
+                            <div class="subheading">
+                                <h3>Coding Skills</h3>
+                            </div>
+
+                            <!--Coding Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title"><i class="fab fa-html5 "></i> HTML5</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="80">
+                                        <div class="progress-value">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Coding Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title"><i class="fab fa-css3-alt"></i> CSS3</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="80">
+                                        <div class="progress-value">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Coding Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title">Javascript</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="75">
+                                        <div class="progress-value">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--code Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title"><i class="fa fa-language"></i> Bootstrap</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="75">
+                                        <div class="progress-value">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--code Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title"><i class="fa fa-language"></i> React JS</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="65">
+                                        <div class="progress-value">65%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Coding Skills Column End-->
+                        <!--Design Skills Column Start-->
+                        <div class="col-lg-6 skills">
+                            <div class="subheading">
+                                <h3>Design Skills</h3>
+                            </div>
+
+                            <!--Design Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title"><i class="fa fa-language"></i> Adobe Photoshop</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="75">
+                                        <div class="progress-value">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Design Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title"><i class="fa fa-language"></i> Adobe Illustrator</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="65">
+                                        <div class="progress-value">65%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Design Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title">Adobe xd</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="84">
+                                        <div class="progress-value">84%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Design Skill Item-->
+                            <div class="skill-item">
+                                <h4 class="progress-title">Figma</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress-value="84">
+                                        <div class="progress-value">84%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Design Skills Column End-->
+
+                    </div>
+                    <!--Skills Row End-->
+                </div>
+            </section>
+            <!--Resume Section End-->
+
+
+            <!--Porfolio Section Start-->
+            <section id="portfolio" class="portfolio-section pt-page">
+                <div class="section-container">
+
+                    <!--Page Heading-->
+                    <div class="page-heading">
+                        <span class="icon"><i class="lnr lnr-briefcase"></i></span>
+                        <h2>Portfolio.</h2>
+                    </div>
+
+                    <div class="row">
+                        <!--Portfolio Filter-->
+                        <div class="col-md-12 portfolio-filter text-center">
+                            <ul>
+                                <li class="active" data-filter="*">All</li>
+                                <li data-filter=".website">Web Apps</li>
+                                <li data-filter=".email">Email Templates</li>
+                                <li data-filter=".graphic">Graphics/UI/UX</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Portfolio Items-->
+                    <div class="row portfolio-items mb-50">
+
+                         <!--Portfolio Item-->
+                         <div class="item col-lg-4 col-sm-6 website">
+                            <a class="ajax-link" href="topfx-iframe.html">
+                                <figure>
+                                    <img src="img/portfolio/website-template03.JPG" alt="">
+                                    <figcaption>
+                                        <h4>TopFX</h4>
+                                        <p>Website</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 website">
+                            <a class="ajax-link" href="servicedapartment.html">
+                                <figure>
+                                    <img src="img/portfolio/website-template11.png" alt="">
+                                    <figcaption>
+                                        <h4>Serviced Apartments</h4>
+                                        <p>website</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                         <!--Portfolio Item-->
+                         <div class="item col-lg-4 col-sm-6 website">
+                            <a class="ajax-link" href="Newrich.html">
+                                <figure>
+                                    <img src="img/portfolio/website-template13.png" alt="">
+                                    <figcaption>
+                                        <h4>NEWRICH</h4>
+                                        <p>website</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                         <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 email">
+                            <a class="ajax-link" href="ctrader-metatrader.html">
+                                <figure>
+                                    <img src="img/portfolio/img-1.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Email Template</h4>
+                                        <p>cTrader-Metatrader</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+
+                         <!--Portfolio Item-->
+                         <div class="item col-lg-4 col-sm-6 website">
+                            <a class="ajax-link" href="zellij.html">
+                                <figure>
+                                    <img src="img/portfolio/website-template05.JPG" alt="">
+                                    <figcaption>
+                                        <h4>Zellij Studio</h4>
+                                        <p>website</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                      
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 website">
+                        <a class="ajax-link" href="learningResearch.html">
+                            <figure>
+                                <img src="img/portfolio/website-template12.png" alt="">
+                                <figcaption>
+                                    <h4>Learning Research</h4>
+                                    <p>website</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+
+                         <!--Portfolio Item-->
+                         <div class="item col-lg-4 col-sm-6 website">
+                            <a class="ajax-link" href="fondex.html">
+                                <figure>
+                                    <img src="img/portfolio/website-template04.JPG" alt="">
+                                    <figcaption>
+                                        <h4>Fondex</h4>
+                                        <p>Website</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                       
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 email">
+                            <a class="ajax-link" href="nfp-bonus-30.html">
+                                <figure>
+                                    <img src="img/portfolio/email-02.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Email Template</h4>
+                                        <p>NFP Bonus 30%</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 email">
+                            <a class="ajax-link" href="fondex-01.html">
+                                <figure>
+                                    <img src="img/portfolio/email-07.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Email Template</h4>
+                                        <p>Fondex pro</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 email">
+                            <a class="ajax-link" href="ifx-expo.html">
+                                <figure>
+                                    <img src="img/portfolio/email-03.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Email Template</h4>
+                                        <p>IFX Expo</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 email">
+                            <a class="ajax-link" href="new-year.html">
+                                <figure>
+                                    <img src="img/portfolio/email-04.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Email Template</h4>
+                                        <p>Happy New Year</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                       
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 email">
+                            <a class="ajax-link" href="topfx-client.html">
+                                <figure>
+                                    <img src="img/portfolio/email-06.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Email Template</h4>
+                                        <p>TopFX Client</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 graphic">
+                            <a class="image-link" href="img/portfolio/graphic-01.png">
+                                <figure>
+                                    <img src="img/portfolio/graphic-01.png" alt="">
+                                    <figcaption>
+                                        <h4>UI/UX Mobile App</h4>
+                                        <p>Telemedicine</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                       
+
+                        <!--Portfolio Item-->
+                        <!-- <div class="item col-lg-4 col-sm-6 website">
+                            <a class="video-link" href="single-work.html">
+                                <figure>
+                                    <img src="img/portfolio/website-template06.jpg" alt="">
+                                    <figcaption>
+                                        <h4>Mobile App</h4>
+                                        <p>Website</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div> -->
+
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 graphic">
+                            <a class="image-link" href="img/portfolio/graphic-02.png">
+                                <figure>
+                                    <img src="img/portfolio/graphic-02.png" alt="">
+                                    <figcaption>
+                                        <h4>UI/UX Mobile App</h4>
+                                        <p>Pata Parking</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 graphic">
+                            <a class="image-link" href="img/portfolio/graphic-03.png">
+                                <figure>
+                                    <img src="img/portfolio/graphic-03.png" alt="">
+                                    <figcaption>
+                                        <h4>Logo</h4>
+                                        <p>Qualtech Vision</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!--Portfolio Item-->
+                        <div class="item col-lg-4 col-sm-6 graphic">
+                            <a class="image-link" href="img/portfolio/graphic-04.png">
+                                <figure>
+                                    <img src="img/portfolio/graphic-04.png" alt="">
+                                    <figcaption>
+                                        <h4>Instagram Highlight Icons</h4>
+                                        <p>Chow Chow Dog</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </section>
+            <!--Porfolio Section End-->
+
+
+            <!--Blog Section Start-->
+            <!-- <section id="blog" class="blog-section pt-page">
+                <div class="section-container"> -->
+
+                    <!--Page Heading-->
+                    <!-- <div class="page-heading">
+                        <span class="icon"><i class="lnr lnr-book"></i></span>
+                        <h2>My Blogs.</h2>
+                    </div>
+
+                    <div class="row blogs-masonry">
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-1.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Web Design</span>
+                                    <h4 class="blog-title">Best Way to Design</h4>
+                                    <div class="blog-date">August 15, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-2.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Personal</span>
+                                    <h4 class="blog-title">Things I Need to Get Started</h4>
+                                    <div class="blog-date">August 10, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-3.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Design</span>
+                                    <h4 class="blog-title">My Current Workspace</h4>
+                                    <div class="blog-date">August 4, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-4.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Traveling</span>
+                                    <h4 class="blog-title">Best Place to Travel this Summer</h4>
+                                    <div class="blog-date">July 28, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-5.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Web Design</span>
+                                    <h4 class="blog-title">Latest UI Trends to Inspired From</h4>
+                                    <div class="blog-date">July 25, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-6.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Technology</span>
+                                    <h4 class="blog-title">Latest Tech 2018</h4>
+                                    <div class="blog-date">July 19, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-7.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">LifeStyle</span>
+                                    <h4 class="blog-title">Best & Easy To cook</h4>
+                                    <div class="blog-date">July 10, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-8.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Technology</span>
+                                    <h4 class="blog-title">Best Sound Editing Software</h4>
+                                    <div class="blog-date">July 1, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="blog-dark.html" class="blog-item">
+                                <div class="blog-image">
+                                    <img src="img/blog/img-9.jpg" alt="#">
+                                </div>
+                                <div class="blog-content">
+                                    <span class="cat">Traveling</span>
+                                    <h4 class="blog-title">Top Beaches in the world</h4>
+                                    <div class="blog-date">June 24, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section> -->
+            <!--Blog Section End-->
+
+
+            <!--Contact Section Start-->
+            <section id="contact" class="contact-section pt-page">
+                <div class="section-container">
+
+                    <!--Page Heading-->
+                    <div class="page-heading">
+                        <span class="icon"><i class="lnr lnr-envelope"></i></span>
+                        <h2>Contact Me.</h2>
+                    </div>
+
+                    <!--Form Row-->
+                    <div class="row mb-70">
+                        <div class="col-lg-8  offset-lg-2">
+                            <div class="subheading">
+                                <h3>Let's Talk</h3>
+                            </div>
+
+                            <!--Form Start-->
+                            <form id="contact-form" method="post" action="mail.php" enctype="multipart/form-data">
+                                <div class="row">
+
+
+                                    <!--Name Field-->
+                                    <div class="col-md-6 mb-50">
+                                        <span class="input input--filled">
+                                            <input class="input__field cf-validate cf-error" type="text" id="cf-name"
+                                                name="name" />
+                                            <label class="input__label" for="cf-name">Name</label>
+                                        </span>
+                                    </div>
+
+                                    <!--Email Field-->
+                                    <div class="col-md-6 mb-50">
+                                        <span class="input input--filled">
+                                            <input class="input__field cf-validate cf-error" type="text" id="cf-email"
+                                                name="email" />
+                                            <label class="input__label" for="cf-email">Email</label>
+                                        </span>
+                                    </div>
+
+                                    <!--Message Box-->
+                                    <div class="col-md-12 mb-30">
+                                        <span class="input input--filled">
+                                            <textarea class="input__field cf-validate cf-error" id="cf-message"
+                                                name="message" rows="5"></textarea>
+                                            <label class="input__label" for="cf-message">How can I help you?</label>
+                                        </span>
+                                    </div>
+                                    <!--Alert-->
+                                    <div class="alert-container col-md-12"></div>
+
+                                    <!--Submit Button-->
+                                    <div class="col-md-12 text-center">
+                                        <button id="cf-submit href=" #" class="btn-main">Send Message</button>
+                                    </div>
+
+
+                                </div>
+                            </form>
+                            <!--Form End-->
+
+                        </div>
+                    </div>
+
+                    <!--Contact Info Row Start-->
+                    <div class="row contact-info mb-70">
+
+                        <!--Contact Info Item-->
+                        <div class="col-md-4 info-item">
+                            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                            <h5><a href="mailto:example@example.com">muhammadhashir752@gmail.com</a></h5>
+                        </div>
+
+                        <!--Contact Info Item-->
+                        <div class="col-md-4 info-item">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <h5>Islamabad, Pakistan</h5>
+                        </div>
+
+                        <!--Contact Info Item-->
+                        <div class="col-md-4 info-item">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <h5>(+92) 336 9868965</h5>
+                        </div>
+
+                    </div>
+                    <!--Contact Info Row End-->
+
+                </div>
+                <!--Google Map Start-->
+                <div class="google-map">
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.080580152963!2d28.753456512048686!3d41.10917125851436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa8b9c7120ef5%3A0x8e886f3158b6e551!2sKaya%C5%9Fehir+Akik+Sitesi!5e0!3m2!1str!2str!4v1564402199617!5m2!1str!2str"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--Google Map End-->
+            </section>
+            <!--Contact Section End-->
+
+
+        </div>
+        <!--Main End-->
+
+    </div>
+
+    <!--Ajax Portfolio Container Start-->
+    <div class="ajax-portfolio-popup" data-simplebar>
+        <span class="ajax-loader"></span>
+        <div class="navigation-wrap">
+            <span class="popup-close"><i class="fas fa-times-circle"></i></span>
+        </div>
+        <div class="content-wrap">
+            <div class="popup-content"></div>
+        </div>
+    </div>
+    <!--Ajax Portfolio Container End-->
+
+    <!--Jquery JS-->
+    <script src="js/jquery.min.js"></script>
+    <!--Plugins JS-->
+    <script src="js/plugins.min.js"></script>
+    <!--Google Map Api-->
+    <script type="text/javascript"
+        src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1564400378985!5m2!1str!2str"></script>
+    <!--Site Main JS-->
+    <script src="js/main.js"></script>
+
+    <script src="js/main-demo.js"></script>
+
+    <script>
+        //Particles
+        particlesJS.load('particles-js', 'js/particles1.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+
+</html>
