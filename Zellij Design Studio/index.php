@@ -1,0 +1,164 @@
+<?php
+session_start();
+?>
+<!DOCTYPE HTML>
+<html lang="en">
+    
+<head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Zellij Studio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->	
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.png">
+    </head>
+   
+   <body>
+        <!-- loader -->
+        <div class="loader">
+            <div id="movingBallG">
+                <div class="movingBallLineG"></div>
+                <div id="movingBallG_1" class="movingBallG"></div>
+            </div>
+        </div>
+        <!-- loader end -->
+        <!--================= main start ================-->
+        <div id="main">
+            <!--=============== header starts ===============-->	
+          <?php include("include_pages/header.php"); ?>
+			<!--=============== header ends ===============-->	
+                    
+		  <!--=============== wrapper ===============-->	
+            <div id="wrapper">
+			
+                <!-- content-holder  -->
+                <div class="content-holder">
+                    <!-- Page title -->
+                    <div class="dynamic-title">Zellij Design Studio</div>
+                    <!-- Page title  end--> 
+                    <!-- content -->
+                    <div class="content full-height no-bg-con">
+                        <!-- Hero section   -->
+                        <div class="hero-wrap">
+                            <!-- hero-wrap-image-slider-holder  end -->
+                            <div class="hero-wrap-image-slider-holder">
+                                <div class="overlay"></div>
+                                <!-- hero-wrap-image-slider  -->
+                                <div class="hero-wrap-image-slider">
+                                    <!-- 1  -->
+                                    <div class="item">
+                                        <div class="bg" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);">
+                                    <video autoplay loop muted controls>
+									<source src="video.mp4" type="video/mp4">
+									<source src="video.ogg" type="video/ogg">
+									</video>
+									</div>
+									<!---Video--->
+									</div>
+                                    <!-- 1  end-->
+                                </div>
+                                <!-- hero-wrap-image-slider  end -->
+                            </div>
+                            <!-- hero-wrap-image-slider-holder  end -->
+                                                   
+                        </div>
+                        <!-- Hero section   end -->
+                    </div>
+                    <!-- content end -->
+                    <!-- content  -->
+                    <div class="content">
+                        <section id="sec1">
+                            <!--  container  --> 
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <!-- single slider  -->
+                                        <div class="parallax-box slider-box ">
+                                            <div class="single-slider-holder">
+                                                <div class="single-slider">
+                                                    <!-- 1 -->
+                                                    <div class="item">
+                                                        <img src="images/folio/slider/3.jpg" alt="">
+                                                    </div>
+                                                    <!-- 1 end-->
+                                                    <!-- 2 -->
+                                                    <div class="item">
+                                                        <img src="images/folio/slider/2.jpg" alt="">
+                                                    </div>
+                                                    <!-- 2 end-->
+                                                    <!-- 3 -->                                     	
+                                                    <div class="item">
+                                                        <img src="images/folio/slider/1.jpg" alt="">
+                                                    </div>
+                                                    <!-- 3 end  -->
+                                                </div>
+                                                <div class="customNavigation ssn">
+                                                    <a class="prev-slide transition"><i class="fa fa-angle-left"></i></a>
+                                                    <a class="next-slide transition"><i class="fa fa-angle-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <!-- single slider  end -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <!-- section title  -->
+                                        <h2 class="section-title">Welcome to <strong> Zellij Design Studio</strong></h2>
+                                        <!-- section title  end -->
+                                        <p style="text-align:justify;">Zellij Design Studio is a full-service architectural firm skilled in the art and science of designing unique environments for living, learning, work and recreation. We aim to provide imaginative architectural solutions within the economic and developmental constraints of all clients.
+										We are Architects, Interior, Landscape, Urban  and Graphic designers as well as model makers. Our studio provides a full scope of services: feasibility and zoning studies, architectural design, interior design and furnishings, site planning, landscape and garden design. We also participate in large scale planning and urban
+										design projects. </p>
+										<p style="text-align:justify;">
+										We want to find you the best possible built environment that matches your style. Time and budget considerations are incorporated into our design and planning process to produce creative and cost-effective solutions.
+										We have organized our office to maintain a personal, craftsman-like connection throughout the course of design and construction. We listen carefully to clients; we appreciate traditions but look at each project freshly in its own right; and we stay at the cutting edge of twenty-first-century building technology and design.
+										Zellij Studio have been in the business for quite some time and have only been growing our customer base. If you are looking for that new dream contact us today and we promise you that we can make that dream become a reality. See you soon!</p>
+			    <div class="process-box">
+                                            <h3>Our process</h3>
+                                            <ul class="creat-list">
+                                                <li><a href="#">Idea & Start</a></li>
+                                                <li><a href="#">Design & Crate</a></li>
+                                                <li><a href="#">Build & Finish</a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="portfolio.php" class="btn anim-button fl-l"><span>View Our portfolio</span><i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  container end  -->  
+                        </section>
+                    </div>
+                    <!-- content  end  -->        
+                    <!-- content   --> 
+                    <div class="content dark-bg">
+                                                            
+                       <!-- parallax image  -->                        
+                        <div class="parallax-inner">
+                            <div class="bg" data-bg="images/bg/17.jpg" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);"></div>
+                            <div class="overlay"></div>
+                        </div>
+                        <!-- parallax image  end -->  
+                   </div>
+                    <!-- content  end  -->        
+
+ <!--=============== Footer starts===============-->
+ 
+ <?php include("include_pages/footer.html");?>
+  <!--=============== Footer Ends  ===============-->
+
+                    
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+
+<!-- Mirrored from monolit.kwst.net/site/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Sep 2020 07:30:17 GMT -->
+</html>
