@@ -233,6 +233,7 @@ header {
     .navbar {
       .links {
         li {
+          display: block;
           &:hover {
             > .sub-menu {
               display: none;
@@ -259,7 +260,7 @@ header {
           .arrow {
             line-height: 40px;
           }
-          display: block;
+
           .sub-menu {
             position: relative;
             top: 0;
@@ -315,6 +316,7 @@ header {
     }
     .links {
       li {
+        display: block;
         .sub-menu {
           .more-sub-menu {
             display: none;
@@ -387,6 +389,7 @@ header {
   }
   .links {
     li {
+      display: block;
       &:hover {
         .htmlcss-arrow {
           transform: rotate(0deg);

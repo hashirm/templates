@@ -236,6 +236,9 @@ header .stickyNav {
     align-items: center;
     justify-content: space-between;
   }
+  .navbar .links li {
+    display: block;
+  }
   .navbar .links li .sub-menu .more-sub-menu {
     display: none;
     position: relative;
@@ -282,6 +285,9 @@ header .stickyNav {
   .sidebar-logo i {
     font-size: 25px;
     color: rgb(36, 37, 41);
+  }
+  .links li {
+    display: block;
   }
   .links li:hover .htmlcss-arrow {
     transform: rotate(0deg);
