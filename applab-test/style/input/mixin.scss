@@ -1,0 +1,11 @@
+@mixin cube($color, $width, $height) {
+  width: $width;
+  height: $height;
+  transform: rotate(45deg);
+  background-color: $color;
+}
+@mixin containerSection() {
+  max-width: 1443px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

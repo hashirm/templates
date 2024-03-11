@@ -36,3 +36,6 @@ let jsArrow = document.querySelector(".js-arrow");
 jsArrow.onclick = function () {
   navLinks.classList.toggle("show3");
 };
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
