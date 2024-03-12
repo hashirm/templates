@@ -28,7 +28,6 @@ header {
   height: 1039px;
 }
 header nav {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -90,7 +89,7 @@ header nav .navbar .links li .sub-menu {
   background-repeat: no-repeat;
   background-position: bottom center;
   padding: 20px 0px 50px;
-  top: 70px;
+  top: 60px;
   left: 0;
   line-height: 40px;
   background-color: #fff;
@@ -100,6 +99,9 @@ header nav .navbar .links li .sub-menu {
   z-index: 2;
 }
 header nav .navbar .links li:hover .htmlCss-sub-menu {
+  display: block;
+}
+header nav .navbar .links li:hover .htmlCss-sub-menu:hover {
   display: block;
 }
 header nav .navbar .links li:hover .js-sub-menu {
@@ -172,7 +174,7 @@ header nav .navbar .links li:hover .js-sub-menu {
     display: block;
     max-width: 270px;
     width: 100%;
-    background: #3e8da8;
+    background: #414242;
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -311,8 +313,9 @@ header nav .navbar .links li:hover .js-sub-menu {
 .navbar.showInput .search-box .input-box {
   top: 65px;
   opacity: 1;
+  z-index: 888;
   pointer-events: auto;
-  background: #3e8da8;
+  background: #484848;
 }
 
 .search-box .input-box::before {
@@ -320,7 +323,7 @@ header nav .navbar .links li:hover .js-sub-menu {
   position: absolute;
   height: 20px;
   width: 20px;
-  background: #3e8da8;
+  background: #484848;
   right: 10px;
   top: -6px;
   transform: rotate(45deg);
@@ -344,7 +347,7 @@ main .section-02 {
 }
 main .section-02 img {
   display: block;
-  margin: 0 auto 58px;
+  margin: 0 auto 31px;
   max-width: 100%;
 }
 main .section-02 .sectionBorder {
@@ -355,23 +358,33 @@ main .section-02 .sectionBorder .containerSection {
   margin: 0 auto;
   padding: 0 15px;
 }
-main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel-01 {
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel {
   margin: 20px 0;
 }
-main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item {
-  width: 421px !important;
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item {
+  width: 440px !important;
   margin: 15px 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px #a39d9d;
   padding: 12px;
 }
-main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item .news-slide .icon {
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item .news-slide .icon {
   width: 50px;
+}
+main .section-02 .sectionBorder .containerSection .nav-pills {
+  margin-top: 27px;
+}
+main .section-02 .sectionBorder .containerSection .nav-pills .nav-link {
+  padding: 16px 24px;
+}
+main .section-02 .sectionBorder .containerSection .nav-pills .nav-link.active {
+  border-radius: 50px;
+  background-color: #7a0a2a;
 }
 main .section-02 .sectionBorder .containerSection .section-02-title {
   display: flex;
   align-items: center;
-  margin-top: -44px;
+  margin-top: -58px;
 }
 main .section-02 .sectionBorder .containerSection .section-02-title span {
   font-size: 40px;
@@ -394,7 +407,7 @@ main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pi
 main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pills .nav-link.active {
   background-color: #7a0a2a;
   border-radius: 77px;
-  padding: 16px 24px;
+  padding: 16px 21px;
   color: #fff;
 }
 main .section-02 .sectionBorder .containerSection .section-02-title .cube {
@@ -408,6 +421,7 @@ main .section-02 .sectionBorder .containerSection .section-02-title img {
 }
 main .section-03 {
   border-top: 5px solid #7a0a2a;
+  margin-top: 50px;
 }
 main .section-03 .containerSection {
   max-width: 1443px;
@@ -468,6 +482,7 @@ main .section-04 .tabPortion > div {
 main .section-04 .tabPortion > div .section-04-title {
   display: flex;
   align-items: center;
+  margin-top: -31px;
 }
 main .section-04 .tabPortion > div .section-04-title span {
   font-size: 40px;
@@ -491,6 +506,7 @@ main .section-04 .tabPortion .containerSection {
   padding: 0 15px;
 }
 main .section-04 .tabPortion .containerSection p {
+  margin-top: 25px;
   font-size: 20px;
 }
 main .section-04 .tabPortion .containerSection .nav-pills {
@@ -554,6 +570,10 @@ main .section-05 .sectionBorder .containerSection {
 main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 {
   margin: 20px 0;
 }
+main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+}
 main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item {
   width: 421px !important;
   margin: 15px 15px;
@@ -612,6 +632,28 @@ main .section-05 .sectionBorder .containerSection .section-02-title .cube {
 main .section-05 .sectionBorder .containerSection .section-02-title img {
   max-width: 100%;
 }
+main .section-06 {
+  background-color: #57585a;
+  padding: 46px 0;
+  border-top: 3px solid #f7931d;
+}
+main .section-06 .logo {
+  border-right: 1px solid #fff;
+  padding-right: 55px;
+}
+main .section-06 .form input {
+  display: block;
+  background: #12a79d;
+  color: #fff;
+  max-width: 646px;
+  border: none;
+  height: 68px;
+  border-radius: 36px;
+  padding-left: 20px;
+}
+main .section-06 .form input::placeholder {
+  color: #fff;
+}
 
 @media (max-width: 1400px) {
   header nav .navbar .links li {
@@ -621,6 +663,170 @@ main .section-05 .sectionBorder .containerSection .section-02-title img {
 @media (max-width: 370px) {
   nav .navbar .nav-links {
     max-width: 100%;
+  }
+}
+.site-footer {
+  background: url(../../img/footer-bg.png);
+  background-color: #26272b;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: underline;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+  margin-bottom: 13px;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links a:focus {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons a:focus {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text {
+    text-align: center;
+  }
+  .site-footer .social-icons {
+    text-align: center;
+  }
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
   }
 }
 

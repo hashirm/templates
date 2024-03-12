@@ -27,7 +27,7 @@ header {
   background-repeat: no-repeat;
   height: 1039px;
   nav {
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -85,7 +85,7 @@ header {
             background-repeat: no-repeat;
             background-position: bottom center;
             padding: 20px 0px 50px;
-            top: 70px;
+            top: 60px;
             left: 0;
             line-height: 40px;
             background-color: #fff;
@@ -97,6 +97,9 @@ header {
           &:hover {
             .htmlCss-sub-menu {
               display: block;
+              &:hover {
+                display: block;
+              }
             }
             .js-sub-menu {
               display: block;
@@ -207,7 +210,7 @@ header {
           display: block;
           max-width: 270px;
           width: 100%;
-          background: #3e8da8;
+          background: #414242;
           line-height: 40px;
           padding: 20px;
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -389,8 +392,9 @@ header {
     .input-box {
       top: 65px;
       opacity: 1;
+      z-index: 888;
       pointer-events: auto;
-      background: #3e8da8;
+      background: #484848;
     }
   }
 }
@@ -402,7 +406,7 @@ header {
       position: absolute;
       height: 20px;
       width: 20px;
-      background: #3e8da8;
+      background: #484848;
       right: 10px;
       top: -6px;
       transform: rotate(45deg);
@@ -429,21 +433,20 @@ main {
 
     img {
       display: block;
-      margin: 0 auto 58px;
+      margin: 0 auto 31px;
       max-width: 100%;
     }
     .sectionBorder {
       border-top: 5px solid #7a0a2a;
       .containerSection {
         @include containerSection();
-
         .tab-content {
-          .owl-carousel-01 {
+          .owl-carousel {
             margin: 20px 0;
             .owl-item {
-              width: 421px !important;
+              width: 440px !important;
               margin: 15px 15px;
-              border-radius: 10px;
+              border-radius: 20px;
               box-shadow: 0px 0px 10px #a39d9d;
               padding: 12px;
               .news-slide {
@@ -454,11 +457,20 @@ main {
             }
           }
         }
-
+        .nav-pills {
+          margin-top: 27px;
+          .nav-link {
+            padding: 16px 24px;
+            &.active {
+              border-radius: 50px;
+              background-color: #7a0a2a;
+            }
+          }
+        }
         .section-02-title {
           display: flex;
           align-items: center;
-          margin-top: -44px;
+          margin-top: -58px;
           span {
             font-size: 40px;
             font-weight: 600;
@@ -474,10 +486,11 @@ main {
                 border-radius: 77px;
                 padding: 16px 24px;
                 color: #7a0a2a;
+
                 &.active {
                   background-color: #7a0a2a;
                   border-radius: 77px;
-                  padding: 16px 24px;
+                  padding: 16px 21px;
                   color: #fff;
                 }
               }
@@ -495,6 +508,7 @@ main {
   }
   .section-03 {
     border-top: 5px solid #7a0a2a;
+    margin-top: 50px;
     .containerSection {
       @include containerSection();
       .section-00-title {
@@ -548,6 +562,7 @@ main {
         .section-04-title {
           display: flex;
           align-items: center;
+          margin-top: -31px;
           span {
             font-size: 40px;
             font-weight: 600;
@@ -565,6 +580,7 @@ main {
       }
       .containerSection {
         p {
+          margin-top: 25px;
           font-size: 20px;
         }
         @include containerSection();
@@ -629,6 +645,14 @@ main {
         .tab-content {
           .owl-carousel-01 {
             margin: 20px 0;
+            .owl-nav {
+              button {
+                &.owl-next {
+                  position: absolute;
+                  right: 0;
+                }
+              }
+            }
             .owl-item {
               width: 421px !important;
               margin: 15px 15px;
@@ -692,6 +716,30 @@ main {
       }
     }
   }
+  .section-06 {
+    background-color: #57585a;
+    padding: 46px 0;
+    border-top: 3px solid #f7931d;
+    .logo {
+      border-right: 1px solid #fff;
+      padding-right: 55px;
+    }
+    .form {
+      input {
+        display: block;
+        background: #12a79d;
+        color: #fff;
+        max-width: 646px;
+        border: none;
+        height: 68px;
+        border-radius: 36px;
+        padding-left: 20px;
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1400px) {
   header {
@@ -713,6 +761,196 @@ main {
       .nav-links {
         max-width: 100%;
       }
+    }
+  }
+}
+
+$color_1: #737373;
+$color_2: #fff;
+$color_3: #3366cc;
+$color_4: #96a2b2;
+$color_5: #818a91;
+$background-color_1: #26272b;
+$background-color_2: #33353d;
+$background-color_3: #eceeef;
+$background-color_4: #29aafe;
+$background-color_5: #3b5998;
+$background-color_6: #00aced;
+$background-color_7: #007bb6;
+$background-color_8: #ea4c89;
+$border-top-color_1: #bbb;
+
+.site-footer {
+  background: url(../../img/footer-bg.png);
+  background-color: $background-color_1;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color_1;
+  hr {
+    border-top-color: $border-top-color_1;
+    opacity: 0.5;
+  }
+  hr.small {
+    margin: 20px 0;
+  }
+  h6 {
+    color: $color_2;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: $color_1;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+      color: $color_3;
+      text-decoration: underline;
+    }
+  }
+  .social-icons {
+    text-align: right;
+    a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: 6px;
+      margin-right: 0;
+      border-radius: 100%;
+      background-color: $background-color_2;
+    }
+  }
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: block;
+    margin-bottom: 13px;
+  }
+  a {
+    color: $color_1;
+    &:active {
+      color: $color_3;
+      text-decoration: none;
+    }
+    &:focus {
+      color: $color_3;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $color_3;
+      text-decoration: none;
+    }
+  }
+}
+.footer-links.inline {
+  li {
+    display: inline-block;
+  }
+}
+.copyright-text {
+  margin: 0;
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: $color_4;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  a {
+    background-color: $background-color_3;
+    color: $color_5;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    &:active {
+      color: $color_2;
+      background-color: $background-color_4;
+    }
+    &:focus {
+      color: $color_2;
+      background-color: $background-color_4;
+    }
+    &:hover {
+      color: $color_2;
+      background-color: $background-color_4;
+    }
+  }
+  a.facebook {
+    &:hover {
+      background-color: $background-color_5;
+    }
+  }
+  a.twitter {
+    &:hover {
+      background-color: $background-color_6;
+    }
+  }
+  a.linkedin {
+    &:hover {
+      background-color: $background-color_7;
+    }
+  }
+  a.dribbble {
+    &:hover {
+      background-color: $background-color_8;
+    }
+  }
+}
+.social-icons.size-sm {
+  a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .site-footer {
+    [class^="col-"] {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+    .copyright-text {
+      text-align: center;
+    }
+    .social-icons {
+      text-align: center;
+    }
+  }
+  .social-icons {
+    li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600;
     }
   }
 }
