@@ -104,6 +104,11 @@
           </div>
         </div>
       </nav>
+      <div>
+        <div class="scrollAnimation d-flex justify-content-center">
+          <div class="dash"></div>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -603,37 +608,55 @@
               <span>Social Media Feeds</span>
               <div class="cube d-inline"></div>
             </div>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="pills-insta-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-insta"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-insta"
-                  aria-selected="true"
-                >
-                  <img src="./img/instaSvg.svg" alt="" srcset="" />
-                  Instagram
+            <div class="d-flex align-items-center gap-4">
+              <ul
+                class="nav nav-pills mb-3 d-inline-flex"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-insta-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-insta"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-insta"
+                    aria-selected="true"
+                  >
+                    <img src="./img/instaSvg.svg" alt="" srcset="" />
+                    Instagram
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-black"
+                    id="pills-twitter-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-twitter"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-twitter"
+                    aria-selected="false"
+                  >
+                    <img src="./img/twitterSvgblack.svg" alt="" srcset="" />
+                    Twitter
+                  </button>
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div class="d-flex justify-content-between">
+              <div>
+                <img src="./img/maeces.png" alt="" srcset="" />
+              </div>
+              <div>
+                <button class="followbutton">
+                  <img src="./img/instaSvg.svg" alt="" srcset="" /> Follow
                 </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-twitter-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-twitter"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-twitter"
-                  aria-selected="false"
-                >
-                  Twitter
-                </button>
-              </li>
-            </ul>
+              </div>
+            </div>
 
             <div class="tab-content" id="pills-tabContent">
               <div
@@ -644,46 +667,16 @@
               >
                 <div class="owl-carousel owl-carousel-01">
                   <div class="news-slide-01 news-slide">
-                    <div>
-                      <img src="./img/news-img-01.png" alt="" />
-                      <p>22 Aug 2023</p>
-                      <div class="d-flex align-items-center">
-                        <img
-                          class="icon"
-                          src="./img/arrow45deg.png"
-                          alt=""
-                          srcset=""
-                        />
-                      </div>
-                    </div>
+                    <img src="./img/socialmediafeed.png" alt="" />
                   </div>
                   <div class="news-slide-02 news-slide">
-                    <div>
-                      <img src="./img/news-img-01.png" alt="" />
-                      <p>22 Aug 2023</p>
-                      <div class="d-flex align-items-center">
-                        <img
-                          class="icon"
-                          src="./img/arrow45deg.png"
-                          alt=""
-                          srcset=""
-                        />
-                      </div>
-                    </div>
+                    <img src="./img/socialmediafeed.png" alt="" />
                   </div>
                   <div class="news-slide-03 news-slide">
-                    <div>
-                      <img src="./img/news-img-01.png" alt="" />
-                      <p>22 Aug 2023</p>
-                      <div class="d-flex align-items-center">
-                        <img
-                          class="icon"
-                          src="./img/arrow45deg.png"
-                          alt=""
-                          srcset=""
-                        />
-                      </div>
-                    </div>
+                    <img src="./img/socialmediafeed.png" alt="" />
+                  </div>
+                  <div class="news-slide-03 news-slide">
+                    <img src="./img/socialmediafeed.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -693,7 +686,7 @@
                 role="tabpanel"
                 aria-labelledby="pills-twitter-tab"
               >
-                Gallery
+                <h1>Twitter Carousel Coming soon</h1>
               </div>
             </div>
           </div>
@@ -885,6 +878,12 @@
         </div>
       </div>
     </footer>
+    <div class="shareLink">
+      <button class="shareButton">
+        <img src="./img/share-icon.png" alt="" srcset="" />
+      </button>
+      <img src="./img/fixedbutton.png" alt="" srcset="" />
+    </div>
 
     <!-- Script JS -->
     <script

@@ -20,12 +20,53 @@ body {
   min-height: 100vh;
 }
 
+.shareLink {
+  position: fixed;
+  top: 240px;
+  left: 10px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.shareButton {
+  background: #fff;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 50%;
+}
+
 header {
   background: url("../../img/bg-header.png");
   background-color: #454545;
   background-position: center;
   background-repeat: no-repeat;
   height: 1039px;
+  position: relative;
+}
+header .scrollAnimation {
+  border: 2px solid #f3f3f3;
+  width: 46px;
+  height: 78px;
+  border-radius: 23px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+header .scrollAnimation .dash {
+  width: 5px;
+  height: 20px;
+  border-radius: 3px;
+  background: #f3f3f3;
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(44px);
+  }
 }
 header nav {
   top: 0;
@@ -299,6 +340,11 @@ header nav .navbar .links li:hover .js-sub-menu {
 .navbar .endIcons .clipboard {
   padding-left: 36px;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  .navbar .endIcons .clipboard {
+    padding-left: 0;
+  }
+}
 
 .links li:hover .htmlcss-arrow {
   transform: rotate(180deg);
@@ -347,8 +393,13 @@ main .section-02 {
 }
 main .section-02 img {
   display: block;
-  margin: 0 auto 31px;
+  margin: 0 auto 68px;
   max-width: 100%;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-02 img {
+    margin: 0 auto 38px;
+  }
 }
 main .section-02 .sectionBorder {
   border-top: 5px solid #7a0a2a;
@@ -361,6 +412,32 @@ main .section-02 .sectionBorder .containerSection {
 main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel {
   margin: 20px 0;
 }
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  left: auto;
+  background: aliceblue;
+  padding: 17px 17px !important;
+  border: 1px solid #dfdcdc;
+  border-radius: 50%;
+}
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-nav button.owl-next img {
+  width: 21px;
+  margin-bottom: 0;
+}
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  right: 65px;
+  left: auto;
+  background: aliceblue;
+  padding: 17px 17px !important;
+  border: 1px solid #dfdcdc;
+  border-radius: 50%;
+}
+main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-nav button.owl-prev img {
+  width: 21px;
+  margin-bottom: 0;
+}
 main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item {
   width: 440px !important;
   margin: 15px 15px;
@@ -370,6 +447,23 @@ main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .ow
 }
 main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item .news-slide .icon {
   width: 50px;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item {
+    width: 321px !important;
+    margin: 15px 12px;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+  main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item {
+    width: 303px !important;
+    margin: 15px 15px;
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 1001px) {
+  main .section-02 .sectionBorder .containerSection .tab-content .owl-carousel .owl-item {
+    width: 409px !important;
+  }
 }
 main .section-02 .sectionBorder .containerSection .nav-pills {
   margin-top: 27px;
@@ -386,6 +480,12 @@ main .section-02 .sectionBorder .containerSection .section-02-title {
   align-items: center;
   margin-top: -58px;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-02 .sectionBorder .containerSection .section-02-title {
+    margin-top: -46px;
+    justify-content: center;
+  }
+}
 main .section-02 .sectionBorder .containerSection .section-02-title span {
   font-size: 40px;
   font-weight: 600;
@@ -396,6 +496,11 @@ main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pi
   align-items: center;
   column-gap: 24px;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pills {
+    column-gap: 4px;
+  }
+}
 main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pills .nav-link {
   font-size: 24px;
   font-weight: 500;
@@ -404,11 +509,22 @@ main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pi
   padding: 16px 24px;
   color: #7a0a2a;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pills .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
 main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pills .nav-link.active {
   background-color: #7a0a2a;
   border-radius: 77px;
   padding: 16px 21px;
   color: #fff;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-02 .sectionBorder .containerSection .section-02-title span .nav-pills .nav-link.active {
+    padding: 10px 15px;
+  }
 }
 main .section-02 .sectionBorder .containerSection .section-02-title .cube {
   width: 23px;
@@ -433,11 +549,22 @@ main .section-03 .containerSection .section-00-title {
   align-items: center;
   margin-top: -32px;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-03 .containerSection .section-00-title {
+    margin-top: -19px;
+    justify-content: center;
+  }
+}
 main .section-03 .containerSection .section-00-title span {
   font-size: 40px;
   font-weight: 600;
   padding: 0 24px;
   background-color: #fff;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-03 .containerSection .section-00-title span {
+    font-size: 22px;
+  }
 }
 main .section-03 .containerSection .section-00-title .cube {
   width: 23px;
@@ -450,7 +577,12 @@ main .section-03 .containerSection .section-00-title img {
 }
 main .section-03 .containerSection div ul {
   list-style: none;
-  margin: 38px 45px 60px;
+  margin: 38px 40px 60px;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-03 .containerSection div ul {
+    margin: 38px 0px 60px;
+  }
 }
 main .section-03 .containerSection div ul li {
   display: flex;
@@ -468,6 +600,11 @@ main .section-03 .containerSection div ul li .list-text {
   font-size: 22px;
   font-weight: 500;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-03 .containerSection div ul li .list-text {
+    font-size: 16px;
+  }
+}
 main .section-04 .tabPortion {
   background: #7a0a2a;
   background-image: url(../../img/maskGroup.png);
@@ -484,12 +621,23 @@ main .section-04 .tabPortion > div .section-04-title {
   align-items: center;
   margin-top: -31px;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-04 .tabPortion > div .section-04-title {
+    margin-top: -18px;
+    justify-content: center;
+  }
+}
 main .section-04 .tabPortion > div .section-04-title span {
   font-size: 40px;
   font-weight: 600;
   padding: 0 24px;
   background-color: #7a0a2a;
   color: #fff;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-04 .tabPortion > div .section-04-title span {
+    font-size: 22px;
+  }
 }
 main .section-04 .tabPortion > div .section-04-title .cube {
   width: 23px;
@@ -515,6 +663,16 @@ main .section-04 .tabPortion .containerSection .nav-pills {
   padding: 8px 9px;
   max-width: fit-content;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-04 .tabPortion .containerSection .nav-pills {
+    border: 0;
+  }
+}
+@media only screen and (max-width: 1190px) and (min-width: 768px) {
+  main .section-04 .tabPortion .containerSection .nav-pills {
+    padding: 8px 28px;
+  }
+}
 main .section-04 .tabPortion .containerSection .nav-pills .nav-link {
   padding: 1.07rem 2.13rem;
   border-radius: 77px;
@@ -527,6 +685,11 @@ main .section-04 .tabPortion .containerSection .nav-pills .nav-link.active {
 main .section-04 .contentPortion {
   padding: 75px 0;
   background-color: #f3f3f3;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-04 .contentPortion {
+    padding: 30px 0;
+  }
 }
 main .section-04 .contentPortion .containerSection {
   max-width: 1443px;
@@ -567,25 +730,79 @@ main .section-05 .sectionBorder .containerSection {
   margin: 0 auto;
   padding: 0 15px;
 }
+main .section-05 .sectionBorder .containerSection hr {
+  width: 70%;
+}
+@media only screen and (max-width: 800px) and (min-width: 564px) {
+  main .section-05 .sectionBorder .containerSection hr {
+    width: 40%;
+  }
+}
+@media (max-width: 563px) {
+  main .section-05 .sectionBorder .containerSection hr {
+    display: none;
+  }
+}
+main .section-05 .sectionBorder .containerSection .followbutton {
+  background-color: #7a0a2a;
+  padding: 12px 23px;
+  border: 0;
+  color: #fff;
+  border-radius: 8px;
+}
 main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 {
   margin: 20px 0;
 }
+main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav {
+  position: relative;
+  top: -255px;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav {
+    top: -203px;
+  }
+}
 main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav button.owl-next {
   position: absolute;
-  right: 0;
+  right: 18px;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav button.owl-next {
+    right: 0;
+  }
+}
+main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav button.owl-prev {
+  position: absolute;
+  left: -9px;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-nav button.owl-prev {
+    left: -5px;
+  }
 }
 main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item {
-  width: 421px !important;
+  width: 436px !important;
   margin: 15px 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #a39d9d;
-  padding: 12px;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item {
+    width: 315px !important;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+  main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item {
+    width: 333px !important;
+  }
 }
 main .section-05 .sectionBorder .containerSection .tab-content .owl-carousel-01 .owl-item .news-slide .icon {
   width: 50px;
 }
 main .section-05 .sectionBorder .containerSection .nav-pills {
   margin-top: 27px;
+  border: 1px solid #d9d9d9;
+  padding: 7px;
+  border-radius: 77px;
 }
 main .section-05 .sectionBorder .containerSection .nav-pills .nav-link {
   padding: 16px 24px;
@@ -599,11 +816,22 @@ main .section-05 .sectionBorder .containerSection .section-02-title {
   align-items: center;
   margin-top: -32px;
 }
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-05 .sectionBorder .containerSection .section-02-title {
+    justify-content: center;
+    margin-top: -19px;
+  }
+}
 main .section-05 .sectionBorder .containerSection .section-02-title span {
   font-size: 40px;
   font-weight: 600;
   padding: 0 24px;
   background-color: #fff;
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  main .section-05 .sectionBorder .containerSection .section-02-title span {
+    font-size: 22px;
+  }
 }
 main .section-05 .sectionBorder .containerSection .section-02-title span .nav-pills {
   align-items: center;

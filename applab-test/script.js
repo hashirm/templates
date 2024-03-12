@@ -38,26 +38,47 @@ jsArrow.onclick = function () {
 };
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  //   function Ymove() {
+  //     $("header .scrollAnimation .dash").css("transform", "translateY(40px)");
+  //     clearInterval();
+  //   }
+  //   setInterval(Ymove, 500);
+
+  $(".section-02 .owl-carousel").owlCarousel({
+    items: 3,
+    loop: true,
+    center: true,
     nav: true,
     lazyload: true,
-    navText: [
-      "<i class='fas fa-chevron-left'></i>",
-      "<i class='fas fa-chevron-right'></i>",
-    ],
-    responsiveClass: true,
+    navText: ["<img src='./img/previous.png'/>", "<img src='./img/next.png'/>"],
     responsive: {
       0: {
-        items: 1,
-        responsiveClass: "owlSmall",
+        items: 1, // Number of items to display at 0px and up (e.g., mobile)
       },
       768: {
-        items: 2,
-        responsiveClass: "owl-medium",
+        items: 2, // Number of items to display at 768px and up (e.g., tablet)
       },
-      1000: {
-        items: 3,
-        responsiveClass: "owl-large",
+      1200: {
+        items: 3, // Number of items to display at 1200px and up (e.g., desktop)
+      },
+    },
+  });
+  $(".section-05 .owl-carousel").owlCarousel({
+    items: 3,
+    nav: true,
+    navText: [
+      "<img src='./img/navArrow.png'/>",
+      "<img src='./img/navArrow-next.png'/>",
+    ],
+    responsive: {
+      0: {
+        items: 1, // Number of items to display at 0px and up (e.g., mobile)
+      },
+      768: {
+        items: 2, // Number of items to display at 768px and up (e.g., tablet)
+      },
+      1200: {
+        items: 3, // Number of items to display at 1200px and up (e.g., desktop)
       },
     },
   });
