@@ -1,0 +1,67 @@
+.latest-news {
+  background-color: #79103F;
+  padding: 67px 0px 57px;
+  background-image: url(../images/latestnew-bg-part.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (max-width: 480px) {
+  .latest-news {
+    padding: 44px 0px 57px;
+  }
+}
+.latest-news .latestnews-title {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 29px;
+  font-family: "Bebas Neue", san-sarif;
+}
+@media (max-width: 767px) {
+  .latest-news .latestnews-title {
+    font-size: 42px;
+    text-align: center;
+  }
+}
+.latest-news h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .latest-news h2 {
+    font-size: 28px;
+  }
+}
+.latest-news p {
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .latest-news p {
+    font-size: 19px;
+  }
+}
+.latest-news button {
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-top: 40px;
+}
+.latest-news .owl-carousel {
+  color: white;
+}
+.latest-news .owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 22px;
+}
+.latest-news .owl-carousel .owl-dots .owl-dot {
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  margin-left: 8px;
+  border-radius: 50%;
+}
+.latest-news .owl-carousel .owl-dots .owl-dot.active {
+  background-color: red;
+}
+
+/*# sourceMappingURL=sectionLatestnews.css.map */

@@ -1,0 +1,101 @@
+.gallery-section .img-gap {
+  gap: 0.15rem;
+  margin: 0 2px;
+}
+.gallery-section .gallery {
+  background-color: #DF8D23;
+  margin-bottom: 7px;
+}
+.gallery-section .gallery .gallery-content {
+  padding: 31px 15px 29px;
+}
+.gallery-section .gallery .gallery-content button {
+  color: #000;
+}
+.gallery-section .gallery .gallery-content button.active {
+  background-color: #DF8D23;
+  color: #fff;
+}
+.gallery-section .gallery-grid {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  grid-template-areas: "imageone imageone imageone imagetwo imagethree imagethree imagethree imagethree imagethree" "imagefour imagefive imagefive imagefive imagefive imagesix imagesix imagesix imagesix";
+}
+.gallery-section .gallery-grid .item-a {
+  grid-area: imageone;
+}
+.gallery-section .gallery-grid .item-b {
+  grid-area: imagetwo;
+  background-color: black;
+}
+.gallery-section .gallery-grid .item-c {
+  grid-area: imagethree;
+  background-color: black;
+}
+.gallery-section .gallery-grid .item-d {
+  grid-area: imagefour;
+}
+.gallery-section .gallery-grid .item-e {
+  grid-area: imagefive;
+}
+.gallery-section .gallery-grid .item-f {
+  grid-area: imagesix;
+}
+@media (max-width: 1365px) {
+  .gallery-section .gallery-grid {
+    grid-template-areas: "imageone imagetwo" "imagethree imagefour" "imagefive imagesix";
+  }
+}
+@media (max-width: 768px) {
+  .gallery-section .gallery-grid {
+    grid-template-areas: "imageone" "imagetwo" "imagethree" "imagefour" "imagefive" "imagesix";
+  }
+}
+.gallery-section .gallery-images img {
+  max-width: 100%;
+}
+.gallery-section .gallery-images figure {
+  margin-bottom: 0px;
+  position: relative;
+}
+.gallery-section .gallery-images figure figcaption {
+  opacity: 100%;
+  color: white;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  bottom: 50px;
+  margin-left: 20px;
+}
+.gallery-section .gallery-images figure figcaption span {
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 1600px) {
+  .gallery-section .gallery-images figure figcaption span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 610px) {
+  .gallery-section .gallery-images figure figcaption span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1600px) {
+  .gallery-section .gallery-images figure figcaption {
+    font-size: 17px;
+  }
+}
+@media (max-width: 610px) {
+  .gallery-section .gallery-images figure figcaption {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1899px) {
+  .gallery-section .gallery-images figure {
+    background: #000;
+  }
+}
+
+/*# sourceMappingURL=sectionGallery.css.map */

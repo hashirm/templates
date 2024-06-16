@@ -1,0 +1,76 @@
+.sponsors {
+  padding: 75px 0;
+}
+.sponsors h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+}
+@media (max-width: 991px) {
+  .sponsors .owl-carousel-02 .owl-dots {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+  .sponsors .owl-carousel-02 .owl-dots .owl-dot {
+    border: 1px solid rgb(218, 215, 215);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .sponsors .owl-carousel-02 .owl-dots .owl-dot.active {
+    background: rgb(224, 224, 224);
+  }
+}
+.sponsors .owl-carousel-02 .sponsor-slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 350px;
+  border: 1px solid #C17C1E;
+  border-radius: 20px;
+}
+@media (max-width: 480px) {
+  .sponsors .owl-carousel-02 .sponsor-slider-item {
+    height: 262px;
+  }
+}
+.sponsors .owl-carousel-02 .sponsor-slider-item img.single-logo {
+  padding: 97px 54px;
+}
+.sponsors .owl-carousel-02 .sponsor-slider-item .two-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 54px 45px;
+  row-gap: 10px;
+}
+.sponsors .owl-carousel-02 .sponsor-slider-item .two-logos img {
+  width: fit-content;
+}
+@media (max-width: 480px) {
+  .sponsors .owl-carousel-02 .sponsor-slider-item .two-logos {
+    padding: 20px 54px 23px;
+  }
+  .sponsors .owl-carousel-02 .sponsor-slider-item .two-logos img {
+    width: 100%;
+  }
+}
+.sponsors .owl-carousel-02 .sponsor-slider-item .telecom-partner {
+  background-color: #C17C1E;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 18px 0;
+  border-radius: 0 0 20px 20px;
+}
+@media (max-width: 600px) {
+  .sponsors .owl-carousel-02 .sponsor-slider-item .telecom-partner {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=sectionSponsor.css.map */

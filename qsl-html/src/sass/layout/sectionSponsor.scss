@@ -1,0 +1,82 @@
+
+
+.sponsors {
+	padding: 75px 0;
+
+	h1 {
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 64px;
+	}
+
+	.owl-carousel-02 {
+
+
+			@media(max-width:991px){
+					.owl-dots{
+						margin-top: 20px;
+						text-align: center;
+						display: flex;
+						justify-content: center;
+						gap:4px;
+						.owl-dot{
+							border: 1px solid rgb(218, 215, 215);
+							width:15px;
+							height: 15px;
+							border-radius: 50%;
+							&.active{
+								background:rgb(224, 224, 224);
+							}
+						}
+					}
+			}
+
+		.sponsor-slider-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+			height: 350px;
+			border: 1px solid #C17C1E;
+			border-radius: 20px;
+			@media(max-width:480px){
+				height: 262px;
+			}
+			img.single-logo{
+				padding:97px 54px;
+			}
+			.two-logos{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: start;
+				padding:20px 54px 45px;
+				row-gap: 10px;
+				img{
+					width: fit-content;
+				}
+				@media (max-width:480px){
+					padding:20px 54px 23px;
+					img{
+						width:100%;
+					}
+				}
+				
+				
+			}
+
+			.telecom-partner {
+				background-color: #C17C1E;
+				color: white;
+				text-align: center;
+				font-weight: 500;
+				font-size: 22px;
+				padding: 18px 0;
+				border-radius: 0 0 20px 20px;
+				@media(max-width:600px){
+					font-size: 18px;
+				}
+			
+			}
+
+		}
+	}
+}

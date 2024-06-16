@@ -1,0 +1,196 @@
+.hero-img {
+	position: relative;
+	background-image: linear-gradient(90deg, rgba(121,16,63,1) 23%, rgba(246,169,39,0.1) 49%);
+	// background-position: right;
+	background-repeat: no-repeat;
+	height: 705px;
+	padding-top: 136px;
+	
+	&::after{
+		content:'';
+		display: block;
+		position: absolute;
+		background-image: url(../images/hero-img-rightpart.png);
+		background-position: right;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: auto;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+
+	}
+ .setup{
+	position: relative;
+	column-gap: 6rem;
+	position: relative;
+		z-index: 2;
+		@media(max-width:768px){
+			column-gap:2rem;
+			top:7.3rem;
+		}
+		@media (max-width:480px) {
+			column-gap:1rem;
+			
+		}
+	.setup-component{
+		position: relative;
+		&::before{
+			content:'';
+			display: block;
+			position: absolute;
+			width:2px;
+			height: 60px;
+			background-color: #ccc;
+			bottom:13px;
+			left: -53px;
+			transform: skew(18deg);
+			@media(max-width:768px){
+				display: none;
+			}
+			
+		}
+		&:first-child::before{
+			display: none;
+		}
+	}
+ }
+	
+
+	@media(max-width:991px) {
+		background-blend-mode: soft-light;
+	}
+
+	@media(max-width:768px) {
+		padding-top: 50px;
+
+	}
+
+	.hero-content {
+		max-width: 668px;
+		position: relative;
+		z-index: 2;
+
+		.pro-ea-logo{
+			position: relative;
+			&::before{
+				content:'';
+				display: block;
+				position: absolute;
+				border: 1px solid #fff;
+				opacity: 50%;
+				height: 115px;
+				left: 180px;
+				
+				@media(max-width:480px){
+					display: none;
+
+				}
+			}
+		}
+
+		@media (max-width:768px){
+			max-width: 704px;
+			bottom: 0;
+		}
+		.hero-content-logos {
+			padding: 9px 0;
+			column-gap: 100px;
+			@media (max-width:480px) {
+				column-gap: 10px;
+				.pro-ea-logo {
+					width: 118px;
+				}
+				.eqsl-logo {
+					width: 202px;
+				}
+			}
+
+
+		}
+
+		.feathered-rectangle {
+
+			// position: absolute;
+			// width: 1000px;
+			// height: 705px;
+			// z-index: 11;
+			// background: linear-gradient(to left,rgba(246,169,39,0) 0%, rgba(121,16,63,1) 30%, rgba(121,16,63,1) 45%);
+			// border: 1px solid #ccc; /* optional: add border for better visibility */ 
+			.welcome-text {
+				font-size: 80px;
+				font-family: 'Bebas Neue', sans-serif;
+				font-weight: 500;
+				line-height: 80px;
+				margin: 44px 0 13px;
+				@media (max-width:768px) {
+					font-size: 60px;
+					margin: 40px 0 13px;
+					line-height: 55px;
+				}
+
+				@media (max-width:480px) {
+
+					font-size: 41px;
+					line-height: 42px;
+
+				}
+
+			}
+
+			.hero-content-desc {
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 28px;
+				opacity: 75%;
+
+				@media (max-width:768px) {
+					margin-bottom: 40px !important;
+				}
+			}
+
+			// background-color:url(../images/gradient-hero.png);
+
+			&::after {
+				content: "";
+				width: 200px;
+				height: 705px;
+				background: linear-gradient(to left, rgba(246, 169, 39, 0) 0%, rgba(121, 16, 63, 1) 30%, rgba(121, 16, 63, 1) 45%);
+
+			}
+		}
+	}
+
+	.hero-tag {
+		padding: 33px 60px 21px;
+		max-width: 905px;
+		background: #fff;
+		border-radius: 20px 20px 0 0;
+
+		@media(max-width:855px) {
+
+			padding: 33px 25px 21px;
+
+		}
+
+		div {
+			p {
+				&:nth-of-type(1) {
+					opacity: 40%;
+					font-weight: 500;
+				}
+			}
+		}
+
+		p {
+			font-size: 18px;
+			@media(max-width:768px){
+				font-size:12px;
+			}
+			@media(max-width:480px){
+				font-size: 10px;
+			}
+		}
+	}
+
+}
